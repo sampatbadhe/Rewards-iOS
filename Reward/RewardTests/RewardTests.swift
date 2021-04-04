@@ -6,7 +6,6 @@
 //
 
 import XCTest
-@testable import Reward
 
 class RewardTests: XCTestCase {
 
