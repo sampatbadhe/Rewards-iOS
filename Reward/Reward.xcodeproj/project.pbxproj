@@ -18,6 +18,11 @@
 		1FAC2C7B26183E7D00638C59 /* Dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FAC2C7926183E7D00638C59 /* Dev.plist */; };
 		1FAC2CAD2618442800638C59 /* Production.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FAC2C1B2616EAE900638C59 /* Production.plist */; };
 		1FAC2CB22618444F00638C59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAC2C132616EAE200638C59 /* Main.storyboard */; };
+		1FAC2D25261A2EAE00638C59 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2D24261A2EAE00638C59 /* R.generated.swift */; };
+		1FAC2D2B261A318C00638C59 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2D2A261A318C00638C59 /* RealmManager.swift */; };
+		1FAC2D2F261A324000638C59 /* RealmConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2D2E261A324000638C59 /* RealmConfiguration.swift */; };
+		1FAC2D33261A339800638C59 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2D32261A339800638C59 /* Environment.swift */; };
+		1FAC2D37261A359D00638C59 /* EnvironmentUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2D36261A359D00638C59 /* EnvironmentUtility.swift */; };
 		DCC13BE58373AADBA4013FF2 /* Pods_RewardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7BAF31FC450162B39A9D4E /* Pods_RewardTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +55,11 @@
 		1FAC2C7E26183F0300638C59 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		1FAC2C7F26183F1400638C59 /* QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QA.xcconfig; sourceTree = "<group>"; };
 		1FAC2C8026183F2400638C59 /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
+		1FAC2D24261A2EAE00638C59 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		1FAC2D2A261A318C00638C59 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		1FAC2D2E261A324000638C59 /* RealmConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmConfiguration.swift; sourceTree = "<group>"; };
+		1FAC2D32261A339800638C59 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		1FAC2D36261A359D00638C59 /* EnvironmentUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentUtility.swift; sourceTree = "<group>"; };
 		2B66A8663FACA9F6167EFD26 /* Pods-RewardTests.release (qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardTests.release (qa).xcconfig"; path = "Target Support Files/Pods-RewardTests/Pods-RewardTests.release (qa).xcconfig"; sourceTree = "<group>"; };
 		3975ACD5DDFC8F43A4A7D7A3 /* Pods-RewardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardTests.release.xcconfig"; path = "Target Support Files/Pods-RewardTests/Pods-RewardTests.release.xcconfig"; sourceTree = "<group>"; };
 		3E176F6E30C1ED90162BF548 /* Pods-Reward.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reward.release.xcconfig"; path = "Target Support Files/Pods-Reward/Pods-Reward.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +160,10 @@
 		1FAC2C6F26183D8700638C59 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				1FAC2D00261A13FA00638C59 /* Classes */,
+				1FAC2CFF261A13EF00638C59 /* Extensions */,
+				1FAC2CFE261A13E700638C59 /* Enums */,
+				1FAC2CFD261A13D300638C59 /* Structures */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -172,8 +186,41 @@
 				1FAC2C7E26183F0300638C59 /* Production.xcconfig */,
 				1FAC2C7F26183F1400638C59 /* QA.xcconfig */,
 				1FAC2C8026183F2400638C59 /* Dev.xcconfig */,
+				1FAC2D24261A2EAE00638C59 /* R.generated.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FAC2CFD261A13D300638C59 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				1FAC2D32261A339800638C59 /* Environment.swift */,
+			);
+			path = Structures;
+			sourceTree = "<group>";
+		};
+		1FAC2CFE261A13E700638C59 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		1FAC2CFF261A13EF00638C59 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1FAC2D00261A13FA00638C59 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1FAC2D2A261A318C00638C59 /* RealmManager.swift */,
+				1FAC2D2E261A324000638C59 /* RealmConfiguration.swift */,
+				1FAC2D36261A359D00638C59 /* EnvironmentUtility.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		3087DAF88A2ACD9E58439320 /* Pods */ = {
@@ -216,6 +263,7 @@
 			buildConfigurationList = 1FAC2C342616EAE900638C59 /* Build configuration list for PBXNativeTarget "Reward" */;
 			buildPhases = (
 				16EC827AE8E17911028B96EF /* [CP] Check Pods Manifest.lock */,
+				1FAC2D19261A25CA00638C59 /* R.Swift */,
 				1FAC2C062616EAE200638C59 /* Sources */,
 				1FAC2C072616EAE200638C59 /* Frameworks */,
 				1FAC2C082616EAE200638C59 /* Resources */,
@@ -332,6 +380,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1FAC2D19261A25CA00638C59 /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$SRCROOT/Reward/Supporting Files/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Reward/Supporting Files/R.generated.swift\"\n";
+		};
 		59035FE94B453614FCB64D3A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -380,7 +448,12 @@
 			files = (
 				1FAC2C122616EAE200638C59 /* ViewController.swift in Sources */,
 				1FAC2C0E2616EAE200638C59 /* AppDelegate.swift in Sources */,
+				1FAC2D2B261A318C00638C59 /* RealmManager.swift in Sources */,
+				1FAC2D33261A339800638C59 /* Environment.swift in Sources */,
+				1FAC2D37261A359D00638C59 /* EnvironmentUtility.swift in Sources */,
 				1FAC2C102616EAE200638C59 /* SceneDelegate.swift in Sources */,
+				1FAC2D2F261A324000638C59 /* RealmConfiguration.swift in Sources */,
+				1FAC2D25261A2EAE00638C59 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1030,7 +1103,7 @@
 				1FAC2C6426183CB300638C59 /* Debug (Production) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Release (Dev)";
+			defaultConfigurationName = "Debug (Dev)";
 		};
 		1FAC2C342616EAE900638C59 /* Build configuration list for PBXNativeTarget "Reward" */ = {
 			isa = XCConfigurationList;
@@ -1043,7 +1116,7 @@
 				1FAC2C6526183CB300638C59 /* Debug (Production) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Release (Dev)";
+			defaultConfigurationName = "Debug (Dev)";
 		};
 		1FAC2C372616EAE900638C59 /* Build configuration list for PBXNativeTarget "RewardTests" */ = {
 			isa = XCConfigurationList;
@@ -1056,7 +1129,7 @@
 				1FAC2C6626183CB300638C59 /* Debug (Production) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Release (Dev)";
+			defaultConfigurationName = "Debug (Dev)";
 		};
 /* End XCConfigurationList section */
 	};
