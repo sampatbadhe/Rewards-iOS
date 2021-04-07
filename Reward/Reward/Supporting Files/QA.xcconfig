@@ -1,0 +1,12 @@
+//
+//  QA.xcconfig
+//  Reward
+//
+//  Created by Keval Vadoliya on 03/04/21.
+//
+
+base_url = 
+protocol = https
+
+#include "Pods/Target Support Files/Pods-Reward/Pods-Reward.release (qa).xcconfig"
+#include "Pods/Target Support Files/Pods-RewardTests/Pods-RewardTests.release (qa).xcconfig"
