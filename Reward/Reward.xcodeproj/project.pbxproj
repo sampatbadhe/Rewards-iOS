@@ -111,8 +111,8 @@
 		1FAC2C0C2616EAE200638C59 /* Reward */ = {
 			isa = PBXGroup;
 			children = (
-				1FE28B4B261CD05400402A2B /* Models */,
-				1FE28B4A261CD04C00402A2B /* Helpers */,
+				410E7444261D86650014C9DE /* Models */,
+				410E7445261D86740014C9DE /* Helpers */,
 				1FAC2C7526183DEF00638C59 /* Supporting Files */,
 				1FAC2C7026183DCA00638C59 /* Views */,
 				1FAC2C6D26183D7300638C59 /* Controllers */,
@@ -162,20 +162,6 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1FE28B4A261CD04C00402A2B /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		1FE28B4B261CD05400402A2B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		3087DAF88A2ACD9E58439320 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +183,20 @@
 				92BFD410E5745CD114B78874 /* Pods-RewardTests.debug (production).xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		410E7444261D86650014C9DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		410E7445261D86740014C9DE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		FD0CCF834ED88C7D64717CA0 /* Frameworks */ = {
