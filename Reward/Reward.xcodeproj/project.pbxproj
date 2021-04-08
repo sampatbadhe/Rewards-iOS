@@ -10,7 +10,6 @@
 		14861D9AA1B250E7454CCA19 /* Pods_Reward.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F7784DBDEE096F3794609E /* Pods_Reward.framework */; };
 		1FAC2C0E2616EAE200638C59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2C0D2616EAE200638C59 /* AppDelegate.swift */; };
 		1FAC2C102616EAE200638C59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2C0F2616EAE200638C59 /* SceneDelegate.swift */; };
-		1FAC2C122616EAE200638C59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2C112616EAE200638C59 /* ViewController.swift */; };
 		1FAC2C172616EAE900638C59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FAC2C162616EAE900638C59 /* Assets.xcassets */; };
 		1FAC2C1A2616EAE900638C59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAC2C182616EAE900638C59 /* LaunchScreen.storyboard */; };
 		1FAC2C252616EAE900638C59 /* RewardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2C242616EAE900638C59 /* RewardTests.swift */; };
@@ -19,6 +18,7 @@
 		1FAC2CAD2618442800638C59 /* Production.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FAC2C1B2616EAE900638C59 /* Production.plist */; };
 		1FAC2CB22618444F00638C59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAC2C132616EAE200638C59 /* Main.storyboard */; };
 		DCC13BE58373AADBA4013FF2 /* Pods_RewardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7BAF31FC450162B39A9D4E /* Pods_RewardTests.framework */; };
+		E74DFF16261F569100144D7F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DFF15261F569000144D7F /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 		1FAC2C0A2616EAE200638C59 /* Reward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reward.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAC2C0D2616EAE200638C59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FAC2C0F2616EAE200638C59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1FAC2C112616EAE200638C59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1FAC2C142616EAE200638C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FAC2C162616EAE900638C59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FAC2C192616EAE900638C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		D667C4B13F3DA83A2BED6EB4 /* Pods-Reward.release (qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reward.release (qa).xcconfig"; path = "Target Support Files/Pods-Reward/Pods-Reward.release (qa).xcconfig"; sourceTree = "<group>"; };
 		D99290BA55A92F60D1DCDB61 /* Pods-RewardTests.debug (dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardTests.debug (dev).xcconfig"; path = "Target Support Files/Pods-RewardTests/Pods-RewardTests.debug (dev).xcconfig"; sourceTree = "<group>"; };
 		E337C7BB74752E26CFF1DDB2 /* Pods-Reward.debug (qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reward.debug (qa).xcconfig"; path = "Target Support Files/Pods-Reward/Pods-Reward.debug (qa).xcconfig"; sourceTree = "<group>"; };
+		E74DFF15261F569000144D7F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		ED3CF6E3F52884FE2BB52285 /* Pods-Reward.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reward.debug.xcconfig"; path = "Target Support Files/Pods-Reward/Pods-Reward.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,9 +133,9 @@
 		1FAC2C6D26183D7300638C59 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E74DFF19261F569600144D7F /* SignIn */,
 				1FAC2C0D2616EAE200638C59 /* AppDelegate.swift */,
 				1FAC2C0F2616EAE200638C59 /* SceneDelegate.swift */,
-				1FAC2C112616EAE200638C59 /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -199,6 +199,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		E74DFF19261F569600144D7F /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				E74DFF15261F569000144D7F /* SignInViewController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
 		FD0CCF834ED88C7D64717CA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +228,7 @@
 				1FAC2C072616EAE200638C59 /* Frameworks */,
 				1FAC2C082616EAE200638C59 /* Resources */,
 				61431FCF65F9FE91D83292C5 /* [CP] Embed Pods Frameworks */,
+				B0362F76DA36621C8B9B6319 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -371,6 +380,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Reward/Pods-Reward-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B0362F76DA36621C8B9B6319 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reward/Pods-Reward-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reward/Pods-Reward-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Reward/Pods-Reward-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -378,7 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FAC2C122616EAE200638C59 /* ViewController.swift in Sources */,
+				E74DFF16261F569100144D7F /* SignInViewController.swift in Sources */,
 				1FAC2C0E2616EAE200638C59 /* AppDelegate.swift in Sources */,
 				1FAC2C102616EAE200638C59 /* SceneDelegate.swift in Sources */,
 			);
@@ -485,6 +511,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${bundle_id_suffix}";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Reward/Supporting Files/Dev.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -584,6 +611,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${bundle_id_suffix}";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Reward/Supporting Files/Dev.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -683,6 +711,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${bundle_id_suffix}";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Reward/Supporting Files/QA.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -782,6 +811,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${bundle_id_suffix}";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Reward/Supporting Files/Production.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -881,6 +911,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${bundle_id_suffix}";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Reward/Supporting Files/QA.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -980,6 +1011,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${bundle_id_suffix}";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Reward/Supporting Files/Production.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
