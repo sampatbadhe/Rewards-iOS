@@ -19,10 +19,19 @@
 		1FAC2CAD2618442800638C59 /* Production.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FAC2C1B2616EAE900638C59 /* Production.plist */; };
 		1FAC2CB22618444F00638C59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAC2C132616EAE200638C59 /* Main.storyboard */; };
 		1FAC2D25261A2EAE00638C59 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2D24261A2EAE00638C59 /* R.generated.swift */; };
-		1FAC2D2B261A318C00638C59 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2D2A261A318C00638C59 /* RealmManager.swift */; };
-		1FAC2D2F261A324000638C59 /* RealmConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2D2E261A324000638C59 /* RealmConfiguration.swift */; };
-		1FAC2D33261A339800638C59 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2D32261A339800638C59 /* Environment.swift */; };
-		1FAC2D37261A359D00638C59 /* EnvironmentUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2D36261A359D00638C59 /* EnvironmentUtility.swift */; };
+		1FE28B5B261CD58600402A2B /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B56261CD58600402A2B /* Environment.swift */; };
+		1FE28B5C261CD58600402A2B /* RealmConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B58261CD58600402A2B /* RealmConfiguration.swift */; };
+		1FE28B5D261CD58600402A2B /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B59261CD58600402A2B /* RealmManager.swift */; };
+		1FE28B5E261CD58600402A2B /* EnvironmentUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B5A261CD58600402A2B /* EnvironmentUtility.swift */; };
+		1FE28B71261CDBCD00402A2B /* Mapper+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B70261CDBCD00402A2B /* Mapper+Extension.swift */; };
+		1FE28B76261CDC7A00402A2B /* APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B75261CDC7A00402A2B /* APIResponseProtocol.swift */; };
+		1FE28B7D261CDCC000402A2B /* APIUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B7C261CDCC000402A2B /* APIUrl.swift */; };
+		1FE28B83261CDD2000402A2B /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B82261CDD2000402A2B /* APIRequest.swift */; };
+		1FE28B87261CDD4C00402A2B /* APIUrlStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B86261CDD4C00402A2B /* APIUrlStruct.swift */; };
+		1FE28B8D261CDEBC00402A2B /* APIHeaderKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B8C261CDEBC00402A2B /* APIHeaderKey.swift */; };
+		1FE28B91261CDF0900402A2B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B90261CDF0900402A2B /* APIManager.swift */; };
+		1FE28B95261CDF4E00402A2B /* HTTPStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B94261CDF4E00402A2B /* HTTPStatus.swift */; };
+		1FF6CE20261F4F77007BF8B9 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6CE1F261F4F77007BF8B9 /* GlobalSettings.swift */; };
 		DCC13BE58373AADBA4013FF2 /* Pods_RewardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7BAF31FC450162B39A9D4E /* Pods_RewardTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +69,19 @@
 		1FAC2D2E261A324000638C59 /* RealmConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmConfiguration.swift; sourceTree = "<group>"; };
 		1FAC2D32261A339800638C59 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		1FAC2D36261A359D00638C59 /* EnvironmentUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentUtility.swift; sourceTree = "<group>"; };
+		1FE28B56261CD58600402A2B /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		1FE28B58261CD58600402A2B /* RealmConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConfiguration.swift; sourceTree = "<group>"; };
+		1FE28B59261CD58600402A2B /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		1FE28B5A261CD58600402A2B /* EnvironmentUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentUtility.swift; sourceTree = "<group>"; };
+		1FE28B70261CDBCD00402A2B /* Mapper+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mapper+Extension.swift"; sourceTree = "<group>"; };
+		1FE28B75261CDC7A00402A2B /* APIResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseProtocol.swift; sourceTree = "<group>"; };
+		1FE28B7C261CDCC000402A2B /* APIUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUrl.swift; sourceTree = "<group>"; };
+		1FE28B82261CDD2000402A2B /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		1FE28B86261CDD4C00402A2B /* APIUrlStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUrlStruct.swift; sourceTree = "<group>"; };
+		1FE28B8C261CDEBC00402A2B /* APIHeaderKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHeaderKey.swift; sourceTree = "<group>"; };
+		1FE28B90261CDF0900402A2B /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		1FE28B94261CDF4E00402A2B /* HTTPStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatus.swift; sourceTree = "<group>"; };
+		1FF6CE1F261F4F77007BF8B9 /* GlobalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
 		2B66A8663FACA9F6167EFD26 /* Pods-RewardTests.release (qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardTests.release (qa).xcconfig"; path = "Target Support Files/Pods-RewardTests/Pods-RewardTests.release (qa).xcconfig"; sourceTree = "<group>"; };
 		3975ACD5DDFC8F43A4A7D7A3 /* Pods-RewardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardTests.release.xcconfig"; path = "Target Support Files/Pods-RewardTests/Pods-RewardTests.release.xcconfig"; sourceTree = "<group>"; };
 		3E176F6E30C1ED90162BF548 /* Pods-Reward.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reward.release.xcconfig"; path = "Target Support Files/Pods-Reward/Pods-Reward.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +128,7 @@
 				1FAC2C0B2616EAE200638C59 /* Products */,
 				3087DAF88A2ACD9E58439320 /* Pods */,
 				FD0CCF834ED88C7D64717CA0 /* Frameworks */,
+				1FE28B50261CD55600402A2B /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,8 +144,8 @@
 		1FAC2C0C2616EAE200638C59 /* Reward */ = {
 			isa = PBXGroup;
 			children = (
-				1FE28B4B261CD05400402A2B /* Models */,
-				1FE28B4A261CD04C00402A2B /* Helpers */,
+				1FE28B54261CD58600402A2B /* Helpers */,
+				1FE28B53261CD58600402A2B /* Models */,
 				1FAC2C7526183DEF00638C59 /* Supporting Files */,
 				1FAC2C7026183DCA00638C59 /* Views */,
 				1FAC2C6D26183D7300638C59 /* Controllers */,
@@ -150,24 +173,6 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		1FAC2C6E26183D7F00638C59 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		1FAC2C6F26183D8700638C59 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				1FAC2D00261A13FA00638C59 /* Classes */,
-				1FAC2CFF261A13EF00638C59 /* Extensions */,
-				1FAC2CFE261A13E700638C59 /* Enums */,
-				1FAC2CFD261A13D300638C59 /* Structures */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		1FAC2C7026183DCA00638C59 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,36 +196,82 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1FAC2CFD261A13D300638C59 /* Structures */ = {
+		1FE28B50261CD55600402A2B /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
+				1FAC2D2A261A318C00638C59 /* RealmManager.swift */,
 				1FAC2D32261A339800638C59 /* Environment.swift */,
+				1FAC2D36261A359D00638C59 /* EnvironmentUtility.swift */,
+				1FAC2D2E261A324000638C59 /* RealmConfiguration.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		1FE28B53261CD58600402A2B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1FE28B54261CD58600402A2B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1FE28B7B261CDCAF00402A2B /* Enums */,
+				1FE28B74261CDC5D00402A2B /* Protocols */,
+				1FE28B6F261CDBB200402A2B /* Extensions */,
+				1FE28B55261CD58600402A2B /* Structures */,
+				1FE28B57261CD58600402A2B /* Classes */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1FE28B55261CD58600402A2B /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				1FE28B56261CD58600402A2B /* Environment.swift */,
+				1FE28B82261CDD2000402A2B /* APIRequest.swift */,
+				1FE28B86261CDD4C00402A2B /* APIUrlStruct.swift */,
+				1FE28B94261CDF4E00402A2B /* HTTPStatus.swift */,
+				1FF6CE1F261F4F77007BF8B9 /* GlobalSettings.swift */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
 		};
-		1FAC2CFE261A13E700638C59 /* Enums */ = {
+		1FE28B57261CD58600402A2B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1FE28B58261CD58600402A2B /* RealmConfiguration.swift */,
+				1FE28B59261CD58600402A2B /* RealmManager.swift */,
+				1FE28B5A261CD58600402A2B /* EnvironmentUtility.swift */,
+				1FE28B90261CDF0900402A2B /* APIManager.swift */,
 			);
-			path = Enums;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		1FAC2CFF261A13EF00638C59 /* Extensions */ = {
+		1FE28B6F261CDBB200402A2B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1FE28B70261CDBCD00402A2B /* Mapper+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		1FAC2D00261A13FA00638C59 /* Classes */ = {
+		1FE28B74261CDC5D00402A2B /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				1FAC2D2A261A318C00638C59 /* RealmManager.swift */,
-				1FAC2D2E261A324000638C59 /* RealmConfiguration.swift */,
-				1FAC2D36261A359D00638C59 /* EnvironmentUtility.swift */,
+				1FE28B75261CDC7A00402A2B /* APIResponseProtocol.swift */,
 			);
-			path = Classes;
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1FE28B7B261CDCAF00402A2B /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				1FE28B7C261CDCC000402A2B /* APIUrl.swift */,
+				1FE28B8C261CDEBC00402A2B /* APIHeaderKey.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		3087DAF88A2ACD9E58439320 /* Pods */ = {
@@ -446,14 +497,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE28B5E261CD58600402A2B /* EnvironmentUtility.swift in Sources */,
+				1FE28B7D261CDCC000402A2B /* APIUrl.swift in Sources */,
+				1FE28B87261CDD4C00402A2B /* APIUrlStruct.swift in Sources */,
+				1FE28B8D261CDEBC00402A2B /* APIHeaderKey.swift in Sources */,
 				1FAC2C122616EAE200638C59 /* ViewController.swift in Sources */,
 				1FAC2C0E2616EAE200638C59 /* AppDelegate.swift in Sources */,
-				1FAC2D2B261A318C00638C59 /* RealmManager.swift in Sources */,
-				1FAC2D33261A339800638C59 /* Environment.swift in Sources */,
-				1FAC2D37261A359D00638C59 /* EnvironmentUtility.swift in Sources */,
+				1FE28B76261CDC7A00402A2B /* APIResponseProtocol.swift in Sources */,
+				1FE28B5D261CD58600402A2B /* RealmManager.swift in Sources */,
+				1FE28B71261CDBCD00402A2B /* Mapper+Extension.swift in Sources */,
+				1FE28B5C261CD58600402A2B /* RealmConfiguration.swift in Sources */,
+				1FE28B5B261CD58600402A2B /* Environment.swift in Sources */,
+				1FF6CE20261F4F77007BF8B9 /* GlobalSettings.swift in Sources */,
 				1FAC2C102616EAE200638C59 /* SceneDelegate.swift in Sources */,
-				1FAC2D2F261A324000638C59 /* RealmConfiguration.swift in Sources */,
+				1FE28B91261CDF0900402A2B /* APIManager.swift in Sources */,
+				1FE28B83261CDD2000402A2B /* APIRequest.swift in Sources */,
 				1FAC2D25261A2EAE00638C59 /* R.generated.swift in Sources */,
+				1FE28B95261CDF4E00402A2B /* HTTPStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
