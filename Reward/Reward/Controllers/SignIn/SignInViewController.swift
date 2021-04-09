@@ -42,7 +42,7 @@ class SignInViewController: UIViewController {
         let user = GIDSignIn.sharedInstance()?.currentUser
         var parameter = [String: Any]()
         parameter["first_name"] = user?.profile.givenName
-        parameter["lastName"] = user?.profile.familyName
+        parameter["last_name"] = user?.profile.familyName
         parameter["email"] = user?.profile.email
         parameter["google_uid"] = user?.userID
         return ["user_auth": parameter]
