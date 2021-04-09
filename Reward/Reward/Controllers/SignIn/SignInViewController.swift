@@ -38,6 +38,16 @@ class SignInViewController: UIViewController {
         }
     }
     
+    func getParameters() -> [String: Any] {
+        let user = GIDSignIn.sharedInstance()?.currentUser
+        var parameter = [String: Any]()
+        parameter["first_name"] = user?.profile.givenName
+        parameter["lastName"] = user?.profile.familyName
+        parameter["email"] = user?.profile.email
+        parameter["google_uid"] = user?.userID
+        return ["user_auth": parameter]
+    }
+    
     @IBAction func signOutAction(_ sender: UIButton) {
         GIDSignIn.sharedInstance()?.signOut()
         updateScreen()
