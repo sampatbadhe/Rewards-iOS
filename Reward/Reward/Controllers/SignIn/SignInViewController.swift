@@ -16,21 +16,23 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setGoogleSignIn()
+        updateScreenOnLoginStatus()
+    }
+    
+    func setGoogleSignIn() {
+        GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance()?.presentingViewController = self
         NotificationCenter.default.addObserver(self, selector: #selector(userDidSignInGoogle(_:)), name: .signInGoogleCompleted, object: nil)
-        setUI()
-    }
-    
-    func setUI() {
         signInButton.style = .wide
-        updateScreen()
     }
+
     
     @objc private func userDidSignInGoogle(_ notification: Notification) {
-        updateScreen()
+        updateScreenOnLoginStatus()
     }
     
-    private func updateScreen() {
+    private func updateScreenOnLoginStatus() {
         if let user = GIDSignIn.sharedInstance()?.currentUser {
             userNameLabel.text = user.profile.givenName
             signInButton.isEnabled = false
@@ -43,18 +45,20 @@ class SignInViewController: UIViewController {
     }
     
     func getParameters() -> [String: Any] {
-        let user = GIDSignIn.sharedInstance()?.currentUser
         var parameter = [String: Any]()
-        parameter[APIKeys.SignInKeys.firstName] = user?.profile.givenName
-        parameter[APIKeys.SignInKeys.lastName] = user?.profile.familyName
-        parameter[APIKeys.SignInKeys.email] = user?.profile.email
-        parameter[APIKeys.SignInKeys.googleUid] = user?.userID
+        guard let user = GIDSignIn.sharedInstance()?.currentUser else {
+            return parameter
+        }
+        parameter[APIKeys.SignInKeys.firstName] = user.profile.givenName
+        parameter[APIKeys.SignInKeys.lastName] = user.profile.familyName
+        parameter[APIKeys.SignInKeys.email] = user.profile.email
+        parameter[APIKeys.SignInKeys.googleUid] = user.userID
         return [APIKeys.SignInKeys.userAuth: parameter]
     }
     
-    @IBAction func signOutAction(_ sender: UIButton) {
+    @IBAction func signOutButtonAction(_ sender: UIButton) {
         GIDSignIn.sharedInstance()?.signOut()
-        updateScreen()
+        updateScreenOnLoginStatus()
     }
 
 }

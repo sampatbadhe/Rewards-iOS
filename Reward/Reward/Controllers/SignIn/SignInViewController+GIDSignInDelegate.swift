@@ -1,21 +1,21 @@
 //
-//  AppDelegate+GIDSignInDelegate.swift
+//  SignInViewController+GIDSignInDelegate.swift
 //  Reward
 //
-//  Created by Darshan on 10/04/21.
+//  Created by Darshan on 11/04/21.
 //
 
 import UIKit
 import GoogleSignIn
 
-extension AppDelegate: GIDSignInDelegate {
+extension SignInViewController: GIDSignInDelegate {
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
             if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
-                print("The user has not signed in before or they have since signed out.")
+                // Handle: the user has not signed in before or they have since signed out.
             } else {
-                print("\(error.localizedDescription)")
+                // Handle Error for else part
             }
             return
         }

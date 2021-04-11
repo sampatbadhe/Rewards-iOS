@@ -39,7 +39,7 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <state key="normal" title="Sign Out"/>
                                 <connections>
-                                    <action selector="signOutAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O2o-ah-hem"/>
+                                    <action selector="signOutButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O2o-ah-hem"/>
                                 </connections>
                             </button>
                         </subviews>

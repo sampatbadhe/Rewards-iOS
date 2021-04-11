@@ -13,7 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         GIDSignIn.sharedInstance().clientID = "839765622136-mbout8i9rt7gg15n4mcp9p9d8isc2svp.apps.googleusercontent.com"
-        GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
         return true
     }
