@@ -8,6 +8,8 @@ target 'Reward' do
   pod 'RealmSwift'
   pod 'ObjectMapper'
   pod 'Alamofire'
+  pod 'SwifterSwift'
+  pod 'R.swift'
   pod 'IQKeyboardManagerSwift'
   pod 'GoogleSignIn'
 
