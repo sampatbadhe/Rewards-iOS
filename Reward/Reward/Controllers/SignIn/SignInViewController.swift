@@ -49,11 +49,11 @@ class SignInViewController: UIViewController {
         guard let user = GIDSignIn.sharedInstance()?.currentUser else {
             return parameter
         }
-        parameter[APIKeys.SignInKeys.firstName] = user.profile.givenName
-        parameter[APIKeys.SignInKeys.lastName] = user.profile.familyName
-        parameter[APIKeys.SignInKeys.email] = user.profile.email
-        parameter[APIKeys.SignInKeys.googleUid] = user.userID
-        return [APIKeys.SignInKeys.userAuth: parameter]
+        parameter[APIKeys.SignIn.firstName] = user.profile.givenName
+        parameter[APIKeys.SignIn.lastName] = user.profile.familyName
+        parameter[APIKeys.SignIn.email] = user.profile.email
+        parameter[APIKeys.SignIn.googleUid] = user.userID
+        return [APIKeys.SignIn.userAuth: parameter]
     }
     
     @IBAction func signOutButtonAction(_ sender: UIButton) {
