@@ -95,10 +95,6 @@
 		D667C4B13F3DA83A2BED6EB4 /* Pods-Reward.release (qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reward.release (qa).xcconfig"; path = "Target Support Files/Pods-Reward/Pods-Reward.release (qa).xcconfig"; sourceTree = "<group>"; };
 		D99290BA55A92F60D1DCDB61 /* Pods-RewardTests.debug (dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardTests.debug (dev).xcconfig"; path = "Target Support Files/Pods-RewardTests/Pods-RewardTests.debug (dev).xcconfig"; sourceTree = "<group>"; };
 		E337C7BB74752E26CFF1DDB2 /* Pods-Reward.debug (qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reward.debug (qa).xcconfig"; path = "Target Support Files/Pods-Reward/Pods-Reward.debug (qa).xcconfig"; sourceTree = "<group>"; };
-		E72B57722621F53800B6DC8C /* NotificationName+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extensions.swift"; sourceTree = "<group>"; };
-		E72B577F2621F77E00B6DC8C /* APIKeysStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeysStruct.swift; sourceTree = "<group>"; };
-		E731F30E2623594600DFF0B3 /* SignInViewController+GIDSignInDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+GIDSignInDelegate.swift"; sourceTree = "<group>"; };
-		E74DFF15261F569000144D7F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		E77DE86926245BEE00D20520 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		E77DE86A26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignInViewController+GIDSignInDelegate.swift"; sourceTree = "<group>"; };
 		E77DE87326245C8100D20520 /* NotificationName+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extensions.swift"; sourceTree = "<group>"; };
@@ -134,7 +130,6 @@
 				1FAC2C0B2616EAE200638C59 /* Products */,
 				3087DAF88A2ACD9E58439320 /* Pods */,
 				FD0CCF834ED88C7D64717CA0 /* Frameworks */,
-				E77DE85326243D1500D20520 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -292,17 +287,6 @@
 				92BFD410E5745CD114B78874 /* Pods-RewardTests.debug (production).xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		E77DE85326243D1500D20520 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				E74DFF15261F569000144D7F /* SignInViewController.swift */,
-				E72B577F2621F77E00B6DC8C /* APIKeysStruct.swift */,
-				E72B57722621F53800B6DC8C /* NotificationName+Extensions.swift */,
-				E731F30E2623594600DFF0B3 /* SignInViewController+GIDSignInDelegate.swift */,
-			);
-			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		E77DE86826245BE100D20520 /* SignIn */ = {
