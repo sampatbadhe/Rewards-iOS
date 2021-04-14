@@ -11,6 +11,7 @@ target 'Reward' do
   pod 'SwifterSwift'
   pod 'R.swift'
   pod 'IQKeyboardManagerSwift'
+  pod 'GoogleSignIn'
 
   # Pods for Reward
 
