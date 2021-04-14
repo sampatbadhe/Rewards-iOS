@@ -7,6 +7,7 @@
 
 base_url = 
 protocol = https
+googleSchemeUrl = com.googleusercontent.apps.839765622136-mbout8i9rt7gg15n4mcp9p9d8isc2svp
 
 #include "Pods/Target Support Files/Pods-Reward/Pods-Reward.release (dev).xcconfig"
 #include "Pods/Target Support Files/Pods-RewardTests/Pods-RewardTests.release (dev).xcconfig"
