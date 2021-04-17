@@ -1,5 +1,5 @@
 //
-//  NotificationName+Extensions.swift
+//  NotificationName+Extension.swift
 //  Reward
 //
 //  Created by Darshan on 10/04/21.
