@@ -23,6 +23,7 @@ PODS:
   - Realm/Headers (10.7.2)
   - RealmSwift (10.7.2):
     - Realm (= 10.7.2)
+  - SkyFloatingLabelTextField (4.0.0)
   - SwifterSwift (5.2.0):
     - SwifterSwift/AppKit (= 5.2.0)
     - SwifterSwift/CoreAnimation (= 5.2.0)
@@ -56,6 +57,7 @@ DEPENDENCIES:
   - ObjectMapper
   - R.swift
   - RealmSwift
+  - SkyFloatingLabelTextField
   - SwifterSwift
 
 SPEC REPOS:
@@ -71,6 +73,7 @@ SPEC REPOS:
     - R.swift.Library
     - Realm
     - RealmSwift
+    - SkyFloatingLabelTextField
     - SwifterSwift
 
 SPEC CHECKSUMS:
@@ -85,8 +88,9 @@ SPEC CHECKSUMS:
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   Realm: e523da9ade306c5ae87e85dc09fdef148d3e1cc1
   RealmSwift: 4f6758c3adbdcc87f7b7777107226532a077f61c
+  SkyFloatingLabelTextField: 79ddc40e4ad59707fedbb48d605417aee48bb78a
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
 
-PODFILE CHECKSUM: 9d1ba01a437b68eb4515d724909041ac1482b701
+PODFILE CHECKSUM: 8d224e85afaf067eeec1ad7b00295f4c2b65a4df
 
 COCOAPODS: 1.10.1
