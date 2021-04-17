@@ -38,7 +38,7 @@ class SignInViewController: UIViewController {
     }
     
     @objc private func userDidSignInGoogle(_ notification: Notification) {
-        
+        // API call after google sign in completed
     }
     
     func getParameters() -> [String: Any] {
