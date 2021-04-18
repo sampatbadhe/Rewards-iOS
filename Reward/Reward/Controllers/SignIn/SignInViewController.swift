@@ -73,7 +73,10 @@ extension SignInViewController: APIResponseProtocol {
     
     func successResponse(_ response: [String: Any], successCode: Int, request: APIRequest) {
         Common.hideLoader()
-        // Open tab bar
+        guard let token = response["token"] as? String else {
+            return
+        }
+        Variable.token = token
     }
     
 }
