@@ -60,5 +60,13 @@ class SignInViewController: UIViewController {
         GIDSignIn.sharedInstance()?.signOut()
         updateScreenOnLoginStatus()
     }
+    
+    @IBAction func settingButtonAction(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let settingVC = storyboard.instantiateViewController(identifier: "SettingViewController") as? SettingViewController else {
+            return
+        }
+        navigationController?.pushViewController(settingVC, animated: true)
+    }
 
 }

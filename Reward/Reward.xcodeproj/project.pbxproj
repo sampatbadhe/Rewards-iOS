@@ -36,6 +36,8 @@
 		E77DE86C26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DE86A26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift */; };
 		E77DE87426245C8200D20520 /* NotificationName+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DE87326245C8100D20520 /* NotificationName+Extensions.swift */; };
 		E77DE87826245CED00D20520 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DE87726245CED00D20520 /* APIKeys.swift */; };
+		E79BDE2D262C6F9C001C3C73 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BDE2C262C6F9C001C3C73 /* SettingViewController.swift */; };
+		E79BDE33262C7029001C3C73 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BDE32262C7029001C3C73 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,8 @@
 		E77DE86A26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignInViewController+GIDSignInDelegate.swift"; sourceTree = "<group>"; };
 		E77DE87326245C8100D20520 /* NotificationName+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extensions.swift"; sourceTree = "<group>"; };
 		E77DE87726245CED00D20520 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		E79BDE2C262C6F9C001C3C73 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		E79BDE32262C7029001C3C73 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		ED3CF6E3F52884FE2BB52285 /* Pods-Reward.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reward.debug.xcconfig"; path = "Target Support Files/Pods-Reward/Pods-Reward.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +171,7 @@
 		1FAC2C6D26183D7300638C59 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E79BDE2B262C6F7F001C3C73 /* Setting */,
 				E77DE86826245BE100D20520 /* SignIn */,
 				1FAC2C0D2616EAE200638C59 /* AppDelegate.swift */,
 				1FAC2C0F2616EAE200638C59 /* SceneDelegate.swift */,
@@ -236,6 +241,7 @@
 				1FE28B59261CD58600402A2B /* RealmManager.swift */,
 				1FE28B5A261CD58600402A2B /* EnvironmentUtility.swift */,
 				1FE28B90261CDF0900402A2B /* APIManager.swift */,
+				E79BDE32262C7029001C3C73 /* GradientView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -296,6 +302,14 @@
 				E77DE86A26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		E79BDE2B262C6F7F001C3C73 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				E79BDE2C262C6F9C001C3C73 /* SettingViewController.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		FD0CCF834ED88C7D64717CA0 /* Frameworks */ = {
@@ -517,6 +531,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E77DE86B26245BEE00D20520 /* SignInViewController.swift in Sources */,
+				E79BDE33262C7029001C3C73 /* GradientView.swift in Sources */,
+				E79BDE2D262C6F9C001C3C73 /* SettingViewController.swift in Sources */,
 				1FAC2C0E2616EAE200638C59 /* AppDelegate.swift in Sources */,
 				1FE28B5E261CD58600402A2B /* EnvironmentUtility.swift in Sources */,
 				1FE28B7D261CDCC000402A2B /* APIUrl.swift in Sources */,
