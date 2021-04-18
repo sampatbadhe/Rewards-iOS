@@ -36,6 +36,8 @@
 		E77DE86C26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DE86A26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift */; };
 		E77DE87426245C8200D20520 /* NotificationName+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DE87326245C8100D20520 /* NotificationName+Extensions.swift */; };
 		E77DE87826245CED00D20520 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DE87726245CED00D20520 /* APIKeys.swift */; };
+		E79BDDF7262C3538001C3C73 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BDDF6262C3538001C3C73 /* Common.swift */; };
+		E79BDDFB262C357C001C3C73 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BDDFA262C357C001C3C73 /* Loader.swift */; };
 		E7A82B86262B0EF2007E4EC2 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A82B85262B0EF2007E4EC2 /* UIFont+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +102,8 @@
 		E77DE86A26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignInViewController+GIDSignInDelegate.swift"; sourceTree = "<group>"; };
 		E77DE87326245C8100D20520 /* NotificationName+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extensions.swift"; sourceTree = "<group>"; };
 		E77DE87726245CED00D20520 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		E79BDDF6262C3538001C3C73 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		E79BDDFA262C357C001C3C73 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		E7A82B85262B0EF2007E4EC2 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		ED3CF6E3F52884FE2BB52285 /* Pods-Reward.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reward.debug.xcconfig"; path = "Target Support Files/Pods-Reward/Pods-Reward.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -238,6 +242,8 @@
 				1FE28B59261CD58600402A2B /* RealmManager.swift */,
 				1FE28B5A261CD58600402A2B /* EnvironmentUtility.swift */,
 				1FE28B90261CDF0900402A2B /* APIManager.swift */,
+				E79BDDF6262C3538001C3C73 /* Common.swift */,
+				E79BDDFA262C357C001C3C73 /* Loader.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -533,8 +539,10 @@
 				1FE28B71261CDBCD00402A2B /* Mapper+Extension.swift in Sources */,
 				1FE28B5C261CD58600402A2B /* RealmConfiguration.swift in Sources */,
 				1FE28B5B261CD58600402A2B /* Environment.swift in Sources */,
+				E79BDDFB262C357C001C3C73 /* Loader.swift in Sources */,
 				1FF6CE20261F4F77007BF8B9 /* GlobalSettings.swift in Sources */,
 				1FAC2C102616EAE200638C59 /* SceneDelegate.swift in Sources */,
+				E79BDDF7262C3538001C3C73 /* Common.swift in Sources */,
 				1FE28B91261CDF0900402A2B /* APIManager.swift in Sources */,
 				E77DE86C26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift in Sources */,
 				1FE28B83261CDD2000402A2B /* APIRequest.swift in Sources */,
@@ -646,6 +654,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				EXCLUDED_ARCHS = arm64;
+				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = "Reward/Supporting Files/Dev.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -746,6 +755,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				EXCLUDED_ARCHS = arm64;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				INFOPLIST_FILE = "Reward/Supporting Files/Dev.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -754,6 +764,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.Reward;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				bundle_id_suffix = Dev;
@@ -846,6 +857,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				EXCLUDED_ARCHS = arm64;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				INFOPLIST_FILE = "Reward/Supporting Files/QA.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -854,6 +866,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.Reward;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				bundle_id_suffix = QA;
@@ -946,6 +959,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				EXCLUDED_ARCHS = arm64;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				INFOPLIST_FILE = "Reward/Supporting Files/Production.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -954,6 +968,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.Reward;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				bundle_id_suffix = "";
@@ -1046,6 +1061,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				EXCLUDED_ARCHS = arm64;
+				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = "Reward/Supporting Files/QA.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1146,6 +1162,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				EXCLUDED_ARCHS = arm64;
+				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = "Reward/Supporting Files/Production.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

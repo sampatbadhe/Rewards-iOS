@@ -8,9 +8,10 @@
 import Foundation
 
 enum APIUrl: String {
-    case token = ""
+    case token = "auth/google_signup"
 }
 
 public enum APIPath: String {
+    case v1 = "api/v1/"
     case noPath = ""
 }

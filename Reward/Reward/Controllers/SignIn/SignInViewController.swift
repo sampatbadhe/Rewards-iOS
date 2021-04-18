@@ -15,11 +15,14 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var iHeroLabel: UILabel!
     @IBOutlet weak var signInButton: GIDSignInButton!
     
+    let apiManager = APIManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        apiManager.delegate = self
+        signInButton.isEnabled = true
         setGoogleSignIn()
         setUI()
-        signInButton.isEnabled = true
     }
     
     func setGoogleSignIn() {
@@ -37,7 +40,19 @@ class SignInViewController: UIViewController {
     }
     
     @objc private func userDidSignInGoogle(_ notification: Notification) {
-        // API call after google sign in completed
+        callTokenAPI()
+    }
+    
+    func callTokenAPI() {
+        Common.showLoader()
+        apiManager.callAPI(request: tokenAPIRequest())
+    }
+    
+    func tokenAPIRequest() -> APIRequest {
+        return APIRequest(
+            url: APIUrlStruct(apiPath: .v1, apiUrl: .token),
+            parameters: getParameters(),
+            method: .post)
     }
     
     func getParameters() -> [String: Any] {
@@ -52,4 +67,13 @@ class SignInViewController: UIViewController {
         return [APIKeys.SignIn.userAuth: parameter]
     }
 
+}
+
+extension SignInViewController: APIResponseProtocol {
+    
+    func successResponse(_ response: [String: Any], successCode: Int, request: APIRequest) {
+        Common.hideLoader()
+        // Open tab bar
+    }
+    
 }
