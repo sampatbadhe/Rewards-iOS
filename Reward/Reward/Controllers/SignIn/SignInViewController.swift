@@ -17,7 +17,6 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        AppDelegateUtility().lockOrientation(.portrait, andRotateTo: .portrait)
         setGoogleSignIn()
         setUI()
         signInButton.isEnabled = true
