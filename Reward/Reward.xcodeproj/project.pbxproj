@@ -19,6 +19,7 @@
 		1FAC2CAD2618442800638C59 /* Production.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FAC2C1B2616EAE900638C59 /* Production.plist */; };
 		1FAC2CB22618444F00638C59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAC2C132616EAE200638C59 /* Main.storyboard */; };
 		1FAC2D25261A2EAE00638C59 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2D24261A2EAE00638C59 /* R.generated.swift */; };
+		1FAD9AB5262EDE1E00B80A5A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD9AB4262EDE1D00B80A5A /* Constants.swift */; };
 		1FE28B5B261CD58600402A2B /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B56261CD58600402A2B /* Environment.swift */; };
 		1FE28B5C261CD58600402A2B /* RealmConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B58261CD58600402A2B /* RealmConfiguration.swift */; };
 		1FE28B5D261CD58600402A2B /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B59261CD58600402A2B /* RealmManager.swift */; };
@@ -73,6 +74,7 @@
 		1FAC2C7F26183F1400638C59 /* QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QA.xcconfig; sourceTree = "<group>"; };
 		1FAC2C8026183F2400638C59 /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
 		1FAC2D24261A2EAE00638C59 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		1FAD9AB4262EDE1D00B80A5A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1FE28B56261CD58600402A2B /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		1FE28B58261CD58600402A2B /* RealmConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConfiguration.swift; sourceTree = "<group>"; };
 		1FE28B59261CD58600402A2B /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				E77DE87726245CED00D20520 /* APIKeys.swift */,
+				1FAD9AB4262EDE1D00B80A5A /* Constants.swift */,
 				1FE28B56261CD58600402A2B /* Environment.swift */,
 				1FE28B82261CDD2000402A2B /* APIRequest.swift */,
 				1FE28B86261CDD4C00402A2B /* APIUrlStruct.swift */,
@@ -559,6 +562,7 @@
 				1FF6CE20261F4F77007BF8B9 /* GlobalSettings.swift in Sources */,
 				1FAC2C102616EAE200638C59 /* SceneDelegate.swift in Sources */,
 				1FE28B91261CDF0900402A2B /* APIManager.swift in Sources */,
+				1FAD9AB5262EDE1E00B80A5A /* Constants.swift in Sources */,
 				E77DE86C26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift in Sources */,
 				1FE28B83261CDD2000402A2B /* APIRequest.swift in Sources */,
 				1FE996762627515F00223DEC /* ClaimRewardViewController.swift in Sources */,

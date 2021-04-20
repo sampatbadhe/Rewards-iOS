@@ -9,77 +9,47 @@ import UIKit
 
 class ClaimRewardViewController: UIViewController {
 
+    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var categoryTextField: UITextField!
+    @IBOutlet weak var reasonLabel: UILabel!
     @IBOutlet weak var reasonTextField: UITextField!
     @IBOutlet weak var additionalCommentLabel: UILabel!
     @IBOutlet weak var AdditionCommentTextView: UITextView!
+    @IBOutlet weak var submitButton: UIButton!
+    
     var categoryList: [Category] = []
     var selectedCategory: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        prepareList()
-        datePicker.backgroundColor = .red
+        setUI()
         addRightView(categoryTextField)
         addRightView(reasonTextField)
-        print(datePicker.frame)
         // Do any additional setup after loading the view.
     }
     
+    func setUI() {
+        dateLabel.text = Constants.Title.date
+        categoryLabel.text = Constants.Title.category
+        reasonLabel.text = Constants.Title.reason
+        additionalCommentLabel.text = Constants.Title.additionalComment
+        submitButton.setTitle(Constants.Title.submit, for: .normal)
+    }
+    
     func addRightView(_ textField: UITextField) {
+        let imageWidth: CGFloat = 20
+        let imageHeight: CGFloat = 15
         let height = textField.bounds.height
         let view = UIView(frame: CGRect(x: 0, y: 0, width: height, height: height))
         view.backgroundColor = R.color.lightGrey()
-        let imageView = UIImageView(frame: CGRect(x: height / 2 - 10, y: (height / 2) - (15 / 2), width: 20, height: 15))
-        imageView.image = UIImage(systemName: "arrowtriangle.down.fill")?.withRenderingMode(.alwaysTemplate)
+        let imageView = UIImageView(frame: CGRect(x: (height - imageWidth) / 2, y: (height - imageHeight) / 2, width: imageWidth, height: imageHeight))
+        imageView.image = UIImage(systemName: "chevron.down")?.withRenderingMode(.alwaysTemplate)
         imageView.tintColor = R.color.darkGrey()
         view.addSubview(imageView)
         textField.rightView = view
         textField.rightViewMode = .always
-    }
-    
-    func prepareList() {
-        categoryList = [
-            Category(
-                title: "KFC",
-                id: 1,
-                reasonList: [
-                    Reason(
-                        title: "Meeting",
-                        id: 101),
-                    Reason(title: "Organize Event", id: 102)]),
-            Category(
-                title: "COE",
-                id: 2,
-                reasonList: [
-                    Reason(
-                        title: "Meeting",
-                        id: 201),
-                    Reason(title: "Organize Event", id: 202)]),
-            Category(
-                title: "Hiring",
-                id: 3,
-                reasonList: [
-                    Reason(
-                        title: "Interview",
-                        id: 301),
-                    Reason(title: "Code Review", id: 302)]),
-            Category(
-                title: "Referral",
-                id: 4,
-                reasonList: [
-                    Reason(
-                        title: "Gifted a Carrier",
-                        id: 401)]),
-            Category(
-                title: "Others",
-                id: 5,
-                reasonList: [
-                    Reason(
-                        title: "New Initiative Implemented",
-                        id: 501),
-                    Reason(title: "Improved Existing Process", id: 502)])]
     }
     
     func openCategoryListDropDown() {
@@ -96,10 +66,7 @@ class ClaimRewardViewController: UIViewController {
         dropDown.finalAction = {
             self.categoryTextField.resignFirstResponder()
         }
-        let navigationController = UINavigationController(rootViewController: dropDown)
-        modalPresentationStyle = .overFullScreen
-        dropDown.title = "Select Category"
-        present(navigationController, animated: true, completion: nil)
+        presentDropDown(dropDown, title: Constants.Title.category)
     }
     
     func openReasonListDropDown() {
@@ -115,11 +82,15 @@ class ClaimRewardViewController: UIViewController {
         dropDown.finalAction = {
             self.reasonTextField.resignFirstResponder()
         }
+        presentDropDown(dropDown, title: Constants.Title.selectReason)
+    }
+    
+    func presentDropDown(_ dropDown: UIViewController, title: String) {
         let navigationController = UINavigationController(rootViewController: dropDown)
         navigationController.navigationBar.prefersLargeTitles = true
         navigationController.navigationItem.largeTitleDisplayMode = .always
         modalPresentationStyle = .overFullScreen
-        dropDown.title = "Select Reason"
+        dropDown.title = title
         present(navigationController, animated: true, completion: nil)
     }
 
