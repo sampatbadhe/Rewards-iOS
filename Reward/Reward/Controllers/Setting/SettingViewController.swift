@@ -7,6 +7,7 @@
 
 import UIKit
 import SwifterSwift
+import GoogleSignIn
 
 class SettingViewController: UIViewController {
     
@@ -34,7 +35,8 @@ extension SettingViewController: UITableViewDelegate {
         if indexPath.row != 2 {
             return
         }
-        // Logout Action
+        GIDSignIn.sharedInstance()?.signOut()
+        navigationController?.popViewController()
     }
     
 }
