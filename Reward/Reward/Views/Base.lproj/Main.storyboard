@@ -9,81 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sign In View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="SignInViewController" id="BYZ-38-t0r" customClass="SignInViewController" customModule="Reward" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fo1-An-0lx">
-                                <rect key="frame" x="20" y="144" width="374" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14Q-Mt-TIT" customClass="GIDSignInButton">
-                                <rect key="frame" x="82" y="423" width="250" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="CAi-8a-YlY"/>
-                                    <constraint firstAttribute="height" constant="50" id="M7N-N3-1DH"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhw-2d-5Td">
-                                <rect key="frame" x="82" y="493" width="250" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="5GV-f3-3lF"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                <state key="normal" title="Sign Out"/>
-                                <connections>
-                                    <action selector="signOutButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O2o-ah-hem"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgk-NA-1j9">
-                                <rect key="frame" x="183" y="593" width="48" height="30"/>
-                                <state key="normal" title="Tabbar"/>
-                                <connections>
-                                    <segue destination="i5u-Rz-PUM" kind="show" id="O8b-eK-KSr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAq-n0-lnl">
-                                <rect key="frame" x="160" y="812" width="94" height="30"/>
-                                <state key="normal" title="Claim Reward"/>
-                                <connections>
-                                    <segue destination="PeG-gU-loX" kind="presentation" id="qJ2-oD-3NN"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fo1-An-0lx" secondAttribute="trailing" constant="20" id="5tS-2D-bDe"/>
-                            <constraint firstItem="Fo1-An-0lx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="EoG-Dz-Mex"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sAq-n0-lnl" secondAttribute="bottom" constant="20" id="H2g-30-TWT"/>
-                            <constraint firstItem="Uhw-2d-5Td" firstAttribute="leading" secondItem="14Q-Mt-TIT" secondAttribute="leading" id="QGb-HN-18c"/>
-                            <constraint firstItem="14Q-Mt-TIT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rat-J6-LCq"/>
-                            <constraint firstItem="Uhw-2d-5Td" firstAttribute="top" secondItem="14Q-Mt-TIT" secondAttribute="bottom" constant="20" id="Szn-5Z-zdK"/>
-                            <constraint firstItem="dgk-NA-1j9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UcJ-1p-KbR"/>
-                            <constraint firstItem="sAq-n0-lnl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZvZ-gD-mA7"/>
-                            <constraint firstItem="dgk-NA-1j9" firstAttribute="top" secondItem="Uhw-2d-5Td" secondAttribute="bottom" constant="50" id="cxm-7B-Dv0"/>
-                            <constraint firstItem="Uhw-2d-5Td" firstAttribute="trailing" secondItem="14Q-Mt-TIT" secondAttribute="trailing" id="jpY-Hm-hbU"/>
-                            <constraint firstItem="14Q-Mt-TIT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uSV-pl-svi"/>
-                            <constraint firstItem="Fo1-An-0lx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ycT-2B-Jnx"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="signInButton" destination="14Q-Mt-TIT" id="XtK-cC-Xnm"/>
-                        <outlet property="signOutButton" destination="Uhw-2d-5Td" id="6Dl-9o-fDG"/>
-                        <outlet property="userNameLabel" destination="Fo1-An-0lx" id="SDy-P3-SiL"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="102.89855072463769" y="64.955357142857139"/>
-        </scene>
         <!--Claim Reward-->
         <scene sceneID="aNU-ap-yA2">
             <objects>
@@ -322,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vih-Dy-tRj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="103" y="1438"/>
+            <point key="canvasLocation" x="110" y="1533"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NfI-ot-Llm">
@@ -338,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m6h-x7-no9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-651" y="1439"/>
+            <point key="canvasLocation" x="-614" y="1533"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Cit-E9-JUE">
@@ -411,7 +336,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nwS-mS-aVA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1532" y="1438"/>
+            <point key="canvasLocation" x="1525" y="1533"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3Ib-v0-GFg">
@@ -427,7 +352,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8O-mM-u2F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2235" y="1438"/>
+            <point key="canvasLocation" x="2212" y="1533"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="Gpq-NT-R0M">
@@ -454,14 +379,23 @@
                                             <segue destination="PeG-gU-loX" kind="presentation" id="cpc-Jf-XH2"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3k-hr-QXc">
+                                        <rect key="frame" x="183" y="184" width="48" height="30"/>
+                                        <state key="normal" title="Tabbar"/>
+                                        <connections>
+                                            <segue destination="i5u-Rz-PUM" kind="presentation" id="2Uu-xH-QNw"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="fKO-8s-MqO" firstAttribute="leading" secondItem="OI8-ek-1WU" secondAttribute="leading" constant="50" id="JjI-O6-vmQ"/>
                                     <constraint firstAttribute="trailing" secondItem="fKO-8s-MqO" secondAttribute="trailing" constant="50" id="Q9e-IO-z81"/>
                                     <constraint firstAttribute="bottom" secondItem="vzE-Fm-ied" secondAttribute="bottom" constant="42" id="WRc-gB-qYq"/>
+                                    <constraint firstItem="P3k-hr-QXc" firstAttribute="centerX" secondItem="OI8-ek-1WU" secondAttribute="centerX" id="ad3-T3-eBB"/>
                                     <constraint firstItem="vzE-Fm-ied" firstAttribute="centerX" secondItem="OI8-ek-1WU" secondAttribute="centerX" id="mxf-gD-g0b"/>
                                     <constraint firstItem="fKO-8s-MqO" firstAttribute="centerY" secondItem="OI8-ek-1WU" secondAttribute="centerY" id="sKf-Ri-h3p"/>
+                                    <constraint firstItem="vzE-Fm-ied" firstAttribute="top" secondItem="P3k-hr-QXc" secondAttribute="bottom" constant="15" id="u8g-pr-OKS"/>
                                     <constraint firstItem="fKO-8s-MqO" firstAttribute="centerX" secondItem="OI8-ek-1WU" secondAttribute="centerX" id="vbq-4y-bSs"/>
                                 </constraints>
                             </view>
@@ -525,9 +459,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo" width="540" height="540"/>
         <image name="claimReward" width="32" height="32"/>
         <image name="dashboard" width="16" height="16"/>
+        <image name="logo" width="540" height="540"/>
         <image name="myView" width="16" height="16"/>
         <image name="notifications" width="16" height="16"/>
         <image name="settings" width="16" height="16"/>
