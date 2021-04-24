@@ -466,15 +466,15 @@
             </objects>
             <point key="canvasLocation" x="75" y="65"/>
         </scene>
-        <!--Setting View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="FMA-23-HFT">
             <objects>
-                <viewController storyboardIdentifier="SettingViewController" id="jYu-rY-CHY" customClass="SettingViewController" customModule="Reward" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingViewController" id="jYu-rY-CHY" customClass="SettingsViewController" customModule="Reward" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KEo-km-w86">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ist-s8-8Ux" customClass="CustomTableView" customModule="Reward" customModuleProvider="target">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ist-s8-8Ux" customClass="CustomTableView" customModule="Reward" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
@@ -533,14 +533,24 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T3z-Rk-TAn">
+                                                    <rect key="frame" x="20" y="150" width="374" height="0.5"/>
+                                                    <color key="backgroundColor" systemColor="separatorColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="0.5" id="1gA-9z-Kjq"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="vED-ZR-kVQ" firstAttribute="leading" secondItem="iPG-NJ-UmU" secondAttribute="leading" constant="20" id="1TJ-Rs-ghn"/>
+                                                <constraint firstItem="T3z-Rk-TAn" firstAttribute="leading" secondItem="iPG-NJ-UmU" secondAttribute="leading" constant="20" id="31S-2Y-ztW"/>
                                                 <constraint firstItem="Mcl-vk-PUi" firstAttribute="leading" secondItem="vED-ZR-kVQ" secondAttribute="trailing" constant="12" id="3K1-1g-9KU"/>
                                                 <constraint firstAttribute="bottom" secondItem="vED-ZR-kVQ" secondAttribute="bottom" constant="20" id="DF8-jY-1jq"/>
                                                 <constraint firstAttribute="trailing" secondItem="Mcl-vk-PUi" secondAttribute="trailing" constant="20" id="Uu4-NJ-mV4"/>
+                                                <constraint firstAttribute="trailing" secondItem="T3z-Rk-TAn" secondAttribute="trailing" constant="20" id="WNx-NQ-zHA"/>
                                                 <constraint firstItem="Mcl-vk-PUi" firstAttribute="centerY" secondItem="vED-ZR-kVQ" secondAttribute="centerY" id="agW-WV-7Ky"/>
                                                 <constraint firstItem="vED-ZR-kVQ" firstAttribute="top" secondItem="iPG-NJ-UmU" secondAttribute="top" constant="20" id="al0-KM-BKY"/>
+                                                <constraint firstAttribute="bottom" secondItem="T3z-Rk-TAn" secondAttribute="bottom" id="j2M-jp-SP6"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -647,6 +657,9 @@
         <namedColor name="white">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

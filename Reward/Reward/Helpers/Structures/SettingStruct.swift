@@ -11,11 +11,14 @@ struct SettingInfo {
     
     var title: String?
     var image: UIImage?
+    var switchVisibility: Bool
     
-    internal init(title: String? = nil, image: UIImage? = nil) {
+    internal init(title: String? = nil, image: UIImage? = nil, switchVisibility: Bool = true) {
         self.title = title
         self.image = image
+        self.switchVisibility = switchVisibility
     }
+    
 }
 
 struct NavigationTitle {
@@ -25,7 +28,7 @@ struct NavigationTitle {
 struct Setting {
     
     struct Title {
-        static let notification = "Notification"
+        static let notifications = "Notifications"
         static let logout = "Logout"
     }
     

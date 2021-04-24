@@ -27,10 +27,10 @@ class SettingCell: UITableViewCell {
         settingImageView.tintColor = R.color.black()
     }
     
-    func configureWithModel(index: Int, settingInfo :SettingInfo) {
+    func configureWithModel(settingInfo :SettingInfo, index: Int) {
         settingImageView.image = settingInfo.image?.withRenderingMode(.alwaysTemplate)
         settingTitleLabel.text = settingInfo.title
-        settingSwitch.isHidden = index != 1
+        settingSwitch.isHidden = !settingInfo.switchVisibility
         setUI()
     }
 
