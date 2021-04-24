@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		14861D9AA1B250E7454CCA19 /* Pods_Reward.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F7784DBDEE096F3794609E /* Pods_Reward.framework */; };
+		1F1055BA2633FC9A002F8C54 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055B92633FC99002F8C54 /* TabBarController.swift */; };
+		1F1055BE263433AE002F8C54 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055BD263433AC002F8C54 /* AppSettings.swift */; };
+		1F1055C22634342B002F8C54 /* UITabBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055C12634342B002F8C54 /* UITabBar+Extension.swift */; };
+		1F1055C62634370E002F8C54 /* TabBarController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055C52634370E002F8C54 /* TabBarController+Delegate.swift */; };
 		1F60B8362627ED4A001A2286 /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60B8352627ED4A001A2286 /* CategoryList.swift */; };
 		1FAC2C0E2616EAE200638C59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2C0D2616EAE200638C59 /* AppDelegate.swift */; };
 		1FAC2C102616EAE200638C59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2C0F2616EAE200638C59 /* SceneDelegate.swift */; };
@@ -60,6 +64,10 @@
 
 /* Begin PBXFileReference section */
 		18EC8EB9381FA17CDA0D3DA8 /* Pods-RewardTests.debug (qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardTests.debug (qa).xcconfig"; path = "Target Support Files/Pods-RewardTests/Pods-RewardTests.debug (qa).xcconfig"; sourceTree = "<group>"; };
+		1F1055B92633FC99002F8C54 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		1F1055BD263433AC002F8C54 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		1F1055C12634342B002F8C54 /* UITabBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Extension.swift"; sourceTree = "<group>"; };
+		1F1055C52634370E002F8C54 /* TabBarController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabBarController+Delegate.swift"; sourceTree = "<group>"; };
 		1F60B8352627ED4A001A2286 /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
 		1F7BAF31FC450162B39A9D4E /* Pods_RewardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RewardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAC2C0A2616EAE200638C59 /* Reward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reward.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +150,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F1055B82633FC6B002F8C54 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				1F1055B92633FC99002F8C54 /* TabBarController.swift */,
+				1F1055C52634370E002F8C54 /* TabBarController+Delegate.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
 		1FAC2C012616EAE200638C59 = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +204,7 @@
 		1FAC2C6D26183D7300638C59 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1F1055B82633FC6B002F8C54 /* TabBarController */,
 				1FE996722627513B00223DEC /* ClaimReward */,
 				E77DE86826245BE100D20520 /* SignIn */,
 				1FAC2C0D2616EAE200638C59 /* AppDelegate.swift */,
@@ -262,6 +280,7 @@
 				1FE28B5A261CD58600402A2B /* EnvironmentUtility.swift */,
 				1FE28B90261CDF0900402A2B /* APIManager.swift */,
 				E79BDDFA262C357C001C3C73 /* Loader.swift */,
+				1F1055BD263433AC002F8C54 /* AppSettings.swift */,
 				1FE9968326276DD100223DEC /* DropDownController.swift */,
 			);
 			path = Classes;
@@ -273,6 +292,7 @@
 				E77DE87326245C8100D20520 /* NotificationName+Extensions.swift */,
 				1FE28B70261CDBCD00402A2B /* Mapper+Extension.swift */,
 				E7A82B85262B0EF2007E4EC2 /* UIFont+Extension.swift */,
+				1F1055C12634342B002F8C54 /* UITabBar+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -570,9 +590,12 @@
 				1FE28B5D261CD58600402A2B /* RealmManager.swift in Sources */,
 				E7A82B86262B0EF2007E4EC2 /* UIFont+Extension.swift in Sources */,
 				1FE28B71261CDBCD00402A2B /* Mapper+Extension.swift in Sources */,
+				1F1055BE263433AE002F8C54 /* AppSettings.swift in Sources */,
 				1FE28B5C261CD58600402A2B /* RealmConfiguration.swift in Sources */,
+				1F1055C22634342B002F8C54 /* UITabBar+Extension.swift in Sources */,
 				1FE28B5B261CD58600402A2B /* Environment.swift in Sources */,
 				E79BDDFB262C357C001C3C73 /* Loader.swift in Sources */,
+				1F1055BA2633FC9A002F8C54 /* TabBarController.swift in Sources */,
 				1FF6CE20261F4F77007BF8B9 /* GlobalSettings.swift in Sources */,
 				1FAC2C102616EAE200638C59 /* SceneDelegate.swift in Sources */,
 				E70AD5A62634317500F0FA9A /* UserProfileModel.swift in Sources */,
@@ -581,6 +604,7 @@
 				1FAD9AB5262EDE1E00B80A5A /* Constants.swift in Sources */,
 				E77DE86C26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift in Sources */,
 				1FE28B83261CDD2000402A2B /* APIRequest.swift in Sources */,
+				1F1055C62634370E002F8C54 /* TabBarController+Delegate.swift in Sources */,
 				1FE996762627515F00223DEC /* ClaimRewardViewController.swift in Sources */,
 				E77DE87426245C8200D20520 /* NotificationName+Extensions.swift in Sources */,
 				1FAC2D25261A2EAE00638C59 /* R.generated.swift in Sources */,
