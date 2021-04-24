@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,7 +13,7 @@
             <objects>
                 <viewController storyboardIdentifier="SignInViewController" id="BYZ-38-t0r" customClass="SignInViewController" customModule="Reward" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fo1-An-0lx">
@@ -80,7 +79,7 @@
             <objects>
                 <viewController storyboardIdentifier="ClaimRewardViewController" id="0Qw-fy-GP3" customClass="ClaimRewardViewController" customModule="Reward" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sd1-xb-gJD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mxu-pY-oIF">
@@ -266,8 +265,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Claim Reward" largeTitleDisplayMode="always" id="W6M-sl-sX2"/>
                     <connections>
-                        <outlet property="additionCommentTextView" destination="emd-gq-d9g" id="y26-9C-9Rk"/>
                         <outlet property="additionalCommentLabel" destination="5CP-vp-vRO" id="9TL-BK-qip"/>
+                        <outlet property="additionalCommentTextView" destination="emd-gq-d9g" id="y26-9C-9Rk"/>
                         <outlet property="categoryLabel" destination="c9X-cX-J0f" id="HeA-76-XBU"/>
                         <outlet property="categoryTextField" destination="w8n-aq-Yx0" id="gdV-Sv-cfx"/>
                         <outlet property="dateLabel" destination="zec-Dl-j1P" id="YTL-8d-F9W"/>

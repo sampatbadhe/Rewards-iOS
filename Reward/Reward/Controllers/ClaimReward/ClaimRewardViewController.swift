@@ -16,7 +16,7 @@ class ClaimRewardViewController: UIViewController {
     @IBOutlet weak var reasonLabel: UILabel!
     @IBOutlet weak var reasonTextField: UITextField!
     @IBOutlet weak var additionalCommentLabel: UILabel!
-    @IBOutlet weak var additionCommentTextView: UITextView!
+    @IBOutlet weak var additionalCommentTextView: UITextView!
     @IBOutlet weak var submitButton: UIButton!
     
     var categoryList: [Category] = []
