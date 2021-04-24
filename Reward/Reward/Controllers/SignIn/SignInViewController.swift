@@ -10,14 +10,18 @@ import GoogleSignIn
 
 class SignInViewController: UIViewController {
 
+    @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var welcomeToLabel: UILabel!
+    @IBOutlet weak var iHeroLabel: UILabel!
     @IBOutlet weak var signInButton: GIDSignInButton!
-    @IBOutlet weak var signOutButton: UIButton!
-    @IBOutlet weak var userNameLabel: UILabel!
+    
+    let apiManager = APIManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        apiManager.delegate = self
         setGoogleSignIn()
-        updateScreenOnLoginStatus()
+        setUI()
     }
     
     func setGoogleSignIn() {
@@ -27,21 +31,37 @@ class SignInViewController: UIViewController {
         signInButton.style = .wide
     }
 
-    
-    @objc private func userDidSignInGoogle(_ notification: Notification) {
-        updateScreenOnLoginStatus()
+    func setUI() {
+        welcomeToLabel.font = UIFont().preferredFont(for: .largeTitle, weight: .semibold)
+        iHeroLabel.font = iHeroLabel.font.bold()
+        topView.layer.cornerRadius = 32
+        topView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
     }
     
-    private func updateScreenOnLoginStatus() {
-        if let user = GIDSignIn.sharedInstance()?.currentUser {
-            userNameLabel.text = user.profile.givenName
-            signInButton.isEnabled = false
-            signOutButton.isEnabled = true
-        } else {
-            userNameLabel.text = String()
-            signInButton.isEnabled = true
-            signOutButton.isEnabled = false
-        }
+    @objc private func userDidSignInGoogle(_ notification: Notification) {
+        callTokenAPI()
+    }
+    
+    func callTokenAPI() {
+        Loader.shared.show()
+        apiManager.callAPI(request: tokenAPIRequest())
+    }
+    
+    func tokenAPIRequest() -> APIRequest {
+        return APIRequest(
+            url: APIUrlStruct(apiPath: .v1, apiUrl: .token),
+            parameters: getParameters(),
+            method: .post)
+    }
+    
+    func callProfileAPI() {
+        apiManager.callAPI(request: profileAPIRequest())
+    }
+    
+    func profileAPIRequest() -> APIRequest {
+        return APIRequest(
+            headers: [.accessToken, .json],
+            url: APIUrlStruct(apiPath: .v1, apiUrl: .profile))
     }
     
     func getParameters() -> [String: Any] {
@@ -54,11 +74,6 @@ class SignInViewController: UIViewController {
         parameter[APIKeys.SignIn.email] = user.profile.email
         parameter[APIKeys.SignIn.googleUid] = user.userID
         return [APIKeys.SignIn.userAuth: parameter]
-    }
-    
-    @IBAction func signOutButtonAction(_ sender: UIButton) {
-        GIDSignIn.sharedInstance()?.signOut()
-        updateScreenOnLoginStatus()
     }
 
 }

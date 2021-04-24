@@ -14,6 +14,7 @@ PODS:
     - GTMSessionFetcher/Core (~> 1.5)
   - GTMSessionFetcher/Core (1.5.0)
   - IQKeyboardManagerSwift (6.5.6)
+  - MBProgressHUD (1.2.0)
   - ObjectMapper (4.2.0)
   - R.swift (5.4.0):
     - R.swift.Library (~> 5.3.0)
@@ -53,6 +54,7 @@ DEPENDENCIES:
   - Alamofire
   - GoogleSignIn
   - IQKeyboardManagerSwift
+  - MBProgressHUD
   - ObjectMapper
   - R.swift
   - RealmSwift
@@ -66,6 +68,7 @@ SPEC REPOS:
     - GTMAppAuth
     - GTMSessionFetcher
     - IQKeyboardManagerSwift
+    - MBProgressHUD
     - ObjectMapper
     - R.swift
     - R.swift.Library
@@ -80,6 +83,7 @@ SPEC CHECKSUMS:
   GTMAppAuth: 5b53231ef6920f149ab84b2969cb0ab572da3077
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
@@ -87,6 +91,6 @@ SPEC CHECKSUMS:
   RealmSwift: 4f6758c3adbdcc87f7b7777107226532a077f61c
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
 
-PODFILE CHECKSUM: 4ebd98c07ae1d5d566acfd71d88fd0af3532e784
+PODFILE CHECKSUM: 33f38f2176d22eccd4ce26c2dc860478dc95ec0f
 
 COCOAPODS: 1.10.1
