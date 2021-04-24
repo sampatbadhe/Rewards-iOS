@@ -387,6 +387,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Jz3-hv-2dM"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="claimReward" id="6kp-er-VaN">
                         <inset key="imageInsets" minX="-20" minY="-40" maxX="-20" maxY="0.0"/>
@@ -394,7 +395,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZ0-ZY-OC2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="1438"/>
+            <point key="canvasLocation" x="832" y="1533"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="LyC-uK-hFD">
