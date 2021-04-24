@@ -19,7 +19,7 @@ struct SettingInfo {
 }
 
 struct NavigationTitle {
-    static let settings = "Settins"
+    static let settings = "Settings"
 }
 
 struct Setting {
