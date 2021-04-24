@@ -92,12 +92,12 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zec-Dl-j1P">
                                                 <rect key="frame" x="20" y="42" width="0.0" height="0.0"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                                <color key="textColor" name="darkGrey"/>
+                                                <color key="textColor" name="darkGray"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="d9q-gz-cJI">
                                                 <rect key="frame" x="40" y="20" width="354" height="44"/>
-                                                <color key="tintColor" name="darkGrey"/>
+                                                <color key="tintColor" name="darkGray"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="dto-9d-xnx"/>
                                                 </constraints>
@@ -105,13 +105,13 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CP-vp-vRO">
                                                 <rect key="frame" x="20" y="232" width="374" height="0.0"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                                <color key="textColor" name="darkGrey"/>
+                                                <color key="textColor" name="darkGray"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9X-cX-J0f">
                                                 <rect key="frame" x="20" y="84" width="374" height="0.0"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                                <color key="textColor" name="darkGrey"/>
+                                                <color key="textColor" name="darkGray"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="251" scrollEnabled="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="emd-gq-d9g">
@@ -120,12 +120,12 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="251" constant="88" id="Ysl-j6-N8m"/>
                                                 </constraints>
-                                                <color key="textColor" name="black"/>
+                                                <color key="textColor" name="darkGray"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" name="darkGrey"/>
+                                                        <color key="value" name="darkGray"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="1"/>
@@ -148,7 +148,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" name="darkGrey"/>
+                                                        <color key="value" name="darkGray"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="1"/>
@@ -157,7 +157,7 @@
                                                         <real key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="rightViewTintColor">
-                                                        <color key="value" name="darkGrey"/>
+                                                        <color key="value" name="darkGray"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -167,7 +167,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Eg-oW-uZT">
                                                 <rect key="frame" x="20" y="158" width="374" height="0.0"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                                <color key="textColor" name="darkGrey"/>
+                                                <color key="textColor" name="darkGray"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3eh-ga-ovf">
@@ -180,7 +180,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" name="darkGrey"/>
+                                                        <color key="value" name="darkGray"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="1"/>
@@ -189,7 +189,7 @@
                                                         <real key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="rightViewTintColor">
-                                                        <color key="value" name="darkGrey"/>
+                                                        <color key="value" name="darkGray"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -237,13 +237,13 @@
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wY5-Lu-YX8">
                                 <rect key="frame" x="20" y="738" width="374" height="50"/>
-                                <color key="backgroundColor" name="darkGrey"/>
+                                <color key="backgroundColor" name="darkGray"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="P2R-fA-inf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                 <state key="normal">
-                                    <color key="titleColor" name="lightGrey"/>
+                                    <color key="titleColor" name="lightGray"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -266,7 +266,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Claim Reward" largeTitleDisplayMode="always" id="W6M-sl-sX2"/>
                     <connections>
-                        <outlet property="AdditionCommentTextView" destination="emd-gq-d9g" id="y26-9C-9Rk"/>
+                        <outlet property="additionCommentTextView" destination="emd-gq-d9g" id="y26-9C-9Rk"/>
                         <outlet property="additionalCommentLabel" destination="5CP-vp-vRO" id="9TL-BK-qip"/>
                         <outlet property="categoryLabel" destination="c9X-cX-J0f" id="HeA-76-XBU"/>
                         <outlet property="categoryTextField" destination="w8n-aq-Yx0" id="gdV-Sv-cfx"/>
@@ -301,13 +301,10 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="black">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="darkGrey">
+        <namedColor name="darkGray">
             <color red="0.23899999260902405" green="0.23899999260902405" blue="0.23899999260902405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="lightGrey">
+        <namedColor name="lightGray">
             <color red="0.91399997472763062" green="0.90600001811981201" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="white">

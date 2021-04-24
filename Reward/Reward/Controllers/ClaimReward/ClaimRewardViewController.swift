@@ -8,7 +8,7 @@
 import UIKit
 
 class ClaimRewardViewController: UIViewController {
-
+    
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var categoryLabel: UILabel!
@@ -16,7 +16,7 @@ class ClaimRewardViewController: UIViewController {
     @IBOutlet weak var reasonLabel: UILabel!
     @IBOutlet weak var reasonTextField: UITextField!
     @IBOutlet weak var additionalCommentLabel: UILabel!
-    @IBOutlet weak var AdditionCommentTextView: UITextView!
+    @IBOutlet weak var additionCommentTextView: UITextView!
     @IBOutlet weak var submitButton: UIButton!
     
     var categoryList: [Category] = []
@@ -43,10 +43,10 @@ class ClaimRewardViewController: UIViewController {
         let imageHeight: CGFloat = 15
         let height = textField.bounds.height
         let view = UIView(frame: CGRect(x: 0, y: 0, width: height, height: height))
-        view.backgroundColor = R.color.lightGrey()
+        view.backgroundColor = R.color.lightGray()
         let imageView = UIImageView(frame: CGRect(x: (height - imageWidth) / 2, y: (height - imageHeight) / 2, width: imageWidth, height: imageHeight))
         imageView.image = UIImage(systemName: "chevron.down")?.withRenderingMode(.alwaysTemplate)
-        imageView.tintColor = R.color.darkGrey()
+        imageView.tintColor = R.color.darkGray()
         view.addSubview(imageView)
         textField.rightView = view
         textField.rightViewMode = .always
@@ -56,13 +56,13 @@ class ClaimRewardViewController: UIViewController {
         let dropDown = DropDownController(
             items: Array(categoryList),
             configure: { (cell: UITableViewCell, object) in
-            cell.textLabel?.text = object.title
-        }, selectHandler: { (selectedItems) in
-            if let item = selectedItems.first {
-                self.categoryTextField.text = item.title
-                self.selectedCategory = item.id
-            }
-        })
+                cell.textLabel?.text = object.title
+            }, selectHandler: { (selectedItems) in
+                if let item = selectedItems.first {
+                    self.categoryTextField.text = item.title
+                    self.selectedCategory = item.id
+                }
+            })
         dropDown.finalAction = {
             self.categoryTextField.resignFirstResponder()
         }
@@ -71,14 +71,14 @@ class ClaimRewardViewController: UIViewController {
     
     func openReasonListDropDown() {
         let dropDown = DropDownController(
-            items: Array(categoryList[0].reasonList),
+            items: Array(categoryList.first?.reasonList ?? []),
             configure: { (cell: UITableViewCell, object) in
-            cell.textLabel?.text = object.title
-        }, selectHandler: { (selectedItems) in
-            if let item = selectedItems.first {
-                self.reasonTextField.text = item.title
-            }
-        })
+                cell.textLabel?.text = object.title
+            }, selectHandler: { (selectedItems) in
+                if let item = selectedItems.first {
+                    self.reasonTextField.text = item.title
+                }
+            })
         dropDown.finalAction = {
             self.reasonTextField.resignFirstResponder()
         }
@@ -93,7 +93,7 @@ class ClaimRewardViewController: UIViewController {
         dropDown.title = title
         present(navigationController, animated: true, completion: nil)
     }
-
+    
 }
 
 extension ClaimRewardViewController: UITextFieldDelegate {

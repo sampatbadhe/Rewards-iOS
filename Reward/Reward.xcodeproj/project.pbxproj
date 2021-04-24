@@ -33,7 +33,6 @@
 		1FE28B91261CDF0900402A2B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B90261CDF0900402A2B /* APIManager.swift */; };
 		1FE28B95261CDF4E00402A2B /* HTTPStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B94261CDF4E00402A2B /* HTTPStatus.swift */; };
 		1FE996762627515F00223DEC /* ClaimRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE996752627515F00223DEC /* ClaimRewardViewController.swift */; };
-		1FE9968026275B9B00223DEC /* TextFieldWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9967F26275B9B00223DEC /* TextFieldWithTitle.swift */; };
 		1FE9968426276DD200223DEC /* DropDownController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9968326276DD100223DEC /* DropDownController.swift */; };
 		1FE9968826276F7E00223DEC /* Searchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9968726276F7E00223DEC /* Searchable.swift */; };
 		1FF6CE20261F4F77007BF8B9 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6CE1F261F4F77007BF8B9 /* GlobalSettings.swift */; };
@@ -88,7 +87,6 @@
 		1FE28B90261CDF0900402A2B /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		1FE28B94261CDF4E00402A2B /* HTTPStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatus.swift; sourceTree = "<group>"; };
 		1FE996752627515F00223DEC /* ClaimRewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimRewardViewController.swift; sourceTree = "<group>"; };
-		1FE9967F26275B9B00223DEC /* TextFieldWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithTitle.swift; sourceTree = "<group>"; };
 		1FE9968326276DD100223DEC /* DropDownController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownController.swift; sourceTree = "<group>"; };
 		1FE9968726276F7E00223DEC /* Searchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searchable.swift; sourceTree = "<group>"; };
 		1FF6CE1F261F4F77007BF8B9 /* GlobalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
@@ -251,7 +249,6 @@
 				1FE28B59261CD58600402A2B /* RealmManager.swift */,
 				1FE28B5A261CD58600402A2B /* EnvironmentUtility.swift */,
 				1FE28B90261CDF0900402A2B /* APIManager.swift */,
-				1FE9967F26275B9B00223DEC /* TextFieldWithTitle.swift */,
 				1FE9968326276DD100223DEC /* DropDownController.swift */,
 			);
 			path = Classes;
@@ -542,7 +539,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FE9968026275B9B00223DEC /* TextFieldWithTitle.swift in Sources */,
 				E77DE86B26245BEE00D20520 /* SignInViewController.swift in Sources */,
 				1FAC2C0E2616EAE200638C59 /* AppDelegate.swift in Sources */,
 				1FE28B5E261CD58600402A2B /* EnvironmentUtility.swift in Sources */,

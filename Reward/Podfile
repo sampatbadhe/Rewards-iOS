@@ -12,7 +12,6 @@ target 'Reward' do
   pod 'R.swift'
   pod 'IQKeyboardManagerSwift'
   pod 'GoogleSignIn'
-  pod 'SkyFloatingLabelTextField'
 
   # Pods for Reward
 
