@@ -9,28 +9,51 @@ import UIKit
 import SwifterSwift
 
 class SettingViewController: UIViewController {
-
-    @IBOutlet weak var gradientView: GradientView!
-    @IBOutlet weak var profileBorderView: UIView!
-    @IBOutlet weak var profileImageView: UIImageView!
-    @IBOutlet weak var userNameLabel: UILabel!
-    @IBOutlet weak var emailLabel: UILabel!
-    @IBOutlet weak var logoutButton: UIButton!
+    
+    @IBOutlet weak var tableView: CustomTableView!
+    
+    var settingsList = [SettingInfo]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Setting"
-        setUI()
+        title = NavigationTitle.settings
+        getSettingList()
     }
     
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
-        setUI()
+    func getSettingList() {
+        settingsList.removeAll()
+        settingsList.append(SettingInfo(title: Setting.Title.notification, image: R.image.notification()))
+        settingsList.append(SettingInfo(title: Setting.Title.logout, image: R.image.logout()))
     }
     
-    func setUI() {
-        gradientView.addShadow(ofColor: R.color.shadow() ?? .clear, radius: 5, offset: .zero, opacity: 1)
-        profileBorderView.addShadow(ofColor: R.color.shadow() ?? .clear, radius: 5, offset: .zero, opacity: 1)
+}
+
+extension SettingViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row != 2 {
+            return
+        }
+        // Logout Action
+    }
+    
+}
+
+extension SettingViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row == 0 {
+            let profileCell = tableView.dequeueReusableCell(indexPath: indexPath, type: ProfileInfoCell.self)
+            return profileCell
+        } else {
+            let settingCell = tableView.dequeueReusableCell(indexPath: indexPath, type: SettingCell.self)
+            settingCell.configureWithModel(index: indexPath.row, settingInfo: settingsList[indexPath.row - 1])
+            return settingCell
+        }
     }
     
 }
