@@ -9,8 +9,8 @@ import UIKit
 
 extension SignInViewController: APIResponseProtocol {
     
-    func successResponse(_ response: [String: Any], successCode: Int, apiName: APIUrl) {
-        switch apiName {
+    func successResponse(_ response: [String: Any], successCode: Int, request: APIRequest) {
+        switch request.url.endPoint {
         case .token:
             guard let token = response["token"] as? String else {
                 return
@@ -18,16 +18,13 @@ extension SignInViewController: APIResponseProtocol {
             Variable.token = token
             callProfileAPI()
         case .profile:
-            Common.hideLoader()
+            Loader.shared.hide()
             guard let profile = response["user"] as? [String: Any] else {
                 return
             }
-            let userDetail = profile.toObject(type: UserProfileModel.self)
-            print(userDetail)
-            RealmManager.shared.add(object: userDetail)
+            let userDetails = profile.toObject(type: UserProfileModel.self)
+            RealmManager.shared.add(object: userDetails)
         }
-        
-        
     }
     
 }

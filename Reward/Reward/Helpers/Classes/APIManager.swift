@@ -42,7 +42,7 @@ class APIManager {
                 // Handle error
                 return
             }
-            delegate?.successResponse(responseData, successCode: HTTPStatus.success, apiName: request.url.endPoint)
+            delegate?.successResponse(responseData, successCode: HTTPStatus.success, request: request)
         }
     }
     
@@ -50,7 +50,7 @@ class APIManager {
         if !shouldCallFailureMethod {
             // Handle error
         }
-        delegate?.failureResponse(response, failureCode: failureCode, apiName: request.url.endPoint)
+        delegate?.failureResponse(response, failureCode: failureCode, request: request)
    }
     
 }

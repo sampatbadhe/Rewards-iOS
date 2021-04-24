@@ -20,7 +20,6 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         apiManager.delegate = self
-        signInButton.isEnabled = true
         setGoogleSignIn()
         setUI()
     }
@@ -44,7 +43,7 @@ class SignInViewController: UIViewController {
     }
     
     func callTokenAPI() {
-        Common.showLoader()
+        Loader.shared.show()
         apiManager.callAPI(request: tokenAPIRequest())
     }
     

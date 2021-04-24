@@ -38,7 +38,6 @@
 		E77DE86C26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DE86A26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift */; };
 		E77DE87426245C8200D20520 /* NotificationName+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DE87326245C8100D20520 /* NotificationName+Extensions.swift */; };
 		E77DE87826245CED00D20520 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DE87726245CED00D20520 /* APIKeys.swift */; };
-		E79BDDF7262C3538001C3C73 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BDDF6262C3538001C3C73 /* Common.swift */; };
 		E79BDDFB262C357C001C3C73 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BDDFA262C357C001C3C73 /* Loader.swift */; };
 		E79BDE18262C518B001C3C73 /* VariableStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BDE17262C518B001C3C73 /* VariableStruct.swift */; };
 		E7A82B86262B0EF2007E4EC2 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A82B85262B0EF2007E4EC2 /* UIFont+Extension.swift */; };
@@ -107,7 +106,6 @@
 		E77DE86A26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignInViewController+GIDSignInDelegate.swift"; sourceTree = "<group>"; };
 		E77DE87326245C8100D20520 /* NotificationName+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extensions.swift"; sourceTree = "<group>"; };
 		E77DE87726245CED00D20520 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
-		E79BDDF6262C3538001C3C73 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		E79BDDFA262C357C001C3C73 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		E79BDE17262C518B001C3C73 /* VariableStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableStruct.swift; sourceTree = "<group>"; };
 		E7A82B85262B0EF2007E4EC2 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
@@ -250,7 +248,6 @@
 				1FE28B59261CD58600402A2B /* RealmManager.swift */,
 				1FE28B5A261CD58600402A2B /* EnvironmentUtility.swift */,
 				1FE28B90261CDF0900402A2B /* APIManager.swift */,
-				E79BDDF6262C3538001C3C73 /* Common.swift */,
 				E79BDDFA262C357C001C3C73 /* Loader.swift */,
 			);
 			path = Classes;
@@ -552,7 +549,6 @@
 				E79BDDFB262C357C001C3C73 /* Loader.swift in Sources */,
 				1FF6CE20261F4F77007BF8B9 /* GlobalSettings.swift in Sources */,
 				1FAC2C102616EAE200638C59 /* SceneDelegate.swift in Sources */,
-				E79BDDF7262C3538001C3C73 /* Common.swift in Sources */,
 				E70AD5A62634317500F0FA9A /* UserProfileModel.swift in Sources */,
 				1FE28B91261CDF0900402A2B /* APIManager.swift in Sources */,
 				E70AD5A22634285400F0FA9A /* SignInViewController+APIResponseProtocol.swift in Sources */,
