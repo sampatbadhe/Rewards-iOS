@@ -12,6 +12,7 @@
 		1F1055BE263433AE002F8C54 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055BD263433AC002F8C54 /* AppSettings.swift */; };
 		1F1055C22634342B002F8C54 /* UITabBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055C12634342B002F8C54 /* UITabBar+Extension.swift */; };
 		1F1055C62634370E002F8C54 /* TabBarController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055C52634370E002F8C54 /* TabBarController+Delegate.swift */; };
+		1F60B8362627ED4A001A2286 /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60B8352627ED4A001A2286 /* CategoryList.swift */; };
 		1FAC2C0E2616EAE200638C59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2C0D2616EAE200638C59 /* AppDelegate.swift */; };
 		1FAC2C102616EAE200638C59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2C0F2616EAE200638C59 /* SceneDelegate.swift */; };
 		1FAC2C172616EAE900638C59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FAC2C162616EAE900638C59 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		1FAC2CAD2618442800638C59 /* Production.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FAC2C1B2616EAE900638C59 /* Production.plist */; };
 		1FAC2CB22618444F00638C59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAC2C132616EAE200638C59 /* Main.storyboard */; };
 		1FAC2D25261A2EAE00638C59 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC2D24261A2EAE00638C59 /* R.generated.swift */; };
+		1FAD9AB5262EDE1E00B80A5A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD9AB4262EDE1D00B80A5A /* Constants.swift */; };
 		1FE28B5B261CD58600402A2B /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B56261CD58600402A2B /* Environment.swift */; };
 		1FE28B5C261CD58600402A2B /* RealmConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B58261CD58600402A2B /* RealmConfiguration.swift */; };
 		1FE28B5D261CD58600402A2B /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B59261CD58600402A2B /* RealmManager.swift */; };
@@ -34,6 +36,9 @@
 		1FE28B8D261CDEBC00402A2B /* APIHeaderKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B8C261CDEBC00402A2B /* APIHeaderKey.swift */; };
 		1FE28B91261CDF0900402A2B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B90261CDF0900402A2B /* APIManager.swift */; };
 		1FE28B95261CDF4E00402A2B /* HTTPStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B94261CDF4E00402A2B /* HTTPStatus.swift */; };
+		1FE996762627515F00223DEC /* ClaimRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE996752627515F00223DEC /* ClaimRewardViewController.swift */; };
+		1FE9968426276DD200223DEC /* DropDownController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9968326276DD100223DEC /* DropDownController.swift */; };
+		1FE9968826276F7E00223DEC /* Searchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9968726276F7E00223DEC /* Searchable.swift */; };
 		1FF6CE20261F4F77007BF8B9 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6CE1F261F4F77007BF8B9 /* GlobalSettings.swift */; };
 		DCC13BE58373AADBA4013FF2 /* Pods_RewardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7BAF31FC450162B39A9D4E /* Pods_RewardTests.framework */; };
 		E77DE86B26245BEE00D20520 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DE86926245BEE00D20520 /* SignInViewController.swift */; };
@@ -58,6 +63,7 @@
 		1F1055BD263433AC002F8C54 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		1F1055C12634342B002F8C54 /* UITabBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Extension.swift"; sourceTree = "<group>"; };
 		1F1055C52634370E002F8C54 /* TabBarController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabBarController+Delegate.swift"; sourceTree = "<group>"; };
+		1F60B8352627ED4A001A2286 /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
 		1F7BAF31FC450162B39A9D4E /* Pods_RewardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RewardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAC2C0A2616EAE200638C59 /* Reward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reward.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAC2C0D2616EAE200638C59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +81,7 @@
 		1FAC2C7F26183F1400638C59 /* QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QA.xcconfig; sourceTree = "<group>"; };
 		1FAC2C8026183F2400638C59 /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
 		1FAC2D24261A2EAE00638C59 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		1FAD9AB4262EDE1D00B80A5A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1FE28B56261CD58600402A2B /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		1FE28B58261CD58600402A2B /* RealmConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConfiguration.swift; sourceTree = "<group>"; };
 		1FE28B59261CD58600402A2B /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
@@ -87,6 +94,9 @@
 		1FE28B8C261CDEBC00402A2B /* APIHeaderKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHeaderKey.swift; sourceTree = "<group>"; };
 		1FE28B90261CDF0900402A2B /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		1FE28B94261CDF4E00402A2B /* HTTPStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatus.swift; sourceTree = "<group>"; };
+		1FE996752627515F00223DEC /* ClaimRewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimRewardViewController.swift; sourceTree = "<group>"; };
+		1FE9968326276DD100223DEC /* DropDownController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownController.swift; sourceTree = "<group>"; };
+		1FE9968726276F7E00223DEC /* Searchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searchable.swift; sourceTree = "<group>"; };
 		1FF6CE1F261F4F77007BF8B9 /* GlobalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
 		2B66A8663FACA9F6167EFD26 /* Pods-RewardTests.release (qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardTests.release (qa).xcconfig"; path = "Target Support Files/Pods-RewardTests/Pods-RewardTests.release (qa).xcconfig"; sourceTree = "<group>"; };
 		3975ACD5DDFC8F43A4A7D7A3 /* Pods-RewardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardTests.release.xcconfig"; path = "Target Support Files/Pods-RewardTests/Pods-RewardTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				1F1055B82633FC6B002F8C54 /* TabBarController */,
+				1FE996722627513B00223DEC /* ClaimReward */,
 				E77DE86826245BE100D20520 /* SignIn */,
 				1FAC2C0D2616EAE200638C59 /* AppDelegate.swift */,
 				1FAC2C0F2616EAE200638C59 /* SceneDelegate.swift */,
@@ -238,11 +249,13 @@
 			isa = PBXGroup;
 			children = (
 				E77DE87726245CED00D20520 /* APIKeys.swift */,
+				1FAD9AB4262EDE1D00B80A5A /* Constants.swift */,
 				1FE28B56261CD58600402A2B /* Environment.swift */,
 				1FE28B82261CDD2000402A2B /* APIRequest.swift */,
 				1FE28B86261CDD4C00402A2B /* APIUrlStruct.swift */,
 				1FE28B94261CDF4E00402A2B /* HTTPStatus.swift */,
 				1FF6CE1F261F4F77007BF8B9 /* GlobalSettings.swift */,
+				1F60B8352627ED4A001A2286 /* CategoryList.swift */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
@@ -255,6 +268,7 @@
 				1FE28B5A261CD58600402A2B /* EnvironmentUtility.swift */,
 				1FE28B90261CDF0900402A2B /* APIManager.swift */,
 				1F1055BD263433AC002F8C54 /* AppSettings.swift */,
+				1FE9968326276DD100223DEC /* DropDownController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -273,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				1FE28B75261CDC7A00402A2B /* APIResponseProtocol.swift */,
+				1FE9968726276F7E00223DEC /* Searchable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -284,6 +299,14 @@
 				1FE28B8C261CDEBC00402A2B /* APIHeaderKey.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		1FE996722627513B00223DEC /* ClaimReward */ = {
+			isa = PBXGroup;
+			children = (
+				1FE996752627515F00223DEC /* ClaimRewardViewController.swift */,
+			);
+			path = ClaimReward;
 			sourceTree = "<group>";
 		};
 		3087DAF88A2ACD9E58439320 /* Pods */ = {
@@ -539,10 +562,13 @@
 				E77DE86B26245BEE00D20520 /* SignInViewController.swift in Sources */,
 				1FAC2C0E2616EAE200638C59 /* AppDelegate.swift in Sources */,
 				1FE28B5E261CD58600402A2B /* EnvironmentUtility.swift in Sources */,
+				1FE9968426276DD200223DEC /* DropDownController.swift in Sources */,
 				1FE28B7D261CDCC000402A2B /* APIUrl.swift in Sources */,
 				1FE28B87261CDD4C00402A2B /* APIUrlStruct.swift in Sources */,
 				E77DE87826245CED00D20520 /* APIKeys.swift in Sources */,
 				1FE28B8D261CDEBC00402A2B /* APIHeaderKey.swift in Sources */,
+				1F60B8362627ED4A001A2286 /* CategoryList.swift in Sources */,
+				1FE9968826276F7E00223DEC /* Searchable.swift in Sources */,
 				1FAC2C0E2616EAE200638C59 /* AppDelegate.swift in Sources */,
 				1FE28B76261CDC7A00402A2B /* APIResponseProtocol.swift in Sources */,
 				1FE28B5D261CD58600402A2B /* RealmManager.swift in Sources */,
@@ -555,9 +581,11 @@
 				1FF6CE20261F4F77007BF8B9 /* GlobalSettings.swift in Sources */,
 				1FAC2C102616EAE200638C59 /* SceneDelegate.swift in Sources */,
 				1FE28B91261CDF0900402A2B /* APIManager.swift in Sources */,
+				1FAD9AB5262EDE1E00B80A5A /* Constants.swift in Sources */,
 				E77DE86C26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift in Sources */,
 				1FE28B83261CDD2000402A2B /* APIRequest.swift in Sources */,
 				1F1055C62634370E002F8C54 /* TabBarController+Delegate.swift in Sources */,
+				1FE996762627515F00223DEC /* ClaimRewardViewController.swift in Sources */,
 				E77DE87426245C8200D20520 /* NotificationName+Extensions.swift in Sources */,
 				1FAC2D25261A2EAE00638C59 /* R.generated.swift in Sources */,
 				1FE28B95261CDF4E00402A2B /* HTTPStatus.swift in Sources */,
@@ -648,7 +676,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -667,7 +695,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Reward/Supporting Files/Dev.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -748,7 +776,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -767,7 +795,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Reward/Supporting Files/Dev.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -848,7 +876,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -867,7 +895,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Reward/Supporting Files/QA.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -948,7 +976,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -967,7 +995,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Reward/Supporting Files/Production.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1048,7 +1076,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1067,7 +1095,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Reward/Supporting Files/QA.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1148,7 +1176,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1167,7 +1195,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Reward/Supporting Files/Production.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
