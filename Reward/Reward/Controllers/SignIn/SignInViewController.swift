@@ -55,6 +55,16 @@ class SignInViewController: UIViewController {
             method: .post)
     }
     
+    func callProfileAPI() {
+        apiManager.callAPI(request: profileAPIRequest())
+    }
+    
+    func profileAPIRequest() -> APIRequest {
+        return APIRequest(
+            headers: [.accessToken, .json],
+            url: APIUrlStruct(apiPath: .v1, apiUrl: .profile))
+    }
+    
     func getParameters() -> [String: Any] {
         var parameter = [String: Any]()
         guard let user = GIDSignIn.sharedInstance()?.currentUser else {
@@ -67,16 +77,4 @@ class SignInViewController: UIViewController {
         return [APIKeys.SignIn.userAuth: parameter]
     }
 
-}
-
-extension SignInViewController: APIResponseProtocol {
-    
-    func successResponse(_ response: [String: Any], successCode: Int, request: APIRequest) {
-        Common.hideLoader()
-        guard let token = response["token"] as? String else {
-            return
-        }
-        Variable.token = token
-    }
-    
 }

@@ -16,7 +16,7 @@ public enum APIHeaderKey {
     public var header: HTTPHeader {
         switch self {
         case .accessToken:
-            return HTTPHeader(name: "Authorization", value: "")
+            return HTTPHeader(name: "Authorization", value: Variable.token)
         case .contentTypeUrlEncoded:
             return HTTPHeader(name: "Content-Type", value: "application/x-www-form-urlencoded")
         case .json:

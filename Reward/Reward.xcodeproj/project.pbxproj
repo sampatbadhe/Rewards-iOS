@@ -32,6 +32,8 @@
 		1FE28B95261CDF4E00402A2B /* HTTPStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE28B94261CDF4E00402A2B /* HTTPStatus.swift */; };
 		1FF6CE20261F4F77007BF8B9 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6CE1F261F4F77007BF8B9 /* GlobalSettings.swift */; };
 		DCC13BE58373AADBA4013FF2 /* Pods_RewardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7BAF31FC450162B39A9D4E /* Pods_RewardTests.framework */; };
+		E70AD5A22634285400F0FA9A /* SignInViewController+APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AD5A12634285400F0FA9A /* SignInViewController+APIResponseProtocol.swift */; };
+		E70AD5A62634317500F0FA9A /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AD5A52634317500F0FA9A /* UserProfileModel.swift */; };
 		E77DE86B26245BEE00D20520 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DE86926245BEE00D20520 /* SignInViewController.swift */; };
 		E77DE86C26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DE86A26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift */; };
 		E77DE87426245C8200D20520 /* NotificationName+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DE87326245C8100D20520 /* NotificationName+Extensions.swift */; };
@@ -99,6 +101,8 @@
 		D667C4B13F3DA83A2BED6EB4 /* Pods-Reward.release (qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reward.release (qa).xcconfig"; path = "Target Support Files/Pods-Reward/Pods-Reward.release (qa).xcconfig"; sourceTree = "<group>"; };
 		D99290BA55A92F60D1DCDB61 /* Pods-RewardTests.debug (dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardTests.debug (dev).xcconfig"; path = "Target Support Files/Pods-RewardTests/Pods-RewardTests.debug (dev).xcconfig"; sourceTree = "<group>"; };
 		E337C7BB74752E26CFF1DDB2 /* Pods-Reward.debug (qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reward.debug (qa).xcconfig"; path = "Target Support Files/Pods-Reward/Pods-Reward.debug (qa).xcconfig"; sourceTree = "<group>"; };
+		E70AD5A12634285400F0FA9A /* SignInViewController+APIResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+APIResponseProtocol.swift"; sourceTree = "<group>"; };
+		E70AD5A52634317500F0FA9A /* UserProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
 		E77DE86926245BEE00D20520 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		E77DE86A26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignInViewController+GIDSignInDelegate.swift"; sourceTree = "<group>"; };
 		E77DE87326245C8100D20520 /* NotificationName+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extensions.swift"; sourceTree = "<group>"; };
@@ -208,6 +212,7 @@
 		1FE28B53261CD58600402A2B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E70AD5A52634317500F0FA9A /* UserProfileModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 			children = (
 				E77DE86926245BEE00D20520 /* SignInViewController.swift */,
 				E77DE86A26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift */,
+				E70AD5A12634285400F0FA9A /* SignInViewController+APIResponseProtocol.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -547,7 +553,9 @@
 				1FF6CE20261F4F77007BF8B9 /* GlobalSettings.swift in Sources */,
 				1FAC2C102616EAE200638C59 /* SceneDelegate.swift in Sources */,
 				E79BDDF7262C3538001C3C73 /* Common.swift in Sources */,
+				E70AD5A62634317500F0FA9A /* UserProfileModel.swift in Sources */,
 				1FE28B91261CDF0900402A2B /* APIManager.swift in Sources */,
+				E70AD5A22634285400F0FA9A /* SignInViewController+APIResponseProtocol.swift in Sources */,
 				E77DE86C26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift in Sources */,
 				1FE28B83261CDD2000402A2B /* APIRequest.swift in Sources */,
 				E77DE87426245C8200D20520 /* NotificationName+Extensions.swift in Sources */,
