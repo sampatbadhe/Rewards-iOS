@@ -24,11 +24,6 @@ class SignInViewController: UIViewController {
         setUI()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        updateScreenOnLoginStatus()
-    }
-    
     func setGoogleSignIn() {
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance()?.presentingViewController = self

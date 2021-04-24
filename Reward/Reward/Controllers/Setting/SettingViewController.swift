@@ -23,7 +23,7 @@ class SettingViewController: UIViewController {
     
     func getSettingList() {
         settingsList.removeAll()
-        settingsList.append(SettingInfo(title: Setting.Title.notification, image: R.image.notification()))
+        settingsList.append(SettingInfo(title: Setting.Title.notification, image: R.image.notifications()))
         settingsList.append(SettingInfo(title: Setting.Title.logout, image: R.image.logout()))
     }
     
