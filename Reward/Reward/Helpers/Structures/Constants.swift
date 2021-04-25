@@ -10,6 +10,7 @@ import Foundation
 struct Constants {
     
     struct NavigationTitle {
+        static let myView = "My View"
         static let settings = "Settings"
     }
     
