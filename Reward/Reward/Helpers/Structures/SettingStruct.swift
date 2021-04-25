@@ -20,16 +20,3 @@ struct SettingInfo {
     }
     
 }
-
-struct NavigationTitle {
-    static let settings = "Settings"
-}
-
-struct Setting {
-    
-    struct Title {
-        static let notifications = "Notifications"
-        static let logout = "Logout"
-    }
-    
-}

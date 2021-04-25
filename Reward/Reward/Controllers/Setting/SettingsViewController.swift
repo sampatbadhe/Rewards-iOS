@@ -7,6 +7,7 @@
 
 import UIKit
 import SwifterSwift
+import GoogleSignIn
 
 class SettingsViewController: UIViewController {
     
@@ -16,14 +17,29 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = NavigationTitle.settings
+        title = Constants.NavigationTitle.settings
         getSettingList()
     }
     
     func getSettingList() {
         settingList.removeAll()
-        settingList.append(SettingInfo(title: Setting.Title.notifications, image: R.image.notifications()))
-        settingList.append(SettingInfo(title: Setting.Title.logout, image: R.image.logout(), switchVisibility: false))
+        settingList.append(SettingInfo(title: Constants.Setting.notifications, image: R.image.notifications()))
+        settingList.append(SettingInfo(title: Constants.Setting.logout, image: R.image.logout(), switchVisibility: false))
+    }
+    
+    func logoutAlertView() {
+        let alertView = UIAlertController(
+            title: Constants.AlertTitle.logout,
+            message: Constants.AlertMessage.logoutConfirmationMessage,
+            preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: Constants.AlertTitle.cancel, style: .cancel, handler: nil)
+        let logoutAction = UIAlertAction(title: Constants.AlertTitle.logout, style: .default) { (_) in
+            GIDSignIn.sharedInstance()?.signOut()
+            self.dismiss(animated: true, completion: nil)
+        }
+        alertView.addAction(cancelAction)
+        alertView.addAction(logoutAction)
+        present(alertView, animated: true, completion: nil)
     }
     
 }

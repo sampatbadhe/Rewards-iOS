@@ -6,14 +6,12 @@
 //
 
 import UIKit
-import GoogleSignIn
 
 extension SettingsViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if settingList[indexPath.row].title == Setting.Title.logout {
-            GIDSignIn.sharedInstance()?.signOut()
-            dismiss(animated: true, completion: nil)
+        if settingList[indexPath.row].title == Constants.Setting.logout {
+            logoutAlertView()
         }        
     }
     
