@@ -17,7 +17,6 @@ class Redirect {
             return
         }
         toSignInScreen(window)
-        
     }
     
     func toSignInScreen(_ window: UIWindow?) {

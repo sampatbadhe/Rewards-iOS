@@ -27,9 +27,8 @@ extension TabBarController: UITabBarControllerDelegate {
             let navigationController = UINavigationController(rootViewController: claimRewardViewController)
             present(navigationController, animated: true, completion: nil)
             return false
-        } else {
-            return true
         }
+        return true
     }
     
 }
