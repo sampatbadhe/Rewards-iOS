@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wq9-HQ-vGo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -14,11 +15,11 @@
             <objects>
                 <viewController storyboardIdentifier="ClaimRewardViewController" id="0Qw-fy-GP3" customClass="ClaimRewardViewController" customModule="Reward" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sd1-xb-gJD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mxu-pY-oIF">
-                                <rect key="frame" x="0.0" y="108" width="414" height="610"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="679"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTp-EZ-VWB">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
@@ -170,7 +171,7 @@
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wY5-Lu-YX8">
-                                <rect key="frame" x="20" y="738" width="374" height="50"/>
+                                <rect key="frame" x="20" y="743" width="374" height="50"/>
                                 <color key="backgroundColor" name="darkGray"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="P2R-fA-inf"/>
@@ -198,6 +199,9 @@
                             <constraint firstItem="wY5-Lu-YX8" firstAttribute="top" secondItem="Mxu-pY-oIF" secondAttribute="bottom" constant="20" id="mb8-a3-HPt"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="claimReward" id="JU2-9b-v2e">
+                        <inset key="imageInsets" minX="-20" minY="-40" maxX="-20" maxY="0.0"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Claim Reward" largeTitleDisplayMode="always" id="W6M-sl-sX2"/>
                     <connections>
                         <outlet property="additionalCommentLabel" destination="5CP-vp-vRO" id="9TL-BK-qip"/>
@@ -213,32 +217,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1m-X7-Th5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1742.0289855072465" y="64.955357142857139"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="N55-oh-mXt">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PeG-gU-loX" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="xL6-LR-Pbl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="0Qw-fy-GP3" kind="relationship" relationship="rootViewController" id="cwC-3u-ZIT"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ed0-yO-FWB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="878" y="65"/>
+            <point key="canvasLocation" x="832" y="1533"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="aRj-ne-QSX">
             <objects>
                 <viewController id="JwX-hp-WCA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yNG-At-bJb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="07r-aK-cPc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -254,7 +240,7 @@
             <objects>
                 <viewController id="4eU-HF-2hK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i6L-V9-cFd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="AUd-xx-Ht5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -295,7 +281,7 @@
                     <connections>
                         <segue destination="4eU-HF-2hK" kind="relationship" relationship="viewControllers" id="smy-ik-2eF"/>
                         <segue destination="JwX-hp-WCA" kind="relationship" relationship="viewControllers" id="3zq-Kd-5J7"/>
-                        <segue destination="V3R-II-xJG" kind="relationship" relationship="viewControllers" id="Wha-QT-Y7F"/>
+                        <segue destination="0Qw-fy-GP3" kind="relationship" relationship="viewControllers" id="q53-yP-XnF"/>
                         <segue destination="Pzx-Rj-Pmg" kind="relationship" relationship="viewControllers" id="reB-ny-zoq"/>
                         <segue destination="rXG-mJ-zFz" kind="relationship" relationship="viewControllers" id="6ry-pe-BKq"/>
                     </connections>
@@ -305,29 +291,11 @@
             <point key="canvasLocation" x="832" y="815"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="IOC-YE-e3T">
-            <objects>
-                <viewController id="V3R-II-xJG" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="q4Z-WI-ZZE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Jz3-hv-2dM"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="claimReward" id="6kp-er-VaN">
-                        <inset key="imageInsets" minX="-20" minY="-40" maxX="-20" maxY="0.0"/>
-                    </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mZ0-ZY-OC2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="832" y="1533"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="LyC-uK-hFD">
             <objects>
                 <viewController id="Pzx-Rj-Pmg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OeV-ED-ghN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="uaI-ol-m9O"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -343,7 +311,7 @@
             <objects>
                 <viewController id="rXG-mJ-zFz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rNe-Ud-Vu6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="h4O-dO-Nso"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -372,38 +340,13 @@
                                             <constraint firstAttribute="height" constant="50" id="t5H-Jh-kom"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzE-Fm-ied">
-                                        <rect key="frame" x="156" y="229" width="102" height="30"/>
-                                        <state key="normal" title="Claim Rewards"/>
-                                        <connections>
-                                            <segue destination="PeG-gU-loX" kind="presentation" id="cpc-Jf-XH2"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEG-Dl-P09">
-                                        <rect key="frame" x="182.5" y="80.5" width="49" height="30"/>
-                                        <state key="normal" title="Setting"/>
-                                        <connections>
-                                            <segue destination="jYu-rY-CHY" kind="show" id="iRA-W2-nK3"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3k-hr-QXc">
-                                        <rect key="frame" x="183" y="184" width="48" height="30"/>
-                                        <state key="normal" title="Tabbar"/>
-                                        <connections>
-                                            <segue destination="i5u-Rz-PUM" kind="presentation" id="2Uu-xH-QNw"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="fKO-8s-MqO" firstAttribute="leading" secondItem="OI8-ek-1WU" secondAttribute="leading" constant="50" id="JjI-O6-vmQ"/>
                                     <constraint firstItem="PEG-Dl-P09" firstAttribute="centerX" secondItem="OI8-ek-1WU" secondAttribute="centerX" id="MBj-us-jvg"/>
                                     <constraint firstAttribute="trailing" secondItem="fKO-8s-MqO" secondAttribute="trailing" constant="50" id="Q9e-IO-z81"/>
-                                    <constraint firstAttribute="bottom" secondItem="vzE-Fm-ied" secondAttribute="bottom" constant="42" id="WRc-gB-qYq"/>
-                                    <constraint firstItem="P3k-hr-QXc" firstAttribute="centerX" secondItem="OI8-ek-1WU" secondAttribute="centerX" id="ad3-T3-eBB"/>
-                                    <constraint firstItem="vzE-Fm-ied" firstAttribute="centerX" secondItem="OI8-ek-1WU" secondAttribute="centerX" id="mxf-gD-g0b"/>
                                     <constraint firstItem="fKO-8s-MqO" firstAttribute="centerY" secondItem="OI8-ek-1WU" secondAttribute="centerY" id="sKf-Ri-h3p"/>
-                                    <constraint firstItem="vzE-Fm-ied" firstAttribute="top" secondItem="P3k-hr-QXc" secondAttribute="bottom" constant="15" id="u8g-pr-OKS"/>
                                     <constraint firstItem="fKO-8s-MqO" firstAttribute="centerX" secondItem="OI8-ek-1WU" secondAttribute="centerX" id="vbq-4y-bSs"/>
                                     <constraint firstItem="fKO-8s-MqO" firstAttribute="top" secondItem="PEG-Dl-P09" secondAttribute="bottom" constant="15" id="zNt-9h-Ux5"/>
                                 </constraints>

@@ -40,6 +40,7 @@
 		1FE9968426276DD200223DEC /* DropDownController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9968326276DD100223DEC /* DropDownController.swift */; };
 		1FE9968826276F7E00223DEC /* Searchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9968726276F7E00223DEC /* Searchable.swift */; };
 		1FF6CE20261F4F77007BF8B9 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6CE1F261F4F77007BF8B9 /* GlobalSettings.swift */; };
+		1FFCF2AF26353BEF00E0CD50 /* Redirect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFCF2AE26353BEF00E0CD50 /* Redirect.swift */; };
 		DCC13BE58373AADBA4013FF2 /* Pods_RewardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7BAF31FC450162B39A9D4E /* Pods_RewardTests.framework */; };
 		E70AD5752633F42F00F0FA9A /* ProfileInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AD5742633F42F00F0FA9A /* ProfileInfoCell.swift */; };
 		E70AD5792633F44400F0FA9A /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AD5782633F44400F0FA9A /* SettingCell.swift */; };
@@ -109,6 +110,7 @@
 		1FE9968326276DD100223DEC /* DropDownController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownController.swift; sourceTree = "<group>"; };
 		1FE9968726276F7E00223DEC /* Searchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searchable.swift; sourceTree = "<group>"; };
 		1FF6CE1F261F4F77007BF8B9 /* GlobalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
+		1FFCF2AE26353BEF00E0CD50 /* Redirect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redirect.swift; sourceTree = "<group>"; };
 		2B66A8663FACA9F6167EFD26 /* Pods-RewardTests.release (qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardTests.release (qa).xcconfig"; path = "Target Support Files/Pods-RewardTests/Pods-RewardTests.release (qa).xcconfig"; sourceTree = "<group>"; };
 		3975ACD5DDFC8F43A4A7D7A3 /* Pods-RewardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardTests.release.xcconfig"; path = "Target Support Files/Pods-RewardTests/Pods-RewardTests.release.xcconfig"; sourceTree = "<group>"; };
 		3E176F6E30C1ED90162BF548 /* Pods-Reward.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reward.release.xcconfig"; path = "Target Support Files/Pods-Reward/Pods-Reward.release.xcconfig"; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 				E79BDDFA262C357C001C3C73 /* Loader.swift */,
 				1F1055BD263433AC002F8C54 /* AppSettings.swift */,
 				1FE9968326276DD100223DEC /* DropDownController.swift */,
+				1FFCF2AE26353BEF00E0CD50 /* Redirect.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -619,6 +622,7 @@
 				1FE28B5D261CD58600402A2B /* RealmManager.swift in Sources */,
 				E7A82B86262B0EF2007E4EC2 /* UIFont+Extension.swift in Sources */,
 				1FE28B71261CDBCD00402A2B /* Mapper+Extension.swift in Sources */,
+				1FFCF2AF26353BEF00E0CD50 /* Redirect.swift in Sources */,
 				1F1055BE263433AE002F8C54 /* AppSettings.swift in Sources */,
 				1FE28B5C261CD58600402A2B /* RealmConfiguration.swift in Sources */,
 				E70AD58726340E4700F0FA9A /* SettingStruct.swift in Sources */,
