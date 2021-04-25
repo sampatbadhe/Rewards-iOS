@@ -35,7 +35,7 @@ class SettingsViewController: UIViewController {
         let cancelAction = UIAlertAction(title: Constants.AlertTitle.cancel, style: .cancel, handler: nil)
         let logoutAction = UIAlertAction(title: Constants.AlertTitle.logout, style: .default) { (_) in
             GIDSignIn.sharedInstance()?.signOut()
-            self.dismiss(animated: true, completion: nil)
+            Redirect().toSignInScreen(self.view.window)
         }
         alertView.addAction(cancelAction)
         alertView.addAction(logoutAction)
