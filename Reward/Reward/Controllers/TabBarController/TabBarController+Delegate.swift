@@ -20,7 +20,16 @@ extension TabBarController: UITabBarControllerDelegate {
         guard let index = tabBarController.viewControllers?.firstIndex(of: viewController) else {
             return true
         }
-        return index != claimRewardItemIndex
+        if index == claimRewardItemIndex {
+            guard let claimRewardViewController = UIStoryboard.main?.instantiateViewController(withClass: ClaimRewardViewController.self) else {
+                return false
+            }
+            let navigationController = UINavigationController(rootViewController: claimRewardViewController)
+            present(navigationController, animated: true, completion: nil)
+            return false
+        } else {
+            return true
+        }
     }
     
 }
