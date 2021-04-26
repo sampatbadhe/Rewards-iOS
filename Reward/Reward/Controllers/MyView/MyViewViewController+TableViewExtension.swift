@@ -12,10 +12,14 @@ extension MyViewViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerCell = tableView.dequeueReusableCell(withClass: MedalHeaderCell.self)
         headerCell.configureWithModel(medalDetails: medalCategoryDetails)
+        headerCell.allStatusAction = { sender in
+            self.openRewardStatusView()
+        }
         return headerCell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        openRewardStatusView(showAll: false)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

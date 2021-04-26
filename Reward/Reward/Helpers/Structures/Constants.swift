@@ -11,6 +11,7 @@ struct Constants {
     
     struct NavigationTitle {
         static let myView = "My View"
+        static let rewardStatus = "Reward Status"
         static let settings = "Settings"
     }
     

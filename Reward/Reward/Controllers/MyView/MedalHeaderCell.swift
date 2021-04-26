@@ -13,10 +13,14 @@ class MedalHeaderCell: UITableViewCell {
     @IBOutlet weak var goldCountLabel: UILabel!
     @IBOutlet weak var silverCountLabel: UILabel!
     @IBOutlet weak var bronzeCountLabel: UILabel!
+    @IBOutlet weak var allStatusButton: UIButton!
+    
+    var allStatusAction: ((Any) -> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         setUI()
+        allStatusButton.setTitle("Check My Reward Status", for: .normal)
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -35,6 +39,10 @@ class MedalHeaderCell: UITableViewCell {
         goldCountLabel.text = medalDetails.gold.toString
         silverCountLabel.text = medalDetails.silver.toString
         bronzeCountLabel.text = medalDetails.bronze.toString
+    }
+    
+    @IBAction func allStatusButtonAction(_ sender: UIButton) {
+        allStatusAction?(sender)
     }
 
 }

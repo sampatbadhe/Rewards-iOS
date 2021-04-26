@@ -11,6 +11,7 @@ enum APIUrl: String {
     case token = "auth/google_signup"
     case profile = "user"
     case myView = "rewards/my_view"
+    case rewards = "rewards"
 }
 
 public enum APIPath: String {

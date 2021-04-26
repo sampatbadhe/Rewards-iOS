@@ -26,8 +26,8 @@ class MyViewViewController: UIViewController {
     }
     
     func setNavigationBarButton() {
-        let shareButton = UIBarButtonItem(image: UIImage(systemName: "square.and.arrow.up"), style: .plain, target: self, action: #selector(shareAction(_:)))
-        navigationItem.rightBarButtonItem = shareButton
+        let shareBarButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareAction(_:)))
+        navigationItem.rightBarButtonItem = shareBarButton
     }
     
     func setTableView() {
@@ -58,6 +58,13 @@ class MyViewViewController: UIViewController {
     
     @IBAction func shareAction(_ sender: UIBarButtonItem) {
         
+    }
+    
+    func openRewardStatusView(showAll: Bool = true) {
+        guard let rewardStatusViewController = UIStoryboard.main?.instantiateViewController(withClass: RewardStatusViewController.self) else {
+            return
+        }
+        self.navigationController?.pushViewController(rewardStatusViewController, animated: true)
     }
     
 }
