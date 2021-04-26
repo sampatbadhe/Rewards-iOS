@@ -19,9 +19,9 @@ class TeamListCell: UITableViewCell {
         totalMedalCountLabel.font = totalMedalCountLabel.font.bold
     }
     
-    func configureWithModel(index: Int) {
-        teamTitleLabel.text = "Team \(index)"
-        totalMedalCountLabel.text = "\(index + 10)"
+    func configureWithModel(teamDetails: TeamListInfo) {
+        teamTitleLabel.text = teamDetails.type.title
+        totalMedalCountLabel.text = teamDetails.medalCount.toString
     }
 
 }

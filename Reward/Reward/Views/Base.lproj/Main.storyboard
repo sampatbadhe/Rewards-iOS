@@ -439,7 +439,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRefreshControlEnabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRefreshControlEnabled" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="clearTableFooterView" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="emptyHeaderForGroupedTable" value="NO"/>
                                 </userDefinedRuntimeAttributes>

@@ -50,6 +50,13 @@
 		E70AD5A62634317500F0FA9A /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AD5A52634317500F0FA9A /* UserProfileModel.swift */; };
 		E70AD6022634912300F0FA9A /* SettingsViewController+TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AD6012634912300F0FA9A /* SettingsViewController+TableViewExtension.swift */; };
 		E70BDBC92635A013005F52FA /* MyViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70BDBC82635A013005F52FA /* MyViewViewController.swift */; };
+		E7684F1F26372CD7001B66ED /* TeamCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F1E26372CD7001B66ED /* TeamCategoryModel.swift */; };
+		E7684F2326372DF7001B66ED /* MedalCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F2226372DF7001B66ED /* MedalCategoryModel.swift */; };
+		E7684F2726373025001B66ED /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F2626373025001B66ED /* Int+Extension.swift */; };
+		E7684F2B26373155001B66ED /* MyViewStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F2A26373155001B66ED /* MyViewStruct.swift */; };
+		E7684F2F26373287001B66ED /* AppGlobalEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F2E26373287001B66ED /* AppGlobalEnums.swift */; };
+		E7684F3326373632001B66ED /* MyViewViewController+APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F3226373631001B66ED /* MyViewViewController+APIResponseProtocol.swift */; };
+		E7684F3726373683001B66ED /* MyViewViewController+TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F3626373683001B66ED /* MyViewViewController+TableViewExtension.swift */; };
 		E77DE86B26245BEE00D20520 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DE86926245BEE00D20520 /* SignInViewController.swift */; };
 		E77DE86C26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DE86A26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift */; };
 		E77DE87426245C8200D20520 /* NotificationName+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DE87326245C8100D20520 /* NotificationName+Extensions.swift */; };
@@ -137,6 +144,13 @@
 		E70AD5A52634317500F0FA9A /* UserProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
 		E70AD6012634912300F0FA9A /* SettingsViewController+TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewController+TableViewExtension.swift"; sourceTree = "<group>"; };
 		E70BDBC82635A013005F52FA /* MyViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewViewController.swift; sourceTree = "<group>"; };
+		E7684F1E26372CD7001B66ED /* TeamCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCategoryModel.swift; sourceTree = "<group>"; };
+		E7684F2226372DF7001B66ED /* MedalCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedalCategoryModel.swift; sourceTree = "<group>"; };
+		E7684F2626373025001B66ED /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		E7684F2A26373155001B66ED /* MyViewStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewStruct.swift; sourceTree = "<group>"; };
+		E7684F2E26373287001B66ED /* AppGlobalEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGlobalEnums.swift; sourceTree = "<group>"; };
+		E7684F3226373631001B66ED /* MyViewViewController+APIResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyViewViewController+APIResponseProtocol.swift"; sourceTree = "<group>"; };
+		E7684F3626373683001B66ED /* MyViewViewController+TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyViewViewController+TableViewExtension.swift"; sourceTree = "<group>"; };
 		E77DE86926245BEE00D20520 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		E77DE86A26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignInViewController+GIDSignInDelegate.swift"; sourceTree = "<group>"; };
 		E77DE87326245C8100D20520 /* NotificationName+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extensions.swift"; sourceTree = "<group>"; };
@@ -262,6 +276,8 @@
 			isa = PBXGroup;
 			children = (
 				E70AD5A52634317500F0FA9A /* UserProfileModel.swift */,
+				E7684F1E26372CD7001B66ED /* TeamCategoryModel.swift */,
+				E7684F2226372DF7001B66ED /* MedalCategoryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -291,6 +307,7 @@
 				E70AD58626340E4700F0FA9A /* SettingStruct.swift */,
 				E79BDE17262C518B001C3C73 /* VariableStruct.swift */,
 				1F60B8352627ED4A001A2286 /* CategoryList.swift */,
+				E7684F2A26373155001B66ED /* MyViewStruct.swift */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
@@ -318,6 +335,7 @@
 				1FE28B70261CDBCD00402A2B /* Mapper+Extension.swift */,
 				E7A82B85262B0EF2007E4EC2 /* UIFont+Extension.swift */,
 				1F1055C12634342B002F8C54 /* UITabBar+Extension.swift */,
+				E7684F2626373025001B66ED /* Int+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -336,6 +354,7 @@
 			children = (
 				1FE28B7C261CDCC000402A2B /* APIUrl.swift */,
 				1FE28B8C261CDEBC00402A2B /* APIHeaderKey.swift */,
+				E7684F2E26373287001B66ED /* AppGlobalEnums.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -375,6 +394,8 @@
 			isa = PBXGroup;
 			children = (
 				E70BDBC82635A013005F52FA /* MyViewViewController.swift */,
+				E7684F3626373683001B66ED /* MyViewViewController+TableViewExtension.swift */,
+				E7684F3226373631001B66ED /* MyViewViewController+APIResponseProtocol.swift */,
 				E7F29BA82635DC9B0075D964 /* MedalHeaderCell.swift */,
 				E7F29BAC2635DCB70075D964 /* TeamListCell.swift */,
 			);
@@ -624,12 +645,14 @@
 				E77DE86B26245BEE00D20520 /* SignInViewController.swift in Sources */,
 				E79BDE2D262C6F9C001C3C73 /* SettingsViewController.swift in Sources */,
 				E70AD5792633F44400F0FA9A /* SettingCell.swift in Sources */,
+				E7684F2B26373155001B66ED /* MyViewStruct.swift in Sources */,
 				E7F29BA92635DC9B0075D964 /* MedalHeaderCell.swift in Sources */,
 				1FAC2C0E2616EAE200638C59 /* AppDelegate.swift in Sources */,
 				1FE28B5E261CD58600402A2B /* EnvironmentUtility.swift in Sources */,
 				1FE9968426276DD200223DEC /* DropDownController.swift in Sources */,
 				1FE28B7D261CDCC000402A2B /* APIUrl.swift in Sources */,
 				1FE28B87261CDD4C00402A2B /* APIUrlStruct.swift in Sources */,
+				E7684F2F26373287001B66ED /* AppGlobalEnums.swift in Sources */,
 				E77DE87826245CED00D20520 /* APIKeys.swift in Sources */,
 				1FE28B8D261CDEBC00402A2B /* APIHeaderKey.swift in Sources */,
 				E79BDE18262C518B001C3C73 /* VariableStruct.swift in Sources */,
@@ -640,17 +663,21 @@
 				1FE28B5D261CD58600402A2B /* RealmManager.swift in Sources */,
 				E7A82B86262B0EF2007E4EC2 /* UIFont+Extension.swift in Sources */,
 				1FE28B71261CDBCD00402A2B /* Mapper+Extension.swift in Sources */,
+				E7684F3326373632001B66ED /* MyViewViewController+APIResponseProtocol.swift in Sources */,
 				1FFCF2AF26353BEF00E0CD50 /* Redirect.swift in Sources */,
 				E7F29BAD2635DCB70075D964 /* TeamListCell.swift in Sources */,
 				1F1055BE263433AE002F8C54 /* AppSettings.swift in Sources */,
 				1FE28B5C261CD58600402A2B /* RealmConfiguration.swift in Sources */,
+				E7684F2326372DF7001B66ED /* MedalCategoryModel.swift in Sources */,
 				E70AD58726340E4700F0FA9A /* SettingStruct.swift in Sources */,
 				1F1055C22634342B002F8C54 /* UITabBar+Extension.swift in Sources */,
 				1FE28B5B261CD58600402A2B /* Environment.swift in Sources */,
 				E79BDDFB262C357C001C3C73 /* Loader.swift in Sources */,
 				1F1055BA2633FC9A002F8C54 /* TabBarController.swift in Sources */,
 				1FF6CE20261F4F77007BF8B9 /* GlobalSettings.swift in Sources */,
+				E7684F1F26372CD7001B66ED /* TeamCategoryModel.swift in Sources */,
 				1FAC2C102616EAE200638C59 /* SceneDelegate.swift in Sources */,
+				E7684F2726373025001B66ED /* Int+Extension.swift in Sources */,
 				E70AD5A62634317500F0FA9A /* UserProfileModel.swift in Sources */,
 				1FE28B91261CDF0900402A2B /* APIManager.swift in Sources */,
 				E70AD5A22634285400F0FA9A /* SignInViewController+APIResponseProtocol.swift in Sources */,
@@ -665,6 +692,7 @@
 				1FAC2D25261A2EAE00638C59 /* R.generated.swift in Sources */,
 				1FE28B95261CDF4E00402A2B /* HTTPStatus.swift in Sources */,
 				E70AD6022634912300F0FA9A /* SettingsViewController+TableViewExtension.swift in Sources */,
+				E7684F3726373683001B66ED /* MyViewViewController+TableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

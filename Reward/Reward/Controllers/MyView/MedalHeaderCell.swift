@@ -31,10 +31,10 @@ class MedalHeaderCell: UITableViewCell {
         bronzeCountLabel.font = bronzeCountLabel.font.bold
     }
     
-    func configureWithModel() {
-        goldCountLabel.text = "0"
-        silverCountLabel.text = "0"
-        bronzeCountLabel.text = "0"
+    func configureWithModel(medalDetails: MedalCategoryModel) {
+        goldCountLabel.text = medalDetails.gold.toString
+        silverCountLabel.text = medalDetails.silver.toString
+        bronzeCountLabel.text = medalDetails.bronze.toString
     }
 
 }

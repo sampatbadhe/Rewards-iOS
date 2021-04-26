@@ -11,10 +11,18 @@ class MyViewViewController: UIViewController {
     
     @IBOutlet weak var tableView: CustomTableView!
     
+    let apiManager = APIManager()
+    var teamList = [TeamListInfo]()
+    var teamCategoryDetails = TeamCategoryModel()
+    var medalCategoryDetails = MedalCategoryModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = Constants.NavigationTitle.myView
+        apiManager.delegate = self
         setNavigationBarButton()
+        setTableView()
+        callMyViewAPI()
     }
     
     func setNavigationBarButton() {
@@ -22,36 +30,34 @@ class MyViewViewController: UIViewController {
         navigationItem.rightBarButtonItem = shareButton
     }
     
+    func setTableView() {
+        tableView.isHidden = true
+        tableView.refreshControlAction = { sender in
+            self.callMyViewAPI()
+        }
+    }
+    
+    func getTeamListDetails() {
+        teamList.removeAll()
+        let ceo = TeamListInfo(type: .coe, medalCount: teamCategoryDetails.coe)
+        let hiring = TeamListInfo(type: .hiring, medalCount: teamCategoryDetails.hiring)
+        let kfc = TeamListInfo(type: .kfc, medalCount: teamCategoryDetails.kfc)
+        let others = TeamListInfo(type: .others, medalCount: teamCategoryDetails.others)
+        let referral = TeamListInfo(type: .referral, medalCount: teamCategoryDetails.referral)
+        teamList.append(contentsOf: [ceo, hiring, kfc, others, referral])
+    }
+    
+    func callMyViewAPI() {
+        Loader.shared.show()
+        apiManager.callAPI(request: myViewAPIRequest())
+    }
+    
+    func myViewAPIRequest() -> APIRequest {
+        return APIRequest(url: APIUrlStruct(apiPath: .v1, apiUrl: .myView))
+    }
+    
     @IBAction func shareAction(_ sender: UIBarButtonItem) {
         
-    }
-    
-}
-
-extension MyViewViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerCell = tableView.dequeueReusableCell(withClass: MedalHeaderCell.self)
-        headerCell.configureWithModel()
-        return headerCell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-    
-}
-
-extension MyViewViewController: UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withClass: TeamListCell.self, for: indexPath)
-        cell.configureWithModel(index: indexPath.row)
-        return cell
     }
     
 }
