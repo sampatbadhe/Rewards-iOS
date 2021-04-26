@@ -1,0 +1,38 @@
+//
+//  RewardModel.swift
+//  Reward
+//
+//  Created by Darshan on 27/04/21.
+//
+
+import Foundation
+import RealmSwift
+import ObjectMapper
+
+class RewardModel: Object, Mappable {
+    
+    @objc dynamic var id: Int = 0
+    @objc dynamic var activityDate: Date?
+    dynamic var categoryId: CategoryTypeId = .coe
+    @objc dynamic var categoryReasonId: Int = 0
+    @objc dynamic var comments: String?
+    @objc dynamic var status: String?
+    @objc dynamic var createdAt: Date?
+    @objc dynamic var updatedAt: Date?
+    
+    required convenience init?(map: Map) {
+        self.init()
+    }
+    
+    func mapping(map: Map) {
+        id <- map["id"]
+        activityDate <- (map["activity_date"], CustomDateFormatTransform(format: .date))
+        categoryId <- (map["category_id"], EnumTransform<CategoryTypeId>())
+        categoryReasonId <- map["category_reason_id"]
+        comments <- map["comments"]
+        status <- map["status"]
+        createdAt <- (map["created_at"], CustomDateFormatTransform(format: .dateWithMillisecondAndTimeZone))
+        updatedAt <- (map["updated_at"], CustomDateFormatTransform(format: .dateWithMillisecondAndTimeZone))
+    }
+    
+}

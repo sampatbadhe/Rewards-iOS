@@ -13,6 +13,7 @@ class RewardStatusViewController: UIViewController {
     @IBOutlet weak var tableView: CustomTableView!
     
     let apiManager = APIManager()
+    var rewardDetailsList = RewardListModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()

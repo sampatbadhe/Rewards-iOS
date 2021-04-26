@@ -61,6 +61,10 @@
 		E7684F4226374DEF001B66ED /* RewardStatusViewController+APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F4126374DEF001B66ED /* RewardStatusViewController+APIResponseProtocol.swift */; };
 		E7684F4626374E18001B66ED /* RewardStatusViewController+TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F4526374E17001B66ED /* RewardStatusViewController+TableViewExtension.swift */; };
 		E7684F4A26375000001B66ED /* RewardDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F4926375000001B66ED /* RewardDetailCell.swift */; };
+		E7684F4E26375EEF001B66ED /* RewardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F4D26375EEF001B66ED /* RewardModel.swift */; };
+		E7684F5226375F03001B66ED /* RewardListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F5126375F03001B66ED /* RewardListModel.swift */; };
+		E7684F5626375FA2001B66ED /* ArrayTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F5526375FA2001B66ED /* ArrayTransform.swift */; };
+		E7684F5A263765BD001B66ED /* CommonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F59263765BD001B66ED /* CommonExtensions.swift */; };
 		E77DE86B26245BEE00D20520 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DE86926245BEE00D20520 /* SignInViewController.swift */; };
 		E77DE86C26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DE86A26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift */; };
 		E77DE87426245C8200D20520 /* NotificationName+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77DE87326245C8100D20520 /* NotificationName+Extensions.swift */; };
@@ -159,6 +163,10 @@
 		E7684F4126374DEF001B66ED /* RewardStatusViewController+APIResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RewardStatusViewController+APIResponseProtocol.swift"; sourceTree = "<group>"; };
 		E7684F4526374E17001B66ED /* RewardStatusViewController+TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RewardStatusViewController+TableViewExtension.swift"; sourceTree = "<group>"; };
 		E7684F4926375000001B66ED /* RewardDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardDetailCell.swift; sourceTree = "<group>"; };
+		E7684F4D26375EEF001B66ED /* RewardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardModel.swift; sourceTree = "<group>"; };
+		E7684F5126375F03001B66ED /* RewardListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardListModel.swift; sourceTree = "<group>"; };
+		E7684F5526375FA2001B66ED /* ArrayTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTransform.swift; sourceTree = "<group>"; };
+		E7684F59263765BD001B66ED /* CommonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonExtensions.swift; sourceTree = "<group>"; };
 		E77DE86926245BEE00D20520 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		E77DE86A26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignInViewController+GIDSignInDelegate.swift"; sourceTree = "<group>"; };
 		E77DE87326245C8100D20520 /* NotificationName+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extensions.swift"; sourceTree = "<group>"; };
@@ -287,6 +295,8 @@
 				E70AD5A52634317500F0FA9A /* UserProfileModel.swift */,
 				E7684F1E26372CD7001B66ED /* TeamCategoryModel.swift */,
 				E7684F2226372DF7001B66ED /* MedalCategoryModel.swift */,
+				E7684F5126375F03001B66ED /* RewardListModel.swift */,
+				E7684F4D26375EEF001B66ED /* RewardModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -333,6 +343,7 @@
 				1F1055BD263433AC002F8C54 /* AppSettings.swift */,
 				1FE9968326276DD100223DEC /* DropDownController.swift */,
 				1FFCF2AE26353BEF00E0CD50 /* Redirect.swift */,
+				E7684F5526375FA2001B66ED /* ArrayTransform.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -345,6 +356,7 @@
 				E7A82B85262B0EF2007E4EC2 /* UIFont+Extension.swift */,
 				1F1055C12634342B002F8C54 /* UITabBar+Extension.swift */,
 				E7684F2626373025001B66ED /* Int+Extension.swift */,
+				E7684F59263765BD001B66ED /* CommonExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -671,6 +683,7 @@
 				1FE28B5E261CD58600402A2B /* EnvironmentUtility.swift in Sources */,
 				1FE9968426276DD200223DEC /* DropDownController.swift in Sources */,
 				1FE28B7D261CDCC000402A2B /* APIUrl.swift in Sources */,
+				E7684F5A263765BD001B66ED /* CommonExtensions.swift in Sources */,
 				E7684F3B26373F75001B66ED /* RewardStatusViewController.swift in Sources */,
 				1FE28B87261CDD4C00402A2B /* APIUrlStruct.swift in Sources */,
 				E7684F2F26373287001B66ED /* AppGlobalEnums.swift in Sources */,
@@ -694,6 +707,8 @@
 				E7684F2326372DF7001B66ED /* MedalCategoryModel.swift in Sources */,
 				E70AD58726340E4700F0FA9A /* SettingStruct.swift in Sources */,
 				1F1055C22634342B002F8C54 /* UITabBar+Extension.swift in Sources */,
+				E7684F4E26375EEF001B66ED /* RewardModel.swift in Sources */,
+				E7684F5626375FA2001B66ED /* ArrayTransform.swift in Sources */,
 				1FE28B5B261CD58600402A2B /* Environment.swift in Sources */,
 				E79BDDFB262C357C001C3C73 /* Loader.swift in Sources */,
 				1F1055BA2633FC9A002F8C54 /* TabBarController.swift in Sources */,
@@ -716,6 +731,7 @@
 				1FAC2D25261A2EAE00638C59 /* R.generated.swift in Sources */,
 				1FE28B95261CDF4E00402A2B /* HTTPStatus.swift in Sources */,
 				E70AD6022634912300F0FA9A /* SettingsViewController+TableViewExtension.swift in Sources */,
+				E7684F5226375F03001B66ED /* RewardListModel.swift in Sources */,
 				E7684F3726373683001B66ED /* MyViewViewController+TableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

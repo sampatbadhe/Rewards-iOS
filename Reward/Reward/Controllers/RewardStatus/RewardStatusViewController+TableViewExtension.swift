@@ -10,12 +10,12 @@ import UIKit
 extension RewardStatusViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return rewardDetailsList.rewardList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withClass: RewardDetailCell.self, for: indexPath)
-        cell.configureWithModel()
+        cell.configureWithModel(rewardDetail: rewardDetailsList.rewardList[indexPath.row])
         return cell
     }
     
