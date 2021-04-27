@@ -6,15 +6,15 @@
 //
 
 import UIKit
+import RealmSwift
 
 class MyViewViewController: UIViewController {
     
     @IBOutlet weak var tableView: CustomTableView!
     
     let apiManager = APIManager()
-    var teamList = [TeamListInfo]()
-    var teamCategoryDetails = TeamCategoryModel()
-    var medalCategoryDetails = MedalCategoryModel()
+    var categoryBadgeDetails = List<CategoryBadgesModel>()
+    var badgeTallyDetails = BadgesTallyModel()
     var categoryReasonDetails = CategoryReasonListModel()
     
     override func viewDidLoad() {
@@ -42,16 +42,6 @@ class MyViewViewController: UIViewController {
         tableView.refreshControlAction = { sender in
             self.callMyViewAPI()
         }
-    }
-    
-    func getTeamListDetails() {
-        teamList.removeAll()
-        let ceo = TeamListInfo(type: .coe, medalCount: teamCategoryDetails.coe)
-        let hiring = TeamListInfo(type: .hiring, medalCount: teamCategoryDetails.hiring)
-        let kfc = TeamListInfo(type: .kfc, medalCount: teamCategoryDetails.kfc)
-        let others = TeamListInfo(type: .others, medalCount: teamCategoryDetails.others)
-        let referral = TeamListInfo(type: .referral, medalCount: teamCategoryDetails.referral)
-        teamList.append(contentsOf: [ceo, hiring, kfc, others, referral])
     }
     
     func callMyViewAPI() {

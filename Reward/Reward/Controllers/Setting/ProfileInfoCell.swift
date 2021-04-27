@@ -7,7 +7,7 @@
 
 import UIKit
 import SwifterSwift
-import GoogleSignIn
+import SDWebImage
 
 class ProfileInfoCell: UITableViewCell {
 
@@ -34,11 +34,10 @@ class ProfileInfoCell: UITableViewCell {
     }
     
     func configureWithModel() {
-        guard let user = GIDSignIn.sharedInstance()?.currentUser else {
-            return
-        }
-        userNameLabel.text = user.profile.givenName + " " + user.profile.familyName
-        emailLabel.text = user.profile.email
+        let userDetail = RealmManager.shared.getFirstResult(type: UserProfileModel.self)
+        userNameLabel.text = userDetail.fullName()
+        emailLabel.text = userDetail.email
+        profileImageView.sd_setImage(with: URL(string: userDetail.profilePicUrl), placeholderImage: UIImage())
     }
 
 }

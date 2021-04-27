@@ -14,14 +14,11 @@ extension MyViewViewController: APIResponseProtocol {
         tableView.endRefreshing()
         switch request.url.endPoint {
         case .myView:
-            guard let myViewDictionary = response["my_view"] as? [String: Any],
-                  let teamCategoryResponse = myViewDictionary["badges_by_category"] as? [String: Any],
-                  let medalCategoryResponse = myViewDictionary["badges_tally"] as? [String: Any] else {
+            guard let myViewDetails = response.toObject(type: MyViewModel.self).myView else {
                 return
             }
-            teamCategoryDetails = teamCategoryResponse.toObject(type: TeamCategoryModel.self)
-            medalCategoryDetails = medalCategoryResponse.toObject(type: MedalCategoryModel.self)
-            getTeamListDetails()
+            categoryBadgeDetails = myViewDetails.categoryByBadges
+            badgeTallyDetails = myViewDetails.badgesTally ?? BadgesTallyModel()
             tableView.isHidden = false
             tableView.reloadData()
         case .categoryReasons:

@@ -11,7 +11,7 @@ extension MyViewViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerCell = tableView.dequeueReusableCell(withClass: MedalHeaderCell.self)
-        headerCell.configureWithModel(medalDetails: medalCategoryDetails)
+        headerCell.configureWithModel(medalDetails: badgeTallyDetails)
         headerCell.allStatusAction = { sender in
             self.openRewardStatusView()
         }
@@ -19,8 +19,7 @@ extension MyViewViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // change category id
-        openRewardStatusView(showAll: false, categoryId: 6)
+        openRewardStatusView(showAll: false, categoryId: categoryBadgeDetails[indexPath.row].categoryId)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
@@ -29,12 +28,12 @@ extension MyViewViewController: UITableViewDelegate {
 extension MyViewViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return teamList.count
+        return categoryBadgeDetails.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withClass: TeamListCell.self, for: indexPath)
-        cell.configureWithModel(teamDetails: teamList[indexPath.row])
+        cell.configureWithModel(teamDetails: categoryBadgeDetails[indexPath.row])
         return cell
     }
     
