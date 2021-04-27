@@ -14,14 +14,21 @@ class RewardDetailCell: UITableViewCell {
     @IBOutlet weak var medalImageView: UIImageView!
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var statusLabel: PaddingLabel!
+    @IBOutlet weak var reasonTitleLabel: UILabel!
     @IBOutlet weak var reasonLabel: UILabel!
+    @IBOutlet weak var commentLabel: UILabel!
+    @IBOutlet weak var commentLabelTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var dateLabel: UILabel!
     
     var categoryReasonDetails = CategoryReasonListModel()
     
     override func awakeFromNib() {
         super.awakeFromNib()
         mainView.cornerRadius = 10
+        statusLabel.borderWidth = 1
         statusLabel.textColor = UIColor.white
+        reasonTitleLabel.text = "Reason:"
+        reasonTitleLabel.font = UIFont().preferredFont(for: .callout, weight: .semibold)
         getCategoryReasonDetails()
     }
     
@@ -30,14 +37,21 @@ class RewardDetailCell: UITableViewCell {
     }
     
     func configureWithModel(rewardDetail: RewardModel) {
-        medalImageView.image = #imageLiteral(resourceName: "goldMedal")
+        let categoryDetail = categoryReasonDetails.categoryReasonList.filter{ (object) -> Bool in
+            return object.id == rewardDetail.categoryReasonId
+        }
+        medalImageView.image = Common.getMedalType(type: categoryDetail.first?.badge)
         typeLabel.text = rewardDetail.categoryId.title
         statusLabel.text = rewardDetail.status?.capitalized
         statusLabel.backgroundColor = Common.getStatusColor(status: rewardDetail.status)
-        let categoryReason = categoryReasonDetails.categoryReasonList.filter{ (object) -> Bool in
-            return object.id == rewardDetail.categoryReasonId
+        statusLabel.borderColor = Common.getStatusColor(status: rewardDetail.status)
+        reasonLabel.text = categoryDetail.first?.reason
+        dateLabel.text = rewardDetail.activityDate?.dateString()
+        guard let comments = rewardDetail.comments else {
+            return
         }
-        reasonLabel.text = categoryReason.first?.reason
+        commentLabel.text = comments.isEmpty ? String() : comments
+        commentLabelTopConstraint.constant = comments.isEmpty ? 0 : 15
     }
 
 }
