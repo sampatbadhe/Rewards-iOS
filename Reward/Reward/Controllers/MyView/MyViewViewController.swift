@@ -15,6 +15,7 @@ class MyViewViewController: UIViewController {
     var teamList = [TeamListInfo]()
     var teamCategoryDetails = TeamCategoryModel()
     var medalCategoryDetails = MedalCategoryModel()
+    var categoryReasonDetails = CategoryReasonListModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,7 @@ class MyViewViewController: UIViewController {
         setNavigationBarButton()
         setTableView()
         callMyViewAPI()
+        callCategoryReasonsAPI()
     }
     
     func setNavigationBarButton() {
@@ -54,6 +56,14 @@ class MyViewViewController: UIViewController {
     
     func myViewAPIRequest() -> APIRequest {
         return APIRequest(url: APIUrlStruct(apiPath: .v1, apiUrl: .myView))
+    }
+    
+    func callCategoryReasonsAPI() {
+        apiManager.callAPI(request: categoryReasonsAPIRequest())
+    }
+    
+    func categoryReasonsAPIRequest() -> APIRequest {
+        return APIRequest(url: APIUrlStruct(apiPath: .v1, apiUrl: .categoryReasons))
     }
     
     @IBAction func shareAction(_ sender: UIBarButtonItem) {

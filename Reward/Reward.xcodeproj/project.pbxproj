@@ -73,6 +73,8 @@
 		E79BDE18262C518B001C3C73 /* VariableStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BDE17262C518B001C3C73 /* VariableStruct.swift */; };
 		E79BDE2D262C6F9C001C3C73 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BDE2C262C6F9C001C3C73 /* SettingsViewController.swift */; };
 		E7A82B86262B0EF2007E4EC2 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A82B85262B0EF2007E4EC2 /* UIFont+Extension.swift */; };
+		E7B56A562637DBA5006BCD57 /* CategoryReasonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B56A552637DBA5006BCD57 /* CategoryReasonModel.swift */; };
+		E7B56A5A2637DBB4006BCD57 /* CategoryReasonListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B56A592637DBB4006BCD57 /* CategoryReasonListModel.swift */; };
 		E7F29BA92635DC9B0075D964 /* MedalHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F29BA82635DC9B0075D964 /* MedalHeaderCell.swift */; };
 		E7F29BAD2635DCB70075D964 /* TeamListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F29BAC2635DCB70075D964 /* TeamListCell.swift */; };
 /* End PBXBuildFile section */
@@ -175,6 +177,8 @@
 		E79BDE17262C518B001C3C73 /* VariableStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableStruct.swift; sourceTree = "<group>"; };
 		E79BDE2C262C6F9C001C3C73 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E7A82B85262B0EF2007E4EC2 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		E7B56A552637DBA5006BCD57 /* CategoryReasonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryReasonModel.swift; sourceTree = "<group>"; };
+		E7B56A592637DBB4006BCD57 /* CategoryReasonListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryReasonListModel.swift; sourceTree = "<group>"; };
 		E7F29BA82635DC9B0075D964 /* MedalHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedalHeaderCell.swift; sourceTree = "<group>"; };
 		E7F29BAC2635DCB70075D964 /* TeamListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListCell.swift; sourceTree = "<group>"; };
 		ED3CF6E3F52884FE2BB52285 /* Pods-Reward.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reward.debug.xcconfig"; path = "Target Support Files/Pods-Reward/Pods-Reward.debug.xcconfig"; sourceTree = "<group>"; };
@@ -297,6 +301,8 @@
 				E7684F2226372DF7001B66ED /* MedalCategoryModel.swift */,
 				E7684F5126375F03001B66ED /* RewardListModel.swift */,
 				E7684F4D26375EEF001B66ED /* RewardModel.swift */,
+				E7B56A592637DBB4006BCD57 /* CategoryReasonListModel.swift */,
+				E7B56A552637DBA5006BCD57 /* CategoryReasonModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -676,6 +682,7 @@
 				E70AD5832633FC3200F0FA9A /* CustomTableView.swift in Sources */,
 				E77DE86B26245BEE00D20520 /* SignInViewController.swift in Sources */,
 				E79BDE2D262C6F9C001C3C73 /* SettingsViewController.swift in Sources */,
+				E7B56A5A2637DBB4006BCD57 /* CategoryReasonListModel.swift in Sources */,
 				E70AD5792633F44400F0FA9A /* SettingCell.swift in Sources */,
 				E7684F2B26373155001B66ED /* MyViewStruct.swift in Sources */,
 				E7F29BA92635DC9B0075D964 /* MedalHeaderCell.swift in Sources */,
@@ -696,6 +703,7 @@
 				1FE9968826276F7E00223DEC /* Searchable.swift in Sources */,
 				1FAC2C0E2616EAE200638C59 /* AppDelegate.swift in Sources */,
 				1FE28B76261CDC7A00402A2B /* APIResponseProtocol.swift in Sources */,
+				E7B56A562637DBA5006BCD57 /* CategoryReasonModel.swift in Sources */,
 				1FE28B5D261CD58600402A2B /* RealmManager.swift in Sources */,
 				E7A82B86262B0EF2007E4EC2 /* UIFont+Extension.swift in Sources */,
 				1FE28B71261CDBCD00402A2B /* Mapper+Extension.swift in Sources */,

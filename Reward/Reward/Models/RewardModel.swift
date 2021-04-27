@@ -5,7 +5,7 @@
 //  Created by Darshan on 27/04/21.
 //
 
-import Foundation
+import UIKit
 import RealmSwift
 import ObjectMapper
 
