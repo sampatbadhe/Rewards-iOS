@@ -19,7 +19,8 @@ extension MyViewViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        openRewardStatusView(showAll: false)
+        // change category id
+        openRewardStatusView(showAll: false, categoryId: 6)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

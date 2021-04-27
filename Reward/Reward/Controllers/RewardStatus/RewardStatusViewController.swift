@@ -14,6 +14,8 @@ class RewardStatusViewController: UIViewController {
     
     let apiManager = APIManager()
     var rewardDetailsList = RewardListModel()
+    var showAll: Bool = false
+    var categoryId = Int()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +53,19 @@ class RewardStatusViewController: UIViewController {
     func rewardStatusAPIRequest() -> APIRequest {
         return APIRequest(
             url: APIUrlStruct(apiPath: .v1, apiUrl: .rewards),
-            parameters: ["status": statusSegment.selectedSegmentIndex == 0 ? "pending" : "not_pending"])
+            parameters: getRewardStatusParameters())
+    }
+    
+    func getRewardStatusParameters() -> [String: Any] {
+        var parameters = [String: Any]()
+        parameters["status"] = statusSegment.selectedSegmentIndex == 0 ? "pending" : "not_pending"
+        if !showAll {
+            parameters["category_id"] = categoryId
+        }
+//        for Date Filter parameter
+//        start_date
+//        end_date
+        return parameters
     }
 
     @IBAction func filterAction(_ sender: UIBarButtonItem) {

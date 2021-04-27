@@ -75,10 +75,12 @@ class MyViewViewController: UIViewController {
         
     }
     
-    func openRewardStatusView(showAll: Bool = true) {
+    func openRewardStatusView(showAll: Bool = true, categoryId: Int = 0) {
         guard let rewardStatusViewController = UIStoryboard.main?.instantiateViewController(withClass: RewardStatusViewController.self) else {
             return
         }
+        rewardStatusViewController.showAll = showAll
+        rewardStatusViewController.categoryId = categoryId
         self.navigationController?.pushViewController(rewardStatusViewController, animated: true)
     }
     
