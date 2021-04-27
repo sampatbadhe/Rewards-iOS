@@ -28,6 +28,7 @@ class UserProfileModel: Object, Mappable {
         firstName <- map["first_name"]
         lastName <- map["last_name"]
         mobile <- map["mobile"]
+        profilePicUrl <- map["photo_url"]
     }
     
     override static func primaryKey() -> String? {

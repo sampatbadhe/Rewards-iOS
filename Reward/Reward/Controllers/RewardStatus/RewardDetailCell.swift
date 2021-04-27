@@ -6,13 +6,14 @@
 //
 
 import UIKit
+import SwifterSwift
 
 class RewardDetailCell: UITableViewCell {
 
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var medalImageView: UIImageView!
     @IBOutlet weak var typeLabel: UILabel!
-    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var statusLabel: PaddingLabel!
     @IBOutlet weak var reasonLabel: UILabel!
     
     var categoryReasonDetails = CategoryReasonListModel()
@@ -20,6 +21,7 @@ class RewardDetailCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         mainView.cornerRadius = 10
+        statusLabel.textColor = UIColor.white
         getCategoryReasonDetails()
     }
     
@@ -30,7 +32,8 @@ class RewardDetailCell: UITableViewCell {
     func configureWithModel(rewardDetail: RewardModel) {
         medalImageView.image = #imageLiteral(resourceName: "goldMedal")
         typeLabel.text = rewardDetail.categoryId.title
-        statusLabel.text = rewardDetail.status
+        statusLabel.text = rewardDetail.status?.capitalized
+        statusLabel.backgroundColor = Common.getStatusColor(status: rewardDetail.status)
         let categoryReason = categoryReasonDetails.categoryReasonList.filter{ (object) -> Bool in
             return object.id == rewardDetail.categoryReasonId
         }

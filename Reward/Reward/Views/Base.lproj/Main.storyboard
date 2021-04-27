@@ -507,19 +507,19 @@
                                     <action selector="changeStatusTypeAction:" destination="u8L-2Y-BpM" eventType="valueChanged" id="Yrp-xh-a2L"/>
                                 </connections>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uCR-9N-ky6" customClass="CustomTableView" customModule="Reward" customModuleProvider="target">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uCR-9N-ky6" customClass="CustomTableView" customModule="Reward" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="115" width="414" height="747"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RewardDetailCell" id="Yb0-op-FKL" customClass="RewardDetailCell" customModule="Reward" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="86.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="86"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yb0-op-FKL" id="sNu-9A-Brc">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="86.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nmt-m3-ImF">
-                                                    <rect key="frame" x="20" y="10" width="374" height="66.5"/>
+                                                    <rect key="frame" x="20" y="10" width="374" height="66"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OPU-Lh-pcZ">
                                                             <rect key="frame" x="12" y="12" width="30" height="30"/>
@@ -534,14 +534,19 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zn3-Za-cGj">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zn3-Za-cGj" customClass="PaddingLabel" customModule="Reward" customModuleProvider="target">
                                                             <rect key="frame" x="362" y="27" width="0.0" height="0.0"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="4"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuT-IV-evE">
-                                                            <rect key="frame" x="12" y="54" width="350" height="0.5"/>
+                                                            <rect key="frame" x="12" y="54" width="350" height="0.0"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -574,11 +579,15 @@
                                             <outlet property="mainView" destination="Nmt-m3-ImF" id="mhM-sN-6Rj"/>
                                             <outlet property="medalImageView" destination="OPU-Lh-pcZ" id="iyT-6T-h1s"/>
                                             <outlet property="reasonLabel" destination="vuT-IV-evE" id="FUL-WR-dBN"/>
-                                            <outlet property="statusLabel" destination="zn3-Za-cGj" id="etE-QD-cWD"/>
+                                            <outlet property="statusLabel" destination="zn3-Za-cGj" id="bn1-Aw-Kqv"/>
                                             <outlet property="typeLabel" destination="9lN-dh-9wA" id="hr2-Jf-N84"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clearTableFooterView" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRefreshControlEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="u8L-2Y-BpM" id="xAN-2h-952"/>
                                     <outlet property="delegate" destination="u8L-2Y-BpM" id="g6P-Yg-Bar"/>
@@ -966,6 +975,9 @@
             <point key="canvasLocation" x="108.69565217391305" y="1532.8125"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="zn3-Za-cGj"/>
+    </designables>
     <resources>
         <image name="allMedals" width="130" height="40"/>
         <image name="bronzeMedal" width="40" height="40"/>

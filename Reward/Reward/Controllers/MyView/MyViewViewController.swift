@@ -27,6 +27,11 @@ class MyViewViewController: UIViewController {
         callCategoryReasonsAPI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
     func setNavigationBarButton() {
         let shareBarButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareAction(_:)))
         navigationItem.rightBarButtonItem = shareBarButton
