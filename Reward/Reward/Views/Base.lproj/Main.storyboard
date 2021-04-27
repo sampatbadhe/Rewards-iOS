@@ -654,6 +654,128 @@
             </objects>
             <point key="canvasLocation" x="108.69565217391305" y="2908.9285714285711"/>
         </scene>
+        <!--Filter View Controller-->
+        <scene sceneID="mrr-17-mkq">
+            <objects>
+                <viewController storyboardIdentifier="FilterViewController" id="EWF-fN-Y7A" customClass="FilterViewController" customModule="Reward" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y83-UW-zZp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSb-tp-7eV">
+                                <rect key="frame" x="20" y="64" width="374" height="0.0"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" name="darkGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o3s-lX-e18">
+                                <rect key="frame" x="20" y="74" width="374" height="44"/>
+                                <color key="backgroundColor" name="white"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Yx1-HG-0TX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="darkGray"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rightViewTintColor">
+                                        <color key="value" name="darkGray"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="EWF-fN-Y7A" id="vyU-XY-Mhr"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzp-F7-4xX">
+                                <rect key="frame" x="20" y="160" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" name="darkGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="KFi-3L-pbR">
+                                <rect key="frame" x="32" y="138" width="362" height="44"/>
+                                <color key="tintColor" name="darkGray"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="gy5-Ea-LTR"/>
+                                </constraints>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcB-Rc-SQh">
+                                <rect key="frame" x="20" y="224" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" name="darkGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="4EP-2o-giL">
+                                <rect key="frame" x="32" y="202" width="362" height="44"/>
+                                <color key="tintColor" name="darkGray"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="amg-Sg-R5S"/>
+                                </constraints>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5y9-3x-Oye">
+                                <rect key="frame" x="20" y="792" width="374" height="50"/>
+                                <color key="backgroundColor" name="darkGray"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xTJ-Zu-b7W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <state key="normal">
+                                    <color key="titleColor" name="lightGray"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lm2-Ln-vbq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o3s-lX-e18" firstAttribute="top" secondItem="MSb-tp-7eV" secondAttribute="bottom" constant="10" id="2Eh-Kq-nw3"/>
+                            <constraint firstItem="o3s-lX-e18" firstAttribute="trailing" secondItem="MSb-tp-7eV" secondAttribute="trailing" id="3WD-6E-JgO"/>
+                            <constraint firstItem="MSb-tp-7eV" firstAttribute="leading" secondItem="Y83-UW-zZp" secondAttribute="leading" constant="20" id="ALh-xp-DCj"/>
+                            <constraint firstItem="4EP-2o-giL" firstAttribute="top" secondItem="KFi-3L-pbR" secondAttribute="bottom" constant="20" id="FHZ-GK-PYT"/>
+                            <constraint firstItem="KFi-3L-pbR" firstAttribute="top" secondItem="o3s-lX-e18" secondAttribute="bottom" constant="20" id="H9f-7H-lmu"/>
+                            <constraint firstItem="fzp-F7-4xX" firstAttribute="centerY" secondItem="KFi-3L-pbR" secondAttribute="centerY" id="Mwc-n4-xYq"/>
+                            <constraint firstItem="MSb-tp-7eV" firstAttribute="top" secondItem="Lm2-Ln-vbq" secondAttribute="top" constant="20" id="Nf7-cC-rck"/>
+                            <constraint firstItem="Lm2-Ln-vbq" firstAttribute="bottom" secondItem="5y9-3x-Oye" secondAttribute="bottom" constant="20" id="SQK-NH-WXm"/>
+                            <constraint firstItem="Lm2-Ln-vbq" firstAttribute="trailing" secondItem="5y9-3x-Oye" secondAttribute="trailing" constant="20" id="V7H-sZ-zyt"/>
+                            <constraint firstItem="KFi-3L-pbR" firstAttribute="trailing" secondItem="MSb-tp-7eV" secondAttribute="trailing" id="Vbb-YR-X0d"/>
+                            <constraint firstItem="o3s-lX-e18" firstAttribute="leading" secondItem="MSb-tp-7eV" secondAttribute="leading" id="Ye7-CI-mpD"/>
+                            <constraint firstItem="4EP-2o-giL" firstAttribute="trailing" secondItem="MSb-tp-7eV" secondAttribute="trailing" id="a2t-jw-jUG"/>
+                            <constraint firstItem="fzp-F7-4xX" firstAttribute="leading" secondItem="MSb-tp-7eV" secondAttribute="leading" id="ahY-h1-Si1"/>
+                            <constraint firstItem="Lm2-Ln-vbq" firstAttribute="trailing" secondItem="KFi-3L-pbR" secondAttribute="trailing" constant="20" id="dth-3O-fwa"/>
+                            <constraint firstItem="qcB-Rc-SQh" firstAttribute="leading" secondItem="MSb-tp-7eV" secondAttribute="leading" id="ezr-Ua-NFg"/>
+                            <constraint firstItem="KFi-3L-pbR" firstAttribute="leading" secondItem="fzp-F7-4xX" secondAttribute="trailing" constant="12" id="nGz-Mm-hlg"/>
+                            <constraint firstItem="4EP-2o-giL" firstAttribute="leading" secondItem="qcB-Rc-SQh" secondAttribute="trailing" constant="12" id="sI4-xh-3k3"/>
+                            <constraint firstAttribute="trailing" secondItem="MSb-tp-7eV" secondAttribute="trailing" constant="20" id="uGY-oR-XTj"/>
+                            <constraint firstItem="qcB-Rc-SQh" firstAttribute="centerY" secondItem="4EP-2o-giL" secondAttribute="centerY" id="wUq-HX-9fz"/>
+                            <constraint firstItem="5y9-3x-Oye" firstAttribute="leading" secondItem="Lm2-Ln-vbq" secondAttribute="leading" constant="20" id="xWW-V2-0VN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="categoryLabel" destination="MSb-tp-7eV" id="Gzm-8e-tVc"/>
+                        <outlet property="categoryTextField" destination="o3s-lX-e18" id="vpb-yk-d3k"/>
+                        <outlet property="endDateLabel" destination="qcB-Rc-SQh" id="2kg-N1-bN4"/>
+                        <outlet property="endDatePicker" destination="4EP-2o-giL" id="5e8-wc-Diq"/>
+                        <outlet property="startDateLabel" destination="fzp-F7-4xX" id="KPE-RP-jfQ"/>
+                        <outlet property="startDatePicker" destination="KFi-3L-pbR" id="LM4-ZQ-L1k"/>
+                        <outlet property="submitButton" destination="5y9-3x-Oye" id="0p4-oW-PC9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Grr-PJ-LcI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108.69565217391305" y="3590.625"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="NfI-ot-Llm">
             <objects>

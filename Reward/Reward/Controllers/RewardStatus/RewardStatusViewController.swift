@@ -69,7 +69,10 @@ class RewardStatusViewController: UIViewController {
     }
 
     @IBAction func filterAction(_ sender: UIBarButtonItem) {
-        // Open filter screen
+        guard let filterViewController = UIStoryboard.main?.instantiateViewController(withClass: FilterViewController.self) else {
+            return
+        }
+        navigationController?.pushViewController(filterViewController, animated: true)
     }
     
     @IBAction func changeStatusTypeAction(_ sender: UISegmentedControl) {

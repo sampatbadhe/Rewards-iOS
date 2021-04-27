@@ -13,16 +13,20 @@ struct Constants {
         static let myView = "My View"
         static let rewardStatus = "Reward Status"
         static let settings = "Settings"
+        static let filter = "Filter"
     }
     
     struct Title {
         static let selectReason = "Select Reason"
         static let selectCategory = "Select Category"
         static let date = "Date"
+        static let startDate = "Start Date"
+        static let endDate = "End Date"
         static let category = "Category"
         static let reason = "Reason"
         static let additionalComment = "Additional Comment"
         static let submit = "Submit"
+        static let apply = "Apply"
     }
     
     struct Setting {

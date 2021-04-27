@@ -27,7 +27,6 @@ public enum CategoryTypeId: Int {
     
 }
 
-
 public enum TeamType: CaseIterable {
     
     case coe

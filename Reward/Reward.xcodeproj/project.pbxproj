@@ -78,6 +78,8 @@
 		E7B56A602637F677006BCD57 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B56A5F2637F677006BCD57 /* PaddingLabel.swift */; };
 		E7B56A642637FBA0006BCD57 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B56A632637FBA0006BCD57 /* Common.swift */; };
 		E7B56A6A26381FA1006BCD57 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B56A6926381FA1006BCD57 /* String+Extension.swift */; };
+		E7B56A6F26384FA8006BCD57 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B56A6E26384FA8006BCD57 /* FilterViewController.swift */; };
+		E7B56A7326385FFA006BCD57 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B56A7226385FFA006BCD57 /* UIViewController+Extension.swift */; };
 		E7F29BA92635DC9B0075D964 /* MedalHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F29BA82635DC9B0075D964 /* MedalHeaderCell.swift */; };
 		E7F29BAD2635DCB70075D964 /* TeamListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F29BAC2635DCB70075D964 /* TeamListCell.swift */; };
 /* End PBXBuildFile section */
@@ -185,6 +187,8 @@
 		E7B56A5F2637F677006BCD57 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		E7B56A632637FBA0006BCD57 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		E7B56A6926381FA1006BCD57 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		E7B56A6E26384FA8006BCD57 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		E7B56A7226385FFA006BCD57 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		E7F29BA82635DC9B0075D964 /* MedalHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedalHeaderCell.swift; sourceTree = "<group>"; };
 		E7F29BAC2635DCB70075D964 /* TeamListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListCell.swift; sourceTree = "<group>"; };
 		ED3CF6E3F52884FE2BB52285 /* Pods-Reward.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reward.debug.xcconfig"; path = "Target Support Files/Pods-Reward/Pods-Reward.debug.xcconfig"; sourceTree = "<group>"; };
@@ -372,6 +376,7 @@
 				E7684F2626373025001B66ED /* Int+Extension.swift */,
 				E7684F59263765BD001B66ED /* CommonExtensions.swift */,
 				E7B56A6926381FA1006BCD57 /* String+Extension.swift */,
+				E7B56A7226385FFA006BCD57 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -445,6 +450,7 @@
 				E7684F4526374E17001B66ED /* RewardStatusViewController+TableViewExtension.swift */,
 				E7684F4126374DEF001B66ED /* RewardStatusViewController+APIResponseProtocol.swift */,
 				E7684F4926375000001B66ED /* RewardDetailCell.swift */,
+				E7B56A6D26384F88006BCD57 /* Filter */,
 			);
 			path = RewardStatus;
 			sourceTree = "<group>";
@@ -468,6 +474,14 @@
 				E70AD5782633F44400F0FA9A /* SettingCell.swift */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		E7B56A6D26384F88006BCD57 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				E7B56A6E26384FA8006BCD57 /* FilterViewController.swift */,
+			);
+			path = Filter;
 			sourceTree = "<group>";
 		};
 		FD0CCF834ED88C7D64717CA0 /* Frameworks */ = {
@@ -707,6 +721,7 @@
 				E7B56A642637FBA0006BCD57 /* Common.swift in Sources */,
 				E77DE87826245CED00D20520 /* APIKeys.swift in Sources */,
 				E7684F4626374E18001B66ED /* RewardStatusViewController+TableViewExtension.swift in Sources */,
+				E7B56A7326385FFA006BCD57 /* UIViewController+Extension.swift in Sources */,
 				1FE28B8D261CDEBC00402A2B /* APIHeaderKey.swift in Sources */,
 				E79BDE18262C518B001C3C73 /* VariableStruct.swift in Sources */,
 				E7684F4A26375000001B66ED /* RewardDetailCell.swift in Sources */,
@@ -748,6 +763,7 @@
 				E77DE87426245C8200D20520 /* NotificationName+Extensions.swift in Sources */,
 				E7B56A6A26381FA1006BCD57 /* String+Extension.swift in Sources */,
 				E70BDBC92635A013005F52FA /* MyViewViewController.swift in Sources */,
+				E7B56A6F26384FA8006BCD57 /* FilterViewController.swift in Sources */,
 				1FAC2D25261A2EAE00638C59 /* R.generated.swift in Sources */,
 				1FE28B95261CDF4E00402A2B /* HTTPStatus.swift in Sources */,
 				E70AD6022634912300F0FA9A /* SettingsViewController+TableViewExtension.swift in Sources */,
