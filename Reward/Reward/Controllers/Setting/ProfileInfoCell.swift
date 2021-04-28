@@ -18,19 +18,7 @@ class ProfileInfoCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        setUI()
         configureWithModel()
-    }
-    
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
-        setUI()
-    }
-    
-    private func setUI() {
-        profileBorderView.cornerRadius = profileBorderView.height / 2
-        profileImageView.cornerRadius = profileImageView.height / 2
-        profileBorderView.addShadow(ofColor: R.color.shadow() ?? .clear, radius: 5, offset: .zero, opacity: 1)
     }
     
     func configureWithModel() {

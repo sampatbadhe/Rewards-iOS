@@ -24,7 +24,7 @@ class SettingCell: UITableViewCell {
     }
     
     private func setUI() {
-        settingImageView.tintColor = R.color.black()
+//        settingImageView.tintColor = R.color.text()
     }
     
     func configureWithModel(settingInfo :SettingInfo, index: Int) {
