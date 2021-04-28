@@ -25,6 +25,8 @@ extension SignInViewController: APIResponseProtocol {
             let userDetails = profile.toObject(type: UserProfileModel.self)
             RealmManager.shared.add(object: userDetails)
             Redirect().toMainScreen()
+        default:
+            break
         }
     }
     

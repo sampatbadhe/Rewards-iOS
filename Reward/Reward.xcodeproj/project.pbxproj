@@ -42,6 +42,7 @@
 		1FF6CE20261F4F77007BF8B9 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6CE1F261F4F77007BF8B9 /* GlobalSettings.swift */; };
 		1FFCF2AF26353BEF00E0CD50 /* Redirect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFCF2AE26353BEF00E0CD50 /* Redirect.swift */; };
 		DCC13BE58373AADBA4013FF2 /* Pods_RewardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7BAF31FC450162B39A9D4E /* Pods_RewardTests.framework */; };
+		E702D762263A0CBC00C6F3FC /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702D761263A0CBC00C6F3FC /* Date+Extension.swift */; };
 		E70AD5752633F42F00F0FA9A /* ProfileInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AD5742633F42F00F0FA9A /* ProfileInfoCell.swift */; };
 		E70AD5792633F44400F0FA9A /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AD5782633F44400F0FA9A /* SettingCell.swift */; };
 		E70AD5832633FC3200F0FA9A /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AD5822633FC3200F0FA9A /* CustomTableView.swift */; };
@@ -57,6 +58,10 @@
 		E79BDE18262C518B001C3C73 /* VariableStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BDE17262C518B001C3C73 /* VariableStruct.swift */; };
 		E79BDE2D262C6F9C001C3C73 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BDE2C262C6F9C001C3C73 /* SettingsViewController.swift */; };
 		E7A82B86262B0EF2007E4EC2 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A82B85262B0EF2007E4EC2 /* UIFont+Extension.swift */; };
+		E7F4D4322639FCA4005EC6C9 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F4D4312639FCA4005EC6C9 /* NotificationViewController.swift */; };
+		E7F4D438263A026C005EC6C9 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F4D437263A026C005EC6C9 /* NotificationCell.swift */; };
+		E7F4D43C263A0527005EC6C9 /* NotificationViewController+APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F4D43B263A0527005EC6C9 /* NotificationViewController+APIResponseProtocol.swift */; };
+		E7F4D440263A0554005EC6C9 /* NotificationViewController+TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F4D43F263A0554005EC6C9 /* NotificationViewController+TableViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +131,7 @@
 		D667C4B13F3DA83A2BED6EB4 /* Pods-Reward.release (qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reward.release (qa).xcconfig"; path = "Target Support Files/Pods-Reward/Pods-Reward.release (qa).xcconfig"; sourceTree = "<group>"; };
 		D99290BA55A92F60D1DCDB61 /* Pods-RewardTests.debug (dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RewardTests.debug (dev).xcconfig"; path = "Target Support Files/Pods-RewardTests/Pods-RewardTests.debug (dev).xcconfig"; sourceTree = "<group>"; };
 		E337C7BB74752E26CFF1DDB2 /* Pods-Reward.debug (qa).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reward.debug (qa).xcconfig"; path = "Target Support Files/Pods-Reward/Pods-Reward.debug (qa).xcconfig"; sourceTree = "<group>"; };
+		E702D761263A0CBC00C6F3FC /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		E70AD5742633F42F00F0FA9A /* ProfileInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoCell.swift; sourceTree = "<group>"; };
 		E70AD5782633F44400F0FA9A /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		E70AD5822633FC3200F0FA9A /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
@@ -141,6 +147,10 @@
 		E79BDE17262C518B001C3C73 /* VariableStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableStruct.swift; sourceTree = "<group>"; };
 		E79BDE2C262C6F9C001C3C73 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E7A82B85262B0EF2007E4EC2 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		E7F4D4312639FCA4005EC6C9 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		E7F4D437263A026C005EC6C9 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		E7F4D43B263A0527005EC6C9 /* NotificationViewController+APIResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationViewController+APIResponseProtocol.swift"; sourceTree = "<group>"; };
+		E7F4D43F263A0554005EC6C9 /* NotificationViewController+TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationViewController+TableViewExtension.swift"; sourceTree = "<group>"; };
 		ED3CF6E3F52884FE2BB52285 /* Pods-Reward.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reward.debug.xcconfig"; path = "Target Support Files/Pods-Reward/Pods-Reward.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -218,6 +228,7 @@
 		1FAC2C6D26183D7300638C59 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E7F4D4302639FC7D005EC6C9 /* Notification */,
 				E79BDE2B262C6F7F001C3C73 /* Setting */,
 				1F1055B82633FC6B002F8C54 /* TabBarController */,
 				1FE996722627513B00223DEC /* ClaimReward */,
@@ -311,6 +322,7 @@
 				1FE28B70261CDBCD00402A2B /* Mapper+Extension.swift */,
 				E7A82B85262B0EF2007E4EC2 /* UIFont+Extension.swift */,
 				1F1055C12634342B002F8C54 /* UITabBar+Extension.swift */,
+				E702D761263A0CBC00C6F3FC /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -383,6 +395,17 @@
 				E70AD5782633F44400F0FA9A /* SettingCell.swift */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		E7F4D4302639FC7D005EC6C9 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				E7F4D4312639FCA4005EC6C9 /* NotificationViewController.swift */,
+				E7F4D43F263A0554005EC6C9 /* NotificationViewController+TableViewExtension.swift */,
+				E7F4D43B263A0527005EC6C9 /* NotificationViewController+APIResponseProtocol.swift */,
+				E7F4D437263A026C005EC6C9 /* NotificationCell.swift */,
+			);
+			path = Notification;
 			sourceTree = "<group>";
 		};
 		FD0CCF834ED88C7D64717CA0 /* Frameworks */ = {
@@ -608,12 +631,15 @@
 				E79BDE2D262C6F9C001C3C73 /* SettingsViewController.swift in Sources */,
 				E70AD5792633F44400F0FA9A /* SettingCell.swift in Sources */,
 				1FAC2C0E2616EAE200638C59 /* AppDelegate.swift in Sources */,
+				E7F4D4322639FCA4005EC6C9 /* NotificationViewController.swift in Sources */,
 				1FE28B5E261CD58600402A2B /* EnvironmentUtility.swift in Sources */,
 				1FE9968426276DD200223DEC /* DropDownController.swift in Sources */,
 				1FE28B7D261CDCC000402A2B /* APIUrl.swift in Sources */,
 				1FE28B87261CDD4C00402A2B /* APIUrlStruct.swift in Sources */,
 				E77DE87826245CED00D20520 /* APIKeys.swift in Sources */,
+				E7F4D43C263A0527005EC6C9 /* NotificationViewController+APIResponseProtocol.swift in Sources */,
 				1FE28B8D261CDEBC00402A2B /* APIHeaderKey.swift in Sources */,
+				E7F4D438263A026C005EC6C9 /* NotificationCell.swift in Sources */,
 				E79BDE18262C518B001C3C73 /* VariableStruct.swift in Sources */,
 				1F60B8362627ED4A001A2286 /* CategoryList.swift in Sources */,
 				1FE9968826276F7E00223DEC /* Searchable.swift in Sources */,
@@ -623,6 +649,7 @@
 				E7A82B86262B0EF2007E4EC2 /* UIFont+Extension.swift in Sources */,
 				1FE28B71261CDBCD00402A2B /* Mapper+Extension.swift in Sources */,
 				1FFCF2AF26353BEF00E0CD50 /* Redirect.swift in Sources */,
+				E7F4D440263A0554005EC6C9 /* NotificationViewController+TableViewExtension.swift in Sources */,
 				1F1055BE263433AE002F8C54 /* AppSettings.swift in Sources */,
 				1FE28B5C261CD58600402A2B /* RealmConfiguration.swift in Sources */,
 				E70AD58726340E4700F0FA9A /* SettingStruct.swift in Sources */,
@@ -644,6 +671,7 @@
 				E77DE87426245C8200D20520 /* NotificationName+Extensions.swift in Sources */,
 				1FAC2D25261A2EAE00638C59 /* R.generated.swift in Sources */,
 				1FE28B95261CDF4E00402A2B /* HTTPStatus.swift in Sources */,
+				E702D762263A0CBC00C6F3FC /* Date+Extension.swift in Sources */,
 				E70AD6022634912300F0FA9A /* SettingsViewController+TableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
