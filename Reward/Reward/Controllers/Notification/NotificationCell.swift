@@ -10,7 +10,6 @@ import SwifterSwift
 
 class NotificationCell: UITableViewCell {
 
-    @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var notificationDetailLabel: UILabel!
     @IBOutlet weak var notificationDateLabel: UILabel!
     

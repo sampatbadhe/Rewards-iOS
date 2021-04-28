@@ -1,5 +1,5 @@
 //
-//  NotificationViewController.swift
+//  NotificationsViewController.swift
 //  Reward
 //
 //  Created by Darshan on 29/04/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NotificationViewController: UIViewController {
+class NotificationsViewController: UIViewController {
     
     @IBOutlet weak var tableView: CustomTableView!
     

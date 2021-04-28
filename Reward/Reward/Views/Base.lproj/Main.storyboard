@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -294,10 +293,10 @@
             </objects>
             <point key="canvasLocation" x="832" y="815"/>
         </scene>
-        <!--Notification View Controller-->
+        <!--Notifications View Controller-->
         <scene sceneID="LyC-uK-hFD">
             <objects>
-                <viewController storyboardIdentifier="NotificationViewController" id="Pzx-Rj-Pmg" customClass="NotificationViewController" customModule="Reward" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NotificationsViewController" id="Pzx-Rj-Pmg" customClass="NotificationsViewController" customModule="Reward" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OeV-ED-ghN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -307,38 +306,23 @@
                                 <color key="backgroundColor" name="background"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationCell" id="0EP-xa-Oe8" customClass="NotificationCell" customModule="Reward" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="114.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0EP-xa-Oe8" id="hVk-X8-12a">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="114.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjK-hp-H62">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="99.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="47"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kan-Vw-eD3">
-                                                            <rect key="frame" x="12" y="13.5" width="50" height="50"/>
-                                                            <color key="backgroundColor" name="lightPurple"/>
-                                                            <color key="tintColor" name="text"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="52.5" id="5WH-Lt-kgV"/>
-                                                                <constraint firstAttribute="width" constant="50" id="OkB-ZO-ewk"/>
-                                                            </constraints>
-                                                            <imageReference key="image" image="person" catalog="system" symbolScale="default" renderingMode="template"/>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                    <real key="value" value="25"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                            </userDefinedRuntimeAttributes>
-                                                        </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hu8-DV-6yk">
-                                                            <rect key="frame" x="74" y="12" width="288" height="52.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hu8-DV-6yk">
+                                                            <rect key="frame" x="12" y="12" width="350" height="0.0"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                             <color key="textColor" name="text"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2F3-XR-mKC">
-                                                            <rect key="frame" x="74" y="73" width="15" height="14"/>
+                                                            <rect key="frame" x="12" y="20.5" width="15" height="14"/>
                                                             <color key="tintColor" name="text"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="15" id="XzT-4D-UpX"/>
@@ -346,7 +330,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehr-so-fLf">
-                                                            <rect key="frame" x="97" y="80" width="265" height="0.0"/>
+                                                            <rect key="frame" x="35" y="27.5" width="327" height="0.0"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                             <color key="textColor" name="text"/>
                                                             <nil key="highlightedColor"/>
@@ -357,15 +341,12 @@
                                                         <constraint firstItem="2F3-XR-mKC" firstAttribute="leading" secondItem="Hu8-DV-6yk" secondAttribute="leading" id="26V-dL-u5V"/>
                                                         <constraint firstItem="ehr-so-fLf" firstAttribute="leading" secondItem="2F3-XR-mKC" secondAttribute="trailing" constant="8" id="4Bw-Jw-rf3"/>
                                                         <constraint firstItem="2F3-XR-mKC" firstAttribute="top" secondItem="Hu8-DV-6yk" secondAttribute="bottom" constant="8" id="4Zz-eM-Gcx"/>
-                                                        <constraint firstItem="Hu8-DV-6yk" firstAttribute="leading" secondItem="kan-Vw-eD3" secondAttribute="trailing" constant="12" id="K2e-rG-lz7"/>
+                                                        <constraint firstItem="Hu8-DV-6yk" firstAttribute="leading" secondItem="kjK-hp-H62" secondAttribute="leading" constant="12" id="88c-8M-9he"/>
+                                                        <constraint firstItem="Hu8-DV-6yk" firstAttribute="top" secondItem="kjK-hp-H62" secondAttribute="top" constant="12" id="E6j-mA-x2Y"/>
                                                         <constraint firstAttribute="trailing" secondItem="Hu8-DV-6yk" secondAttribute="trailing" constant="12" id="ShE-Wy-XUq"/>
                                                         <constraint firstItem="ehr-so-fLf" firstAttribute="trailing" secondItem="Hu8-DV-6yk" secondAttribute="trailing" id="SoZ-ZL-xfN"/>
-                                                        <constraint firstItem="kan-Vw-eD3" firstAttribute="top" secondItem="kjK-hp-H62" secondAttribute="top" constant="12" id="TKz-2Y-IcW"/>
                                                         <constraint firstAttribute="bottom" secondItem="2F3-XR-mKC" secondAttribute="bottom" constant="12" id="cC7-QF-5Lc"/>
-                                                        <constraint firstItem="Hu8-DV-6yk" firstAttribute="top" secondItem="kan-Vw-eD3" secondAttribute="top" id="nYE-1q-H7Q"/>
                                                         <constraint firstItem="ehr-so-fLf" firstAttribute="centerY" secondItem="2F3-XR-mKC" secondAttribute="centerY" id="tjt-Ob-dcB"/>
-                                                        <constraint firstItem="kan-Vw-eD3" firstAttribute="leading" secondItem="kjK-hp-H62" secondAttribute="leading" constant="12" id="v0l-Qx-HN8"/>
-                                                        <constraint firstItem="Hu8-DV-6yk" firstAttribute="bottom" secondItem="kan-Vw-eD3" secondAttribute="bottom" id="vGO-56-qwb"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -385,7 +366,6 @@
                                         <connections>
                                             <outlet property="notificationDateLabel" destination="ehr-so-fLf" id="BlM-TJ-PDf"/>
                                             <outlet property="notificationDetailLabel" destination="Hu8-DV-6yk" id="sj1-ZL-fJr"/>
-                                            <outlet property="userImageView" destination="kan-Vw-eD3" id="IFn-mP-CjY"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -705,7 +685,6 @@
         <image name="logo" width="540" height="540"/>
         <image name="myView" width="16" height="16"/>
         <image name="notifications" width="16" height="16"/>
-        <image name="person" catalog="system" width="128" height="117"/>
         <image name="settings" width="16" height="16"/>
         <namedColor name="background">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -724,9 +703,6 @@
         </namedColor>
         <namedColor name="green">
             <color red="0.40392156862745099" green="0.84705882352941175" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="lightPurple">
-            <color red="0.69803921568627447" green="0.51372549019607838" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="text">
             <color red="0.090196078431372548" green="0.090196078431372548" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
