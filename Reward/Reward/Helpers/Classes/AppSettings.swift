@@ -16,4 +16,10 @@ class AppSettings {
         UITabBar.appearance().backgroundImage = UIImage()
     }
     
+    func configureNavigationBar() {
+        let navBarColor = [NSAttributedString.Key.foregroundColor: R.color.lightPurple() ?? .black]
+        UINavigationBar.appearance().titleTextAttributes = navBarColor
+        UINavigationBar.appearance().largeTitleTextAttributes = navBarColor
+    }
+    
 }

@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GIDSignIn.sharedInstance().clientID = GlobalSettings.googleClientId
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
         AppSettings().configureTabBar()
+        AppSettings().configureNavigationBar()
         return true
     }
 
