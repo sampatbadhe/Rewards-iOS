@@ -18,20 +18,10 @@ class SettingCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
-        setUI()
-    }
-    
-    private func setUI() {
-        settingImageView.tintColor = R.color.black()
-    }
-    
     func configureWithModel(settingInfo :SettingInfo, index: Int) {
         settingImageView.image = settingInfo.image?.withRenderingMode(.alwaysTemplate)
         settingTitleLabel.text = settingInfo.title
         settingSwitch.isHidden = !settingInfo.switchVisibility
-        setUI()
     }
 
 }

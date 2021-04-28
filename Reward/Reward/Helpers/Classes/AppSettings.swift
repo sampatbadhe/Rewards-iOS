@@ -11,7 +11,7 @@ class AppSettings {
     
     func configureTabBar() {
         UITabBar.appearance().tintColor = R.color.purple()
-        UITabBar.appearance().unselectedItemTintColor = UIColor.black
+        UITabBar.appearance().unselectedItemTintColor = R.color.text()
         UITabBar.appearance().shadowImage = UIImage()
         UITabBar.appearance().backgroundImage = UIImage()
     }

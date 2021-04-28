@@ -61,7 +61,7 @@ class DropDownController<T, Cell: UITableViewCell>: UITableViewController, UISea
             searchController.searchBar.sizeToFit()
             searchController.hidesNavigationBarDuringPresentation = false
             searchController.searchBar.searchBarStyle = .minimal
-            searchController.searchBar.backgroundColor = R.color.white()
+            searchController.searchBar.backgroundColor = R.color.background()
             tableView.tableHeaderView = searchController.searchBar
             return searchController
         })()
@@ -70,7 +70,7 @@ class DropDownController<T, Cell: UITableViewCell>: UITableViewController, UISea
     func setBarButtons() {
         if allowsMultipleSelection {
             navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonAction(_:)))
-            navigationItem.rightBarButtonItem?.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: R.color.white], for: .normal)
+            navigationItem.rightBarButtonItem?.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: R.color.text() ?? .clear], for: .normal)
         }
         navigationItem.leftBarButtonItem = closeButton
         closeButton.target = self
