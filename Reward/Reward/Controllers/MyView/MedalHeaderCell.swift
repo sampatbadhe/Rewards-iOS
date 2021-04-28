@@ -29,7 +29,7 @@ class MedalHeaderCell: UITableViewCell {
     }
     
     private func setUI() {
-        medalView.addShadow(ofColor: R.color.shadow() ?? .clear, radius: 5, offset: .zero, opacity: 1)
+        medalView.addShadow(ofColor: R.color.cardShadow() ?? .clear, radius: 5, offset: .zero, opacity: 1)
         goldCountLabel.font = goldCountLabel.font.bold
         silverCountLabel.font = silverCountLabel.font.bold
         bronzeCountLabel.font = bronzeCountLabel.font.bold

@@ -34,8 +34,8 @@ class RewardStatusViewController: UIViewController {
     }
     
     func setSegmentBarUI() {
-        statusSegment.setTitle("Pending", forSegmentAt: 0)
-        statusSegment.setTitle("History", forSegmentAt: 1)
+        statusSegment.setTitle("Pending Rewards", forSegmentAt: 0)
+        statusSegment.setTitle("Rewards History", forSegmentAt: 1)
     }
     
     func setTableView() {

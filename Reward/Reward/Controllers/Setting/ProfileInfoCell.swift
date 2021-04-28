@@ -19,6 +19,17 @@ class ProfileInfoCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         configureWithModel()
+        setUI()
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        setUI()
+    }
+    
+    private func setUI() {
+        profileBorderView.addShadow(ofColor: R.color.cardShadow() ?? .clear, radius: 5, offset: .zero, opacity: 1)
+        profileBorderView.borderColor = R.color.border()
     }
     
     func configureWithModel() {

@@ -27,6 +27,11 @@ class FilterViewController: UIViewController {
         addRightView(categoryTextField)
     }
     
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        addRightView(categoryTextField)
+    }
+    
     func setUI() {
         categoryLabel.text = Constants.Title.category
         startDateLabel.text = Constants.Title.startDate
