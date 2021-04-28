@@ -328,7 +328,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" name="backgroundColor"/>
+                                <color key="backgroundColor" name="background"/>
                                 <constraints>
                                     <constraint firstItem="fKO-8s-MqO" firstAttribute="leading" secondItem="OI8-ek-1WU" secondAttribute="leading" constant="50" id="JjI-O6-vmQ"/>
                                     <constraint firstAttribute="centerX" secondItem="OI8-ek-1WU" secondAttribute="centerX" id="MBj-us-jvg"/>
@@ -348,7 +348,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" name="textColor"/>
+                                <color key="backgroundColor" name="text"/>
                                 <constraints>
                                     <constraint firstItem="KbD-ex-JvK" firstAttribute="centerY" secondItem="CLx-bv-Gmn" secondAttribute="centerY" multiplier="0.6" id="Ud8-zE-dqH"/>
                                     <constraint firstItem="KbD-ex-JvK" firstAttribute="centerX" secondItem="CLx-bv-Gmn" secondAttribute="centerX" id="eFw-h2-dUl"/>
@@ -363,7 +363,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iHero" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKL-3W-51b">
                                 <rect key="frame" x="144.5" y="415" width="125" height="66"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
-                                <color key="textColor" name="backgroundColor"/>
+                                <color key="textColor" name="background"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -406,6 +406,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ist-s8-8Ux" customClass="CustomTableView" customModule="Reward" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" name="background"/>
+                                <color key="separatorColor" name="border"/>
                                 <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 <color key="sectionIndexBackgroundColor" name="background"/>
                                 <prototypes>
@@ -596,9 +597,6 @@
             <color red="0.40392156862745099" green="0.84705882352941175" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="text">
-            <color red="0.090196078431372548" green="0.090196078431372548" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="textColor">
             <color red="0.090196078431372548" green="0.090196078431372548" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">

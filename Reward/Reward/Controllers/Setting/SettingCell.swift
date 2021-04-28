@@ -22,7 +22,6 @@ class SettingCell: UITableViewCell {
         settingImageView.image = settingInfo.image?.withRenderingMode(.alwaysTemplate)
         settingTitleLabel.text = settingInfo.title
         settingSwitch.isHidden = !settingInfo.switchVisibility
-        setUI()
     }
 
 }
