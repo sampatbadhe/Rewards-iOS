@@ -25,9 +25,19 @@ class ClaimRewardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
+        setTextFieldUI()
+        // Do any additional setup after loading the view.
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        setTextFieldUI()
+    }
+    
+    func setTextFieldUI() {
         addRightView(categoryTextField)
         addRightView(reasonTextField)
-        // Do any additional setup after loading the view.
+        additionalCommentTextView.borderColor = R.color.text()
     }
     
     func setUI() {
