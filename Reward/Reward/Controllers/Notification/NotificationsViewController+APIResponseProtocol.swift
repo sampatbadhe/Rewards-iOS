@@ -12,7 +12,12 @@ extension NotificationsViewController: APIResponseProtocol {
     func successResponse(_ response: [String: Any], successCode: Int, request: APIRequest) {
         Loader.shared.hide()
         tableView.endRefreshing()
-        // Handle notification response
+        if !response.shouldAppendListArray() {
+            notificationListObject.notificationsList.removeAll()
+        }
+        let list = response.toObject(type: NotificationListModel.self).notificationsList.excludedObjects()
+        notificationListObject.notificationsList.append(objectsIn: list)
+        apiParameters = response.getMetaDataDetails(apiParameters: apiParameters)
         tableView.isHidden = false
         tableView.reloadData()
     }

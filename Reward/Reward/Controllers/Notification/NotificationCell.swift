@@ -17,9 +17,9 @@ class NotificationCell: UITableViewCell {
         super.awakeFromNib()
     }
 
-    func configureWithModel() {
-        notificationDetailLabel.text = String()
-        notificationDateLabel.text = Date().getElapsedInterval()
+    func configureWithModel(notification: NotificationModel) {
+        notificationDetailLabel.text = notification.body
+        notificationDateLabel.text = notification.createdAt?.getElapsedInterval()
     }
 
 }
