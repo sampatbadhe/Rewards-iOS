@@ -75,7 +75,7 @@ class OverallStatsCell: UITableViewCell {
                 guard let firstRecord = overallStat.categoryStats.first(where: {$0.categoryId == category}) else {
                     return LineChartData()
                 }
-                chartDataEntries.append(ChartDataEntry(x: Double(index), y: Double(arc4random_uniform(4))))
+                chartDataEntries.append(ChartDataEntry(x: Double(index), y: Double(firstRecord.totalBadgeCount)))
                 categoryName = firstRecord.categoryName
             }
             let lineChartDataSet = LineChartDataSet(entries: chartDataEntries, label: categoryName)

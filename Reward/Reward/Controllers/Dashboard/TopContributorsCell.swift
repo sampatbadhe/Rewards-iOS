@@ -7,6 +7,7 @@
 
 import UIKit
 import SwifterSwift
+import SDWebImage
 
 class TopContributorsCell: UITableViewCell {
     
@@ -28,6 +29,7 @@ class TopContributorsCell: UITableViewCell {
         silverCountLabel.text = String(contributor.badges?.silver ?? Int())
         bronzeCountLabel.text = String(contributor.badges?.bronze ?? Int())
         rankLabel.text = contributor.rank.ordinal
+        profileImageView.sd_setImage(with: URL(string: contributor.photoUrl), placeholderImage: R.image.userPlaceholder())
     }
 
 }
