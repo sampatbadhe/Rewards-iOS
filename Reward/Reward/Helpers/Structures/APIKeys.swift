@@ -9,6 +9,9 @@ import UIKit
 
 struct APIKeys {
     
+    static let currentPage = "page"
+    static let perPage = "per_page"
+    
     struct SignIn {
         static let firstName = "first_name"
         static let lastName = "last_name"
