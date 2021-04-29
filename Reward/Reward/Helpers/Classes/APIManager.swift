@@ -29,7 +29,7 @@ class APIManager {
     func handleAPIResponse(response: AFDataResponse<Any>, request: APIRequest) {
         let statusCode = response.response?.statusCode ?? Int()
         switch statusCode {
-        case HTTPStatus.success:
+        case HTTPStatus.success, HTTPStatus.created:
             callSuccessDelegateMethod(response, statusCode: statusCode, request: request)
         default:
             handleAPIFailure(response, failureCode: statusCode, request: request)

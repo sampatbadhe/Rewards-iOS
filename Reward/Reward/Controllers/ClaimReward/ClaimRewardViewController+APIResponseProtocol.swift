@@ -15,13 +15,10 @@ extension ClaimRewardViewController: APIResponseProtocol {
         case .categoryReasons:
             categoryReasonsObject = response.toObject(type: CategoryReasonListModel.self)
         case .rewards:
-            print(response)
             dismiss(animated: true, completion: nil)
         default:
             break
         }
-        
-        
     }
     
 }
