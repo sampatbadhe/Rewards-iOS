@@ -17,12 +17,13 @@ extension ClaimRewardViewController: UITextFieldDelegate {
                     self.reasonTextField.leftViewMode = .never
                     self.reasonTextField.text = String()
                     self.selectedReason = nil
+                    self.setAdditionalCommentLabelText()
                 }
                 self.selectedCategory = item.id
-                self.setAdditionalCommentLabelText(isOptional: item.id != 10)
+                
             }
         } else if textField == reasonTextField {
-            if selectedCategory == nil {
+            guard let selectedCategory = selectedCategory else {
                 showAlert(title: Constants.AlertTitle.alert, message: Constants.AlertMessage.selectCategoryFirst)
                 return
             }
@@ -32,6 +33,8 @@ extension ClaimRewardViewController: UITextFieldDelegate {
                 if let image = item.itemType {
                     self.reasonTextField.addLeftView(image)
                 }
+                let isMandatory = selectedCategory == 10 && item.value == Constants.Title.other
+                self.setAdditionalCommentLabelText(isOptional: !isMandatory)
             }
         }
     }

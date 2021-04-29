@@ -94,6 +94,7 @@ class ClaimRewardViewController: UIViewController {
                 if let type = object.itemType {
                     cell.imageView?.image = type
                 }
+                cell.backgroundColor = R.color.background() ?? .clear
             }, selectHandler: { (selectedItems) in
                 if let item = selectedItems.first {
                     action(item)
@@ -153,6 +154,12 @@ class ClaimRewardViewController: UIViewController {
                 title: Constants.AlertTitle.alert,
                 message: Constants.AlertMessage.selectReason)
             return false
+        }
+        if !(additionalCommentLabel.text?.contains(Constants.Title.optional) ?? false) {
+            showAlert(
+                title: Constants.AlertTitle.alert,
+                message: Constants.AlertMessage.additionalComment)
+            return  false
         }
         return true
     }

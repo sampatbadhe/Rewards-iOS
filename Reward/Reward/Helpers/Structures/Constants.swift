@@ -23,6 +23,7 @@ struct Constants {
         static let additionalComment = "Additional Comment"
         static let optional = "Optional"
         static let submit = "Submit"
+        static let other = "Other"
     }
     
     struct Setting {
@@ -41,6 +42,7 @@ struct Constants {
         static let selectCategory = "Please select the category"
         static let selectReason = "Please select the reason"
         static let selectCategoryFirst = "Please select the category first"
+        static let additionalComment = "Additional comment required for this reason"
     }
     
 }
