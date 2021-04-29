@@ -15,7 +15,7 @@ class DashboardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = Constants.NavigationTitle.dashboard
+        navigationItem.title = Constants.NavigationTitle.dashboard
         apiManager.delegate = self
         configureTableView()
         callDashboardAPI()

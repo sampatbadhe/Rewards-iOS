@@ -224,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1m-X7-Th5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="832" y="1533"/>
+            <point key="canvasLocation" x="1620" y="1533"/>
         </scene>
         <!--Dashboard View Controller-->
         <scene sceneID="NfI-ot-Llm">
@@ -515,7 +515,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m6h-x7-no9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-614" y="2224"/>
+            <point key="canvasLocation" x="-510" y="2224"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Cit-E9-JUE">
@@ -525,22 +525,13 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aQt-Pn-Tad">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" name="background"/>
-                        <color key="tintColor" name="text"/>
+                        <color key="backgroundColor" name="border"/>
+                        <color key="tintColor" name="border"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" red="0.28627450980000002" green="0.28235294119999998" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                <color key="value" name="text"/>
-                            </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
                                 <size key="value" width="0.0" height="0.0"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                <real key="value" value="0.10000000000000001"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                <real key="value" value="5"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBar>
@@ -549,7 +540,6 @@
                         <segue destination="z7Q-FC-Q8b" kind="relationship" relationship="viewControllers" id="3zq-Kd-5J7"/>
                         <segue destination="0Qw-fy-GP3" kind="relationship" relationship="viewControllers" id="q53-yP-XnF"/>
                         <segue destination="3XF-cK-UKV" kind="relationship" relationship="viewControllers" id="reB-ny-zoq"/>
-                        <segue destination="IRH-po-N20" kind="relationship" relationship="viewControllers" id="M9X-uQ-PVB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S4o-md-g56" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -658,7 +648,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nwS-mS-aVA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1548" y="2224"/>
+            <point key="canvasLocation" x="929" y="2224"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="Gpq-NT-R0M">
@@ -755,7 +745,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ist-s8-8Ux" customClass="CustomTableView" customModule="Reward" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" name="background"/>
                                 <color key="separatorColor" name="border"/>
                                 <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
@@ -920,10 +910,10 @@
             </objects>
             <point key="canvasLocation" x="2303" y="2224"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Custom Navigation Controller-->
         <scene sceneID="oeW-b1-JO7">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4az-fG-Ya6" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4az-fG-Ya6" customClass="CustomNavigationController" customModule="Reward" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="dashboard" id="zMp-SB-9Y7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3VJ-DI-MDt">
@@ -937,12 +927,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BFq-2c-Q9a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-614.49275362318849" y="1532.8125"/>
+            <point key="canvasLocation" x="-510" y="1533"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Custom Navigation Controller-->
         <scene sceneID="Z4J-kH-kip">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3XF-cK-UKV" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3XF-cK-UKV" customClass="CustomNavigationController" customModule="Reward" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="notifications" id="7VE-qu-4SI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Zkg-Pb-QkH">
@@ -956,16 +946,16 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0B-Nn-2Ai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1549" y="1533"/>
+            <point key="canvasLocation" x="929" y="1533"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="SRg-xf-bCn">
+        <!--Custom Navigation Controller-->
+        <scene sceneID="Uhb-qJ-Xf6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IRH-po-N20" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cj8-PW-LCZ" customClass="CustomNavigationController" customModule="Reward" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="settings" id="T3S-m6-wf6"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="y8k-i4-I50">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yPN-Rp-5Od">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -977,10 +967,10 @@
             </objects>
             <point key="canvasLocation" x="2302.898550724638" y="1532.8125"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Custom Navigation Controller-->
         <scene sceneID="Wgz-yT-TOx">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z7Q-FC-Q8b" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z7Q-FC-Q8b" customClass="CustomNavigationController" customModule="Reward" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="myView" id="Zwf-f6-qSx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="3JB-KB-Ee7">
@@ -994,7 +984,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLR-yq-aLg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113" y="1533"/>
+            <point key="canvasLocation" x="196" y="1533"/>
         </scene>
         <!--My View View Controller-->
         <scene sceneID="xG5-m6-XwJ">
@@ -1248,7 +1238,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LQn-0W-3AK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="111.59420289855073" y="2223.8839285714284"/>
+            <point key="canvasLocation" x="196" y="2224"/>
         </scene>
         <!--Reward Status View Controller-->
         <scene sceneID="tUw-xI-B23">
@@ -1417,7 +1407,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7qf-FI-OQl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112" y="2901"/>
+            <point key="canvasLocation" x="196" y="2901"/>
         </scene>
         <!--Filter View Controller-->
         <scene sceneID="PiP-zA-p3D">
