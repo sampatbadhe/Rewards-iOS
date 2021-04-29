@@ -79,7 +79,7 @@ class HeroesOfTheMonthCell: UITableViewCell {
     private func setLineChartDataSet(dataSet: BarChartDataSet, badges: [Badges]) {
         dataSet.drawIconsEnabled = false
         dataSet.colors = badges.compactMap({ $0.color })
-        dataSet.stackLabels = badges.compactMap({ $0.title })
+        dataSet.stackLabels = badges.compactMap({ $0.rawValue })
         dataSet.drawValuesEnabled = false
     }
 

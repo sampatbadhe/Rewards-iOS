@@ -11,14 +11,14 @@ import ObjectMapper
 
 class CategoryReasonListModel: Object, Mappable {
     
-    var categoryReasonList = List<CategoryReasonModel>()
+    var categoryReasons = List<CategoryReasonModel>()
     
     required convenience init?(map: Map) {
         self.init()
     }
     
     func mapping(map: Map) {
-        categoryReasonList <- (map["category_reasons"], ArrayTransform<CategoryReasonModel>())
+        categoryReasons <- (map["category_reasons"], ArrayTransform<CategoryReasonModel>())
     }
     
 }

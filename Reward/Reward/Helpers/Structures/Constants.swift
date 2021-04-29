@@ -27,8 +27,10 @@ struct Constants {
         static let category = "Category"
         static let reason = "Reason"
         static let additionalComment = "Additional Comment"
+        static let optional = "Optional"
         static let submit = "Submit"
         static let apply = "Apply"
+        static let other = "Other"
     }
     
     struct Setting {
@@ -39,10 +41,15 @@ struct Constants {
     struct AlertTitle {
         static let logout = "Logout"
         static let cancel = "Cancel"
+        static let alert = "Alert"
     }
     
     struct AlertMessage {
         static let logoutConfirmationMessage = "Are you sure you want to logout?"
+        static let selectCategory = "Please select the category"
+        static let selectReason = "Please select the reason"
+        static let selectCategoryFirst = "Please select the category first"
+        static let additionalComment = "Additional comment required for this reason"
     }
     
 }

@@ -15,7 +15,7 @@ class CategoryReasonModel: Object, Mappable {
     dynamic var categoryId: CategoryTypeId = .coe
     @objc dynamic var categoryName: String?
     @objc dynamic var reason: String?
-    @objc dynamic var badge: String?
+    dynamic var badge: Badges?
     
     required convenience init?(map: Map) {
         self.init()
@@ -26,7 +26,11 @@ class CategoryReasonModel: Object, Mappable {
         categoryId <- (map["category_id"], EnumTransform<CategoryTypeId>())
         categoryName <- map["category_name"]
         reason <- map["reason"]
-        badge <- map["badge"]
+        badge <- (map["badge"], EnumTransform<Badges>())
+    }
+    
+    override static func primaryKey() -> String? {
+        return "id"
     }
     
 }

@@ -7,21 +7,10 @@
 
 import UIKit
 
-enum Badges: CaseIterable {
-    case gold
-    case silver
-    case bronze
-    
-    public var title: String {
-        switch self {
-        case .gold:
-            return "Gold"
-        case .silver:
-            return "Silver"
-        case .bronze:
-            return "Bronze"
-        }
-    }
+enum Badges: String {
+    case gold = "gold"
+    case silver = "silver"
+    case bronze = "bronze"
     
     public var color: UIColor {
         switch self {
@@ -31,6 +20,17 @@ enum Badges: CaseIterable {
             return R.color.gold() ?? .clear
         case .silver:
             return R.color.silver() ?? .clear
+        }
+    }
+    
+    public var image: UIImage? {
+        switch self {
+        case .bronze:
+            return R.image.bronze()
+        case .gold:
+            return R.image.gold()
+        case .silver:
+            return R.image.silver()
         }
     }
     
