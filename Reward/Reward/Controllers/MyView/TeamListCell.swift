@@ -16,6 +16,7 @@ class TeamListCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         mainView.cornerRadius = 10
+        teamTitleLabel.font = teamTitleLabel.font.bold
         totalMedalCountLabel.font = totalMedalCountLabel.font.bold
     }
     

@@ -22,7 +22,9 @@ class RewardStatusViewController: UIViewController {
         super.viewDidLoad()
         title = Constants.NavigationTitle.rewardStatus
         apiManager.delegate = self
-        setNavigationBarButton()
+        if showAll {
+            setNavigationBarButton()
+        }
         setSegmentBarUI()
         setTableView()
         apiParameters.reset()
