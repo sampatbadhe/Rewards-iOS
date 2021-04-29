@@ -15,7 +15,6 @@ class UserProfileModel: Object, Mappable {
     @objc dynamic var email: String?
     @objc dynamic var firstName: String?
     @objc dynamic var lastName: String?
-    @objc dynamic var mobile: String?
     @objc dynamic var profilePicUrl: String?
     
     required convenience init?(map: Map) {
@@ -27,7 +26,6 @@ class UserProfileModel: Object, Mappable {
         email <- map["email"]
         firstName <- map["first_name"]
         lastName <- map["last_name"]
-        mobile <- map["mobile"]
         profilePicUrl <- map["photo_url"]
     }
     

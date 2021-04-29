@@ -5,6 +5,7 @@ PODS:
     - AppAuth/ExternalUserAgent (= 1.4.0)
   - AppAuth/Core (1.4.0)
   - AppAuth/ExternalUserAgent (1.4.0)
+  - FLAnimatedImage (1.0.15)
   - GoogleSignIn (5.0.2):
     - AppAuth (~> 1.2)
     - GTMAppAuth (~> 1.0)
@@ -27,6 +28,9 @@ PODS:
   - SDWebImage (5.11.0):
     - SDWebImage/Core (= 5.11.0)
   - SDWebImage/Core (5.11.0)
+  - SDWebImageFLPlugin (0.5.0):
+    - FLAnimatedImage (>= 1.0.11)
+    - SDWebImage/Core (~> 5.10)
   - SwifterSwift (5.2.0):
     - SwifterSwift/AppKit (= 5.2.0)
     - SwifterSwift/CoreAnimation (= 5.2.0)
@@ -62,12 +66,14 @@ DEPENDENCIES:
   - R.swift
   - RealmSwift
   - SDWebImage
+  - SDWebImageFLPlugin
   - SwifterSwift
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - AppAuth
+    - FLAnimatedImage
     - GoogleSignIn
     - GTMAppAuth
     - GTMSessionFetcher
@@ -79,11 +85,13 @@ SPEC REPOS:
     - Realm
     - RealmSwift
     - SDWebImage
+    - SDWebImageFLPlugin
     - SwifterSwift
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
+  FLAnimatedImage: dd3db277b17e909ec3c7fd41adfce79b321d960e
   GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
   GTMAppAuth: 5b53231ef6920f149ab84b2969cb0ab572da3077
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
@@ -95,8 +103,9 @@ SPEC CHECKSUMS:
   Realm: e523da9ade306c5ae87e85dc09fdef148d3e1cc1
   RealmSwift: 4f6758c3adbdcc87f7b7777107226532a077f61c
   SDWebImage: 7acbb57630ac7db4a495547fb73916ff3e432f6b
+  SDWebImageFLPlugin: 245c7ce1e77028b6ef415240847b3f8aa4b106b7
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
 
-PODFILE CHECKSUM: ed5a0b22385064fb9fde1fde687d2778f907698f
+PODFILE CHECKSUM: e10829833fa3a2364ed961ab524fed615b88bfe9
 
 COCOAPODS: 1.10.1

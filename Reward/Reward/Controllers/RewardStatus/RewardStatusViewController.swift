@@ -79,4 +79,12 @@ class RewardStatusViewController: UIViewController {
         self.callRewardStatusAPI()
     }
     
+    func handleDelete(index: Int) {
+        print("Marked as Deleted")
+    }
+    
+    func handleEdit(index: Int) {
+        print("Marked as Edited")
+    }
+    
 }
