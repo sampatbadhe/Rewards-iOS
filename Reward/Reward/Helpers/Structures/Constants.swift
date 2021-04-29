@@ -12,6 +12,7 @@ struct Constants {
     struct NavigationTitle {
         static let notifications = "Notifications"
         static let dashboard = "Dashboard"
+        static let settings = "Settings"
     }
     
     struct Title {

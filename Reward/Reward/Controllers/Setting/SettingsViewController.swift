@@ -17,6 +17,7 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = Constants.NavigationTitle.settings
         getSettingList()
     }
     

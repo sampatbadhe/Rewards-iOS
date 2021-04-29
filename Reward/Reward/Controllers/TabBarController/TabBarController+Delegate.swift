@@ -24,7 +24,7 @@ extension TabBarController: UITabBarControllerDelegate {
             guard let claimRewardViewController = UIStoryboard.main?.instantiateViewController(withClass: ClaimRewardViewController.self) else {
                 return false
             }
-            let navigationController = UINavigationController(rootViewController: claimRewardViewController)
+            let navigationController = CustomNavigationController(rootViewController: claimRewardViewController)
             present(navigationController, animated: true, completion: nil)
             return false
         }

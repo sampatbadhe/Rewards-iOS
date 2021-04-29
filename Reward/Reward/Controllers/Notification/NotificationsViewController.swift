@@ -17,7 +17,7 @@ class NotificationsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = Constants.NavigationTitle.notifications
+        navigationItem.title = Constants.NavigationTitle.notifications
         apiManager.delegate = self
         setTableView()
         apiParameters.reset()
