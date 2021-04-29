@@ -51,6 +51,7 @@
 		E70AD6022634912300F0FA9A /* SettingsViewController+TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AD6012634912300F0FA9A /* SettingsViewController+TableViewExtension.swift */; };
 		E70BDBC92635A013005F52FA /* MyViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70BDBC82635A013005F52FA /* MyViewViewController.swift */; };
 		E730BA94263AD8580074F235 /* APIParametersStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E730BA93263AD8580074F235 /* APIParametersStruct.swift */; };
+		E730BAD9263B20B00074F235 /* TeamHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E730BAD8263B20B00074F235 /* TeamHeaderCell.swift */; };
 		E7684F2726373025001B66ED /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F2626373025001B66ED /* Int+Extension.swift */; };
 		E7684F2F26373287001B66ED /* AppGlobalEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F2E26373287001B66ED /* AppGlobalEnums.swift */; };
 		E7684F3326373632001B66ED /* MyViewViewController+APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F3226373631001B66ED /* MyViewViewController+APIResponseProtocol.swift */; };
@@ -163,6 +164,7 @@
 		E70AD6012634912300F0FA9A /* SettingsViewController+TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewController+TableViewExtension.swift"; sourceTree = "<group>"; };
 		E70BDBC82635A013005F52FA /* MyViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewViewController.swift; sourceTree = "<group>"; };
 		E730BA93263AD8580074F235 /* APIParametersStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParametersStruct.swift; sourceTree = "<group>"; };
+		E730BAD8263B20B00074F235 /* TeamHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamHeaderCell.swift; sourceTree = "<group>"; };
 		E7684F2626373025001B66ED /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		E7684F2E26373287001B66ED /* AppGlobalEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGlobalEnums.swift; sourceTree = "<group>"; };
 		E7684F3226373631001B66ED /* MyViewViewController+APIResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyViewViewController+APIResponseProtocol.swift"; sourceTree = "<group>"; };
@@ -447,6 +449,7 @@
 				E7684F3626373683001B66ED /* MyViewViewController+TableViewExtension.swift */,
 				E7684F3226373631001B66ED /* MyViewViewController+APIResponseProtocol.swift */,
 				E7F29BA82635DC9B0075D964 /* MedalHeaderCell.swift */,
+				E730BAD8263B20B00074F235 /* TeamHeaderCell.swift */,
 				E7F29BAC2635DCB70075D964 /* TeamListCell.swift */,
 			);
 			path = MyView;
@@ -747,6 +750,7 @@
 				1FFCF2AF26353BEF00E0CD50 /* Redirect.swift in Sources */,
 				E7F29BAD2635DCB70075D964 /* TeamListCell.swift in Sources */,
 				1F1055BE263433AE002F8C54 /* AppSettings.swift in Sources */,
+				E730BAD9263B20B00074F235 /* TeamHeaderCell.swift in Sources */,
 				1FE28B5C261CD58600402A2B /* RealmConfiguration.swift in Sources */,
 				E70AD58726340E4700F0FA9A /* SettingStruct.swift in Sources */,
 				1F1055C22634342B002F8C54 /* UITabBar+Extension.swift in Sources */,

@@ -63,7 +63,12 @@ class MyViewViewController: UIViewController {
     }
     
     @IBAction func shareAction(_ sender: UIBarButtonItem) {
-        
+        let sharingText = "Yay! I earned \(badgeTallyDetails.gold) gold, \(badgeTallyDetails.silver) silver, and \(badgeTallyDetails.bronze) bronze badges on the iHero app"
+        let textToShare = [sharingText]
+        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = view
+        activityViewController.excludedActivityTypes = [.airDrop]
+        present(activityViewController, animated: true, completion: nil)
     }
     
     func openRewardStatusView(showAll: Bool = true, categoryId: Int = 0) {
