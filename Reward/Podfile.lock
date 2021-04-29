@@ -5,6 +5,9 @@ PODS:
     - AppAuth/ExternalUserAgent (= 1.4.0)
   - AppAuth/Core (1.4.0)
   - AppAuth/ExternalUserAgent (1.4.0)
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
   - GoogleSignIn (5.0.2):
     - AppAuth (~> 1.2)
     - GTMAppAuth (~> 1.0)
@@ -55,6 +58,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Charts
   - GoogleSignIn
   - IQKeyboardManagerSwift
   - MBProgressHUD
@@ -68,6 +72,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - AppAuth
+    - Charts
     - GoogleSignIn
     - GTMAppAuth
     - GTMSessionFetcher
@@ -84,6 +89,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
   GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
   GTMAppAuth: 5b53231ef6920f149ab84b2969cb0ab572da3077
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
@@ -97,6 +103,6 @@ SPEC CHECKSUMS:
   SDWebImage: 7acbb57630ac7db4a495547fb73916ff3e432f6b
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
 
-PODFILE CHECKSUM: ed5a0b22385064fb9fde1fde687d2778f907698f
+PODFILE CHECKSUM: fea77688c1aeba62a3eeee3acfc8abc7d4843313
 
 COCOAPODS: 1.10.1

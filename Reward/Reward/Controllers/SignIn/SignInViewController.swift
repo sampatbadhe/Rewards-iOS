@@ -50,7 +50,7 @@ class SignInViewController: UIViewController {
     func tokenAPIRequest() -> APIRequest {
         return APIRequest(
             url: APIUrlStruct(apiPath: .v1, apiUrl: .token),
-            parameters: getParameters(),
+            parameters: CommonUtility().currentUserParameters(),
             method: .post)
     }
     
@@ -62,18 +62,6 @@ class SignInViewController: UIViewController {
         return APIRequest(
             headers: [.accessToken, .json],
             url: APIUrlStruct(apiPath: .v1, apiUrl: .profile))
-    }
-    
-    func getParameters() -> [String: Any] {
-        var parameter = [String: Any]()
-        guard let user = GIDSignIn.sharedInstance()?.currentUser else {
-            return parameter
-        }
-        parameter[APIKeys.SignIn.firstName] = user.profile.givenName
-        parameter[APIKeys.SignIn.lastName] = user.profile.familyName
-        parameter[APIKeys.SignIn.email] = user.profile.email
-        parameter[APIKeys.SignIn.googleUid] = user.userID
-        return [APIKeys.SignIn.userAuth: parameter]
     }
 
 }

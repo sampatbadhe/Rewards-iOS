@@ -14,6 +14,7 @@ target 'Reward' do
   pod 'GoogleSignIn'
   pod 'MBProgressHUD'
   pod 'SDWebImage'
+  pod 'Charts'
 
   # Pods for Reward
 
