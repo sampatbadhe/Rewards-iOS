@@ -15,6 +15,31 @@ extension Dictionary where Key == String {
         return T(JSON: self) ?? T()
     }
     
+    func shouldAppendListArray() -> Bool {
+        guard let metaData = self["meta"] as? [String: Any] else {
+            return false
+        }
+        if let page = metaData["current_page"] as? Int {
+            return page != 1
+        }
+        return false
+    }
+    
+    func getMetaDataDetails(apiParameters: APIParameters) -> APIParameters {
+        var apiParameters = apiParameters
+        guard let metaData = self["meta"] as? [String: Any] else {
+            return apiParameters
+        }
+        if let page = metaData["current_page"] as? Int {
+            apiParameters.currentPage = page
+        }
+        if let totalCount = metaData["total_count"] as? Int {
+            apiParameters.shouldCallNext = apiParameters.currentPage * apiParameters.perPage < totalCount
+        }
+        apiParameters.currentPage += 1
+        return apiParameters
+    }
+    
 }
 
 extension List where Iterator.Element: Object {

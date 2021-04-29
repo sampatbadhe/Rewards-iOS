@@ -10,6 +10,7 @@ import Foundation
 enum APIUrl: String {
     case token = "auth/google_signup"
     case profile = "user"
+    case notification = "notifications"
 }
 
 public enum APIPath: String {

@@ -46,6 +46,7 @@ class DropDownController<T, Cell: UITableViewCell>: UITableViewController, UISea
         tableView.bounces = false
         tableView.allowsMultipleSelection = allowsMultipleSelection
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        tableView.backgroundColor = R.color.background()
     }
     
     override func viewWillAppear(_ animated: Bool) {
