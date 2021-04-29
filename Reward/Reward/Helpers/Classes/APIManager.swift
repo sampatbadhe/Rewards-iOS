@@ -7,6 +7,7 @@
 
 import Foundation
 import Alamofire
+import GoogleSignIn
 
 class APIManager {
     
@@ -31,8 +32,31 @@ class APIManager {
         switch statusCode {
         case HTTPStatus.success, HTTPStatus.created:
             callSuccessDelegateMethod(response, statusCode: statusCode, request: request)
+        case HTTPStatus.unAuthorized, HTTPStatus.invalidToken:
+            callRefreshTokenAPI(request: request)
         default:
             handleAPIFailure(response, failureCode: statusCode, request: request)
+        }
+    }
+    
+    private func callRefreshTokenAPI(request: APIRequest) {
+        AF.sessionConfiguration.timeoutIntervalForRequest = GlobalSettings.timeoutIntervalForRequest
+        AF.request(
+            APIUrlStruct(apiPath: .v1, apiUrl: .token).toString(),
+            method: .post,
+            parameters: CommonUtility().currentUserParameters(),
+            encoding: URLEncoding.default,
+            headers: [APIHeaderKey.contentTypeUrlEncoded.header]).responseJSON { response in
+                self.handleTokenResponse(response: response, request: request)
+            }
+    }
+    
+    private func handleTokenResponse(response: AFDataResponse<Any>, request: APIRequest) {
+        if let responseData = response.value as? [String: Any], !responseData.isEmpty, let token = responseData["token"] as? String {
+            Variable.token = token
+            callAPI(request: request)
+        } else {
+            // Handle error
         }
     }
 
