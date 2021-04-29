@@ -829,7 +829,6 @@
                         <color key="backgroundColor" name="background"/>
                         <constraints>
                             <constraint firstItem="wwp-qa-pqJ" firstAttribute="bottom" secondItem="b3Q-E4-ey1" secondAttribute="bottom" id="75I-rL-UbI"/>
-                            <constraint firstItem="5fI-eJ-Zfa" firstAttribute="centerX" secondItem="Eux-eY-yM8" secondAttribute="centerX" id="Acp-kZ-5F9"/>
                             <constraint firstItem="b3Q-E4-ey1" firstAttribute="leading" secondItem="wwp-qa-pqJ" secondAttribute="leading" id="C7G-nL-o5U"/>
                             <constraint firstItem="wwp-qa-pqJ" firstAttribute="trailing" secondItem="5fI-eJ-Zfa" secondAttribute="trailing" constant="20" id="Cbw-Vk-Ago"/>
                             <constraint firstItem="5fI-eJ-Zfa" firstAttribute="top" secondItem="wwp-qa-pqJ" secondAttribute="top" constant="10" id="FMc-nZ-7Hi"/>
