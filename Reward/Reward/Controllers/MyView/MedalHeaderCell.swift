@@ -20,7 +20,7 @@ class MedalHeaderCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         setUI()
-        allStatusButton.setTitle("Check My Reward Status", for: .normal)
+        allStatusButton.setTitle(Constants.Title.checkMyRewardsStatus, for: .normal)
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {

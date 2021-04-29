@@ -43,8 +43,8 @@ class RewardStatusViewController: UIViewController {
     }
     
     func setSegmentBarUI() {
-        statusSegment.setTitle("Pending Rewards", forSegmentAt: 0)
-        statusSegment.setTitle("Rewards History", forSegmentAt: 1)
+        statusSegment.setTitle(Constants.Title.pendingRewards, forSegmentAt: 0)
+        statusSegment.setTitle(Constants.Title.rewardsHistory, forSegmentAt: 1)
     }
     
     func setTableView() {
@@ -71,9 +71,9 @@ class RewardStatusViewController: UIViewController {
     
     func getRewardStatusParameters() -> [String: Any] {
         var parameters = [String: Any]()
-        parameters["status"] = statusSegment.selectedSegmentIndex == 0 ? "pending" : "not_pending"
+        parameters[APIKeys.Rewards.status] = statusSegment.selectedSegmentIndex == 0 ? Constants.Reward.pending : Constants.Reward.notPending
         if !showAll {
-            parameters["category_id"] = categoryId
+            parameters[APIKeys.Rewards.categoryId] = categoryId
         }
 //        for Date Filter parameter
 //        start_date

@@ -13,7 +13,7 @@ class TeamHeaderCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        titleLabel.text = "Team's Breakdown"
+        titleLabel.text = Constants.Title.teamBreakdown
     }
 
 }

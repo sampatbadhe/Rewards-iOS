@@ -25,7 +25,7 @@ class RewardDetailCell: UITableViewCell {
         mainView.cornerRadius = 10
         statusLabel.borderWidth = 1
         statusLabel.textColor = UIColor.white
-        reasonTitleLabel.text = "Reason:"
+        reasonTitleLabel.text = Constants.Title.reason + SpecialChars.colon
         reasonTitleLabel.font = UIFont().preferredFont(for: .callout, weight: .semibold)
     }
     

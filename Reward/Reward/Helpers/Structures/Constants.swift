@@ -31,6 +31,15 @@ struct Constants {
         static let submit = "Submit"
         static let apply = "Apply"
         static let other = "Other"
+        static let pendingRewards = "Pending Rewards"
+        static let rewardsHistory = "Rewards History"
+        static let checkMyRewardsStatus = "Check My Reward Status"
+        static let teamBreakdown = "Team's Breakdown"
+    }
+    
+    struct Reward {
+        static let pending = "pending"
+        static let notPending = "not_pending"
     }
     
     struct Setting {

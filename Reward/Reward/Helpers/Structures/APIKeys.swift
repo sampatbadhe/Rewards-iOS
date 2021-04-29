@@ -20,4 +20,11 @@ struct APIKeys {
         static let userAuth = "user_auth"
     }
     
+    struct Rewards {
+        static let status = "status"
+        static let categoryId = "category_id"
+        static let startDate = "start_date"
+        static let endDate = "end_date"
+    }
+    
 }
