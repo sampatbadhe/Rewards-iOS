@@ -56,14 +56,14 @@ class APIManager {
             Variable.token = token
             callAPI(request: request)
         } else {
-            // Handle error
+            Snackbar.shared.show(message: .somethingWentWrong)
         }
     }
 
     private func callSuccessDelegateMethod(_ response: AFDataResponse<Any>, statusCode: Int, request: APIRequest) {
         if let responseData = response.value as? [String: Any] {
             if responseData.isEmpty {
-                // Handle error
+                Snackbar.shared.show(message: .somethingWentWrong)
                 return
             }
             delegate?.successResponse(responseData, successCode: HTTPStatus.success, request: request)
@@ -72,7 +72,7 @@ class APIManager {
     
    private func handleAPIFailure(_ response: AFDataResponse<Any>?, failureCode: Int, request: APIRequest) {
         if !shouldCallFailureMethod {
-            // Handle error
+            Snackbar.shared.show(message: .somethingWentWrong)
         }
         delegate?.failureResponse(response, failureCode: failureCode, request: request)
    }

@@ -55,10 +55,6 @@ struct Constants {
     
     struct AlertMessage {
         static let logoutConfirmationMessage = "Are you sure you want to logout?"
-        static let selectCategory = "Please select the category"
-        static let selectReason = "Please select the reason"
-        static let selectCategoryFirst = "Please select the category first"
-        static let additionalComment = "Additional comment required for this reason"
     }
     
 }

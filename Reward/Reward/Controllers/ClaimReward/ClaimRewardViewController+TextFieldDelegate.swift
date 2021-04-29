@@ -24,7 +24,7 @@ extension ClaimRewardViewController: UITextFieldDelegate {
             }
         } else if textField == reasonTextField {
             guard let selectedCategory = selectedCategory else {
-                showAlert(title: Constants.AlertTitle.alert, message: Constants.AlertMessage.selectCategoryFirst)
+                Snackbar.shared.show(message: .selectCategoryFirst)
                 return
             }
             openDropDownList(dropDownList: getReasonListDropDown()) { (item) in
