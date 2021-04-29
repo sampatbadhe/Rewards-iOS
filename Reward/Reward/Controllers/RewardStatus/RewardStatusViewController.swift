@@ -15,6 +15,7 @@ class RewardStatusViewController: UIViewController {
     let apiManager = APIManager()
     var apiParameters = APIParameters()
     var rewardDetailsList = RewardListModel()
+    var categoryReasonDetails = CategoryReasonListModel()
     var showAll: Bool = false
     var categoryId = Int()
     

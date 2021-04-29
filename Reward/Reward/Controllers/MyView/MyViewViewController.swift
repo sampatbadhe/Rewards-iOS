@@ -19,7 +19,7 @@ class MyViewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = Constants.NavigationTitle.myView
+        navigationItem.title = Constants.NavigationTitle.myView
         apiManager.delegate = self
         setNavigationBarButton()
         setTableView()
@@ -77,6 +77,7 @@ class MyViewViewController: UIViewController {
         }
         rewardStatusViewController.showAll = showAll
         rewardStatusViewController.categoryId = categoryId
+        rewardStatusViewController.categoryReasonDetails.categoryReasons = categoryReasonDetails.categoryReasons
         self.navigationController?.pushViewController(rewardStatusViewController, animated: true)
     }
     

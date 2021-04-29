@@ -20,8 +20,6 @@ class RewardDetailCell: UITableViewCell {
     @IBOutlet weak var commentLabelTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var dateLabel: UILabel!
     
-    var categoryReasonDetails = CategoryReasonListModel()
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         mainView.cornerRadius = 10
@@ -29,14 +27,9 @@ class RewardDetailCell: UITableViewCell {
         statusLabel.textColor = UIColor.white
         reasonTitleLabel.text = "Reason:"
         reasonTitleLabel.font = UIFont().preferredFont(for: .callout, weight: .semibold)
-        getCategoryReasonDetails()
     }
     
-    private func getCategoryReasonDetails() {
-        categoryReasonDetails.categoryReasons = RealmManager.shared.getFirstResult(type: CategoryReasonListModel.self).categoryReasons
-    }
-    
-    func configureWithModel(rewardDetail: RewardModel) {
+    func configureWithModel(rewardDetail: RewardModel, categoryReasonDetails: CategoryReasonListModel) {
         guard let categoryDetail = categoryReasonDetails.categoryReasons.filter({ (object) -> Bool in
             return object.id == rewardDetail.categoryReasonId
         }).first else {

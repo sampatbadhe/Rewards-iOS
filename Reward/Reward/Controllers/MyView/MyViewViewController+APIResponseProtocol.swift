@@ -22,8 +22,8 @@ extension MyViewViewController: APIResponseProtocol {
             tableView.isHidden = false
             tableView.reloadData()
         case .categoryReasons:
+            categoryReasonDetails.categoryReasons.removeAll()
             categoryReasonDetails.categoryReasons = response.toObject(type: CategoryReasonListModel.self).categoryReasons
-            RealmManager.shared.add(object: categoryReasonDetails, shouldUpdate: false)
         default:
             break
         }
