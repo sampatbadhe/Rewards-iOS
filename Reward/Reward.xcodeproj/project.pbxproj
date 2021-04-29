@@ -143,7 +143,7 @@
 		1F1055C52634370E002F8C54 /* TabBarController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabBarController+Delegate.swift"; sourceTree = "<group>"; };
 		1F60B8352627ED4A001A2286 /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
 		1F7BAF31FC450162B39A9D4E /* Pods_RewardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RewardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FAC2C0A2616EAE200638C59 /* Reward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reward.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FAC2C0A2616EAE200638C59 /* iHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAC2C0D2616EAE200638C59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FAC2C0F2616EAE200638C59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1FAC2C142616EAE200638C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -305,7 +305,7 @@
 		1FAC2C0B2616EAE200638C59 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1FAC2C0A2616EAE200638C59 /* Reward.app */,
+				1FAC2C0A2616EAE200638C59 /* iHero.app */,
 				1FAC2C202616EAE900638C59 /* RewardTests.xctest */,
 			);
 			name = Products;
@@ -442,7 +442,6 @@
 				E7B56A5F2637F677006BCD57 /* PaddingLabel.swift */,
 				E730BA77263AA16E0074F235 /* ArrayTransform.swift */,
 				1F011D8B263AE727009A8DB6 /* CommonUtility.swift */,
-				E730BAAF263B000D0074F235 /* ArrayTransform.swift */,
 				1F011DF7263B4BDE009A8DB6 /* CustomNavigationController.swift */,
 			);
 			path = Classes;
@@ -643,7 +642,7 @@
 			);
 			name = Reward;
 			productName = Reward;
-			productReference = 1FAC2C0A2616EAE200638C59 /* Reward.app */;
+			productReference = 1FAC2C0A2616EAE200638C59 /* iHero.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1FAC2C1F2616EAE900638C59 /* RewardTests */ = {
@@ -1041,7 +1040,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.Reward;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iHero;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				bundle_id_suffix = Dev;
@@ -1142,7 +1141,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.Reward;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iHero;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1244,7 +1243,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.Reward;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iHero;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1346,7 +1345,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.Reward;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iHero;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1448,7 +1447,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.Reward;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iHero;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				bundle_id_suffix = QA;
@@ -1549,7 +1548,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.Reward;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iHero;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				bundle_id_suffix = "";
