@@ -18,6 +18,7 @@
 		1F011D9C263AEC99009A8DB6 /* DashboardViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011D9B263AEC99009A8DB6 /* DashboardViewController+TableViewDelegate.swift */; };
 		1F011DA4263AF77A009A8DB6 /* DashboardBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011DA3263AF77A009A8DB6 /* DashboardBottomCell.swift */; };
 		1F011DF4263B3411009A8DB6 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011DF3263B3411009A8DB6 /* UITextField+Extension.swift */; };
+		1F011DF8263B4BDE009A8DB6 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011DF7263B4BDE009A8DB6 /* CustomNavigationController.swift */; };
 		1F1055BA2633FC9A002F8C54 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055B92633FC99002F8C54 /* TabBarController.swift */; };
 		1F1055BE263433AE002F8C54 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055BD263433AC002F8C54 /* AppSettings.swift */; };
 		1F1055C22634342B002F8C54 /* UITabBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055C12634342B002F8C54 /* UITabBar+Extension.swift */; };
@@ -119,6 +120,7 @@
 		1F011D9B263AEC99009A8DB6 /* DashboardViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		1F011DA3263AF77A009A8DB6 /* DashboardBottomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardBottomCell.swift; sourceTree = "<group>"; };
 		1F011DF3263B3411009A8DB6 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		1F011DF7263B4BDE009A8DB6 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		1F1055B92633FC99002F8C54 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		1F1055BD263433AC002F8C54 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		1F1055C12634342B002F8C54 /* UITabBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Extension.swift"; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 				1FFCF2F52639E74000E0CD50 /* ArrayTransform.swift */,
 				1F011D8B263AE727009A8DB6 /* CommonUtility.swift */,
 				E730BAAF263B000D0074F235 /* ArrayTransform.swift */,
+				1F011DF7263B4BDE009A8DB6 /* CustomNavigationController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -772,6 +775,7 @@
 				1FE28B5D261CD58600402A2B /* RealmManager.swift in Sources */,
 				1F011D84263AC3E0009A8DB6 /* OverallStatsCell.swift in Sources */,
 				1FFCF34E2639F6BC00E0CD50 /* OverallStatModel.swift in Sources */,
+				1F011DF8263B4BDE009A8DB6 /* CustomNavigationController.swift in Sources */,
 				E7A82B86262B0EF2007E4EC2 /* UIFont+Extension.swift in Sources */,
 				1FE28B71261CDBCD00402A2B /* Mapper+Extension.swift in Sources */,
 				1FFCF2AF26353BEF00E0CD50 /* Redirect.swift in Sources */,
