@@ -11,7 +11,7 @@ import ObjectMapper
 
 class CategoryReasonModel: Object, Mappable {
     
-    @objc dynamic var badge: String?
+    dynamic var badge: Badges?
     @objc dynamic var categoryId: Int = 0
     @objc dynamic var categoryName: String?
     @objc dynamic var id: Int = 0
@@ -22,7 +22,7 @@ class CategoryReasonModel: Object, Mappable {
     }
     
     func mapping(map: Map) {
-        badge <- map["badge"]
+        badge <- (map["badge"], EnumTransform<Badges>())
         categoryId <- map["category_id"]
         categoryName <- map["category_name"]
         id <- map["id"]

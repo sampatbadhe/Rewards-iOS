@@ -33,10 +33,14 @@ struct Constants {
     struct AlertTitle {
         static let logout = "Logout"
         static let cancel = "Cancel"
+        static let alert = "Alert"
     }
     
     struct AlertMessage {
         static let logoutConfirmationMessage = "Are you sure you want to logout?"
+        static let selectCategory = "Please select the category"
+        static let selectReason = "Please select the reason"
+        static let selectCategoryFirst = "Please select the category first"
     }
     
 }

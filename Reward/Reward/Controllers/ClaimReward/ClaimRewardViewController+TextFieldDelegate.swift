@@ -13,14 +13,25 @@ extension ClaimRewardViewController: UITextFieldDelegate {
         if textField == categoryTextField {
             openDropDownList(dropDownList: getCategoryListDropDown()) { (item) in
                 self.categoryTextField.text = item.value
+                if self.selectedCategory != item.id {
+                    self.reasonTextField.leftViewMode = .never
+                    self.reasonTextField.text = String()
+                    self.selectedReason = nil
+                }
                 self.selectedCategory = item.id
-                self.clearSelectedValue()
                 self.setAdditionalCommentLabelText(isOptional: item.id != 10)
             }
-        } else if textField == reasonTextField && selectedCategory != nil {
+        } else if textField == reasonTextField {
+            if selectedCategory == nil {
+                showAlert(title: Constants.AlertTitle.alert, message: Constants.AlertMessage.selectCategoryFirst)
+                return
+            }
             openDropDownList(dropDownList: getReasonListDropDown()) { (item) in
                 self.reasonTextField.text = item.value
                 self.selectedReason = item.id
+                if let image = item.itemType {
+                    self.reasonTextField.addLeftView(image)
+                }
             }
         }
     }

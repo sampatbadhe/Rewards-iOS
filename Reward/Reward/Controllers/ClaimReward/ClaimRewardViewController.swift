@@ -42,8 +42,8 @@ class ClaimRewardViewController: UIViewController {
     }
     
     func setTextFieldUI() {
-        addRightView(categoryTextField)
-        addRightView(reasonTextField)
+        categoryTextField.addRightView()
+        reasonTextField.addRightView()
         additionalCommentTextView.borderColor = R.color.text()
     }
     
@@ -81,14 +81,9 @@ class ClaimRewardViewController: UIViewController {
         let filteredList = categoryReasonsObject.categoryReasons.filter { (object) -> Bool in
             return object.categoryId == self.selectedCategory
         }
-        var reasonList: [DropDownItem] = filteredList.compactMap({ DropDownItem(id: $0.id, value: $0.reason ?? String()) })
+        var reasonList: [DropDownItem] = filteredList.compactMap({ DropDownItem(id: $0.id, value: $0.reason ?? String(), itemType: $0.badge?.image) })
         reasonList.sort { $0.value < $1.value }
         return Set(reasonList)
-    }
-    
-    func clearSelectedValue() {
-        reasonTextField.text = String()
-        selectedReason = nil
     }
     
     func openDropDownList(dropDownList: Set<DropDownItem>, action: @escaping (DropDownItem) -> Void) {
@@ -140,8 +135,26 @@ class ClaimRewardViewController: UIViewController {
     }
     
     @IBAction func submitButtonAction(_ sender: UIButton) {
-        prepareRewardModel()
-        callClaimRewardAPI()
+        if isValid() {
+            prepareRewardModel()
+            callClaimRewardAPI()
+        }
+    }
+    
+    func isValid() -> Bool {
+        if selectedCategory == nil {
+            showAlert(
+                title: Constants.AlertTitle.alert,
+                message: Constants.AlertMessage.selectCategory)
+            return false
+        }
+        if selectedReason == nil {
+            showAlert(
+                title: Constants.AlertTitle.alert,
+                message: Constants.AlertMessage.selectReason)
+            return false
+        }
+        return true
     }
     
 }

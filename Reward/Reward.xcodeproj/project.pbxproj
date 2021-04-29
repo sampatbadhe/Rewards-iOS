@@ -17,6 +17,7 @@
 		1F011D98263AEC72009A8DB6 /* DashboardViewController+APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011D97263AEC72009A8DB6 /* DashboardViewController+APIResponseProtocol.swift */; };
 		1F011D9C263AEC99009A8DB6 /* DashboardViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011D9B263AEC99009A8DB6 /* DashboardViewController+TableViewDelegate.swift */; };
 		1F011DA4263AF77A009A8DB6 /* DashboardBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011DA3263AF77A009A8DB6 /* DashboardBottomCell.swift */; };
+		1F011DF4263B3411009A8DB6 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011DF3263B3411009A8DB6 /* UITextField+Extension.swift */; };
 		1F1055BA2633FC9A002F8C54 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055B92633FC99002F8C54 /* TabBarController.swift */; };
 		1F1055BE263433AE002F8C54 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055BD263433AC002F8C54 /* AppSettings.swift */; };
 		1F1055C22634342B002F8C54 /* UITabBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055C12634342B002F8C54 /* UITabBar+Extension.swift */; };
@@ -117,6 +118,7 @@
 		1F011D97263AEC72009A8DB6 /* DashboardViewController+APIResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardViewController+APIResponseProtocol.swift"; sourceTree = "<group>"; };
 		1F011D9B263AEC99009A8DB6 /* DashboardViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		1F011DA3263AF77A009A8DB6 /* DashboardBottomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardBottomCell.swift; sourceTree = "<group>"; };
+		1F011DF3263B3411009A8DB6 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		1F1055B92633FC99002F8C54 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		1F1055BD263433AC002F8C54 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		1F1055C12634342B002F8C54 /* UITabBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Extension.swift"; sourceTree = "<group>"; };
@@ -407,6 +409,7 @@
 				1F011D87263ADA08009A8DB6 /* Int+Extension.swift */,
 				E702D761263A0CBC00C6F3FC /* Date+Extension.swift */,
 				E730BAA7263AFEB60074F235 /* CommonExtensions.swift */,
+				1F011DF3263B3411009A8DB6 /* UITextField+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -735,6 +738,7 @@
 				E77DE86B26245BEE00D20520 /* SignInViewController.swift in Sources */,
 				E730BA74263AA0270074F235 /* CategoryReasonModel.swift in Sources */,
 				E79BDE2D262C6F9C001C3C73 /* SettingsViewController.swift in Sources */,
+				1F011DF4263B3411009A8DB6 /* UITextField+Extension.swift in Sources */,
 				E70AD5792633F44400F0FA9A /* SettingCell.swift in Sources */,
 				1FFCF3222639EE3C00E0CD50 /* DashboardViewController.swift in Sources */,
 				1FFCF3542639F76200E0CD50 /* CategoryStatModel.swift in Sources */,
