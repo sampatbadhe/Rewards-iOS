@@ -21,6 +21,8 @@ extension UIViewController {
         textField.rightView = view
         textField.rightViewMode = .always
         textField.borderColor = R.color.text()
+        textField.inputView = UIView()
+        textField.inputAccessoryView = UIView()
     }
     
     func presentDropDown(_ dropDown: UIViewController, title: String) {
