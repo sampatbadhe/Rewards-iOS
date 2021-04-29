@@ -12,6 +12,7 @@ enum APIUrl: String {
     case profile = "user"
     case categoryReasons = "category_reasons"
     case dashboard = "dashboard"
+    case notification = "notifications"
 }
 
 public enum APIPath: String {

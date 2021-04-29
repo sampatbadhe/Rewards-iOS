@@ -9,6 +9,10 @@ import Foundation
 
 struct Constants {
     
+    struct NavigationTitle {
+        static let notifications = "Notifications"
+    }
+    
     struct Title {
         static let selectReason = "Select Reason"
         static let selectCategory = "Select Category"

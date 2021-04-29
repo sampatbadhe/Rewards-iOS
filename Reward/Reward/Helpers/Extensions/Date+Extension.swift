@@ -5,7 +5,7 @@
 //  Created by Keval Vadoliya on 29/04/21.
 //
 
-import Foundation
+import UIKit
 
 extension Optional where Wrapped == Date {
     
@@ -24,7 +24,12 @@ extension Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: self)
-
     }
+
+    func getElapsedInterval() -> String {
+        let formatter = RelativeDateTimeFormatter()
+        formatter.unitsStyle = .full
+        return formatter.localizedString(for: self, relativeTo: Date())
+    } 
     
 }
