@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1FAC2C092616EAE200638C59"
-               BuildableName = "Reward.app"
+               BuildableName = "iHero.app"
                BlueprintName = "Reward"
                ReferencedContainer = "container:Reward.xcodeproj">
             </BuildableReference>
@@ -55,7 +55,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1FAC2C092616EAE200638C59"
-            BuildableName = "Reward.app"
+            BuildableName = "iHero.app"
             BlueprintName = "Reward"
             ReferencedContainer = "container:Reward.xcodeproj">
          </BuildableReference>
@@ -72,7 +72,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1FAC2C092616EAE200638C59"
-            BuildableName = "Reward.app"
+            BuildableName = "iHero.app"
             BlueprintName = "Reward"
             ReferencedContainer = "container:Reward.xcodeproj">
          </BuildableReference>
