@@ -36,7 +36,7 @@ class ProfileInfoCell: UITableViewCell {
         let userDetail = RealmManager.shared.getFirstResult(type: UserProfileModel.self)
         userNameLabel.text = userDetail.fullName()
         emailLabel.text = userDetail.email
-        profileImageView.sd_setImage(with: URL(string: userDetail.profilePicUrl), placeholderImage: UIImage(systemName: "person"))
+        profileImageView.sd_setImage(with: URL(string: userDetail.profilePicUrl), placeholderImage: R.image.userPlaceholder())
     }
 
 }
