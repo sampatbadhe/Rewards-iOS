@@ -72,7 +72,8 @@ class ClaimRewardViewController: UIViewController {
     }
     
     func getCategoryListDropDown() -> Set<DropDownItem> {
-        let categoryList: [DropDownItem] = categoryReasonsObject.categoryReasons.compactMap({ DropDownItem(id: $0.categoryId, value: $0.categoryName ?? String()) })
+        var categoryList: [DropDownItem] = categoryReasonsObject.categoryReasons.compactMap({ DropDownItem(id: $0.categoryId, value: $0.categoryName ?? String()) })
+        categoryList.sort { $0.value < $1.value }
         return Set(categoryList)
     }
     
@@ -80,7 +81,8 @@ class ClaimRewardViewController: UIViewController {
         let filteredList = categoryReasonsObject.categoryReasons.filter { (object) -> Bool in
             return object.categoryId == self.selectedCategory
         }
-        let reasonList: [DropDownItem] = filteredList.compactMap({ DropDownItem(id: $0.id, value: $0.reason ?? String(), itemType: $0.badge ?? String()) })
+        var reasonList: [DropDownItem] = filteredList.compactMap({ DropDownItem(id: $0.id, value: $0.reason ?? String()) })
+        reasonList.sort { $0.value < $1.value }
         return Set(reasonList)
     }
     
@@ -94,6 +96,9 @@ class ClaimRewardViewController: UIViewController {
             items: Array(dropDownList),
             configure: { (cell: UITableViewCell, object) in
                 cell.textLabel?.text = object.value
+                if let type = object.itemType {
+                    cell.imageView?.image = type
+                }
             }, selectHandler: { (selectedItems) in
                 if let item = selectedItems.first {
                     action(item)

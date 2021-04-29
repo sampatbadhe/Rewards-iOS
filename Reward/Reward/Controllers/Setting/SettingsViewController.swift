@@ -33,6 +33,7 @@ class SettingsViewController: UIViewController {
             preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: Constants.AlertTitle.cancel, style: .cancel, handler: nil)
         let logoutAction = UIAlertAction(title: Constants.AlertTitle.logout, style: .default) { (_) in
+            RealmManager.shared.deleteAll()
             GIDSignIn.sharedInstance()?.signOut()
             Redirect().toSignInScreen(self.view.window)
         }

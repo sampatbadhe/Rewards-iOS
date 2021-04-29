@@ -17,7 +17,7 @@ extension ClaimRewardViewController: UITextFieldDelegate {
                 self.clearSelectedValue()
                 self.setAdditionalCommentLabelText(isOptional: item.id != 10)
             }
-        } else if textField == reasonTextField && !(categoryTextField.text?.isEmpty ?? false) {
+        } else if textField == reasonTextField && selectedCategory != nil {
             openDropDownList(dropDownList: getReasonListDropDown()) { (item) in
                 self.reasonTextField.text = item.value
                 self.selectedReason = item.id
