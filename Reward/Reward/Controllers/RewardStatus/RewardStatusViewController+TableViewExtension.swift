@@ -35,6 +35,9 @@ extension RewardStatusViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withClass: RewardDetailCell.self, for: indexPath)
         cell.configureWithModel(rewardDetail: rewardDetailsList.rewardList[indexPath.row])
+        if indexPath.row == rewardDetailsList.rewardList.count - 1 {
+            callRewardStatusAPI()
+        }
         return cell
     }
     

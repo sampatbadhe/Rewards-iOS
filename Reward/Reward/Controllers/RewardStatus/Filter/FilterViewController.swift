@@ -39,21 +39,37 @@ class FilterViewController: UIViewController {
         submitButton.setTitle(Constants.Title.apply, for: .normal)
     }
     
-    func openCategoryListDropDown() {
-        let dropDown = DropDownController(
-            items: Array(categoryList),
-            configure: { (cell: UITableViewCell, object) in
-                cell.textLabel?.text = object.title
-            }, selectHandler: { (selectedItems) in
-                if let item = selectedItems.first {
-                    self.categoryTextField.text = item.title
-                    self.selectedCategory = item.id
-                }
-            })
-        dropDown.finalAction = {
-            self.categoryTextField.resignFirstResponder()
+    func setDatePicker() {
+        startDatePicker.maximumDate = Date()
+        endDatePicker.maximumDate = Date()
+        startDatePicker.addTarget(self, action: #selector(datePickerAction(_:)), for: .valueChanged)
+        endDatePicker.addTarget(self, action: #selector(datePickerAction(_:)), for: .valueChanged)
+    }
+    
+    @IBAction func datePickerAction(_ sender: UIDatePicker) {
+        if sender == startDatePicker {
+            startDatePicker.date = sender.date
+        } else {
+            endDatePicker.date = sender.date
         }
-        presentDropDown(dropDown, title: Constants.Title.category)
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func openCategoryListDropDown() {
+//        let dropDown = DropDownController(
+//            items: Array(categoryList),
+//            configure: { (cell: UITableViewCell, object) in
+//                cell.textLabel?.text = object.title
+//            }, selectHandler: { (selectedItems) in
+//                if let item = selectedItems.first {
+//                    self.categoryTextField.text = item.title
+//                    self.selectedCategory = item.id
+//                }
+//            })
+//        dropDown.finalAction = {
+//            self.categoryTextField.resignFirstResponder()
+//        }
+//        presentDropDown(dropDown, title: Constants.Title.category)
     }
 
 }

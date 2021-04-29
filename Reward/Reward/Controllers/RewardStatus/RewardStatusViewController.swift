@@ -13,6 +13,7 @@ class RewardStatusViewController: UIViewController {
     @IBOutlet weak var tableView: CustomTableView!
     
     let apiManager = APIManager()
+    var apiParameters = APIParameters()
     var rewardDetailsList = RewardListModel()
     var showAll: Bool = false
     var categoryId = Int()
@@ -24,13 +25,18 @@ class RewardStatusViewController: UIViewController {
         setNavigationBarButton()
         setSegmentBarUI()
         setTableView()
+        apiParameters.reset()
         callRewardStatusAPI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationItem.largeTitleDisplayMode = .never
     }
     
     func setNavigationBarButton() {
         let filterBarButton = UIBarButtonItem(image: UIImage(systemName: "slider.vertical.3"), style: .plain, target: self, action: #selector(filterAction(_:)))
         navigationItem.rightBarButtonItem = filterBarButton
-        navigationController?.navigationBar.prefersLargeTitles = false
     }
     
     func setSegmentBarUI() {
@@ -41,11 +47,15 @@ class RewardStatusViewController: UIViewController {
     func setTableView() {
         tableView.isHidden = true
         tableView.refreshControlAction = { sender in
+            self.apiParameters.reset()
             self.callRewardStatusAPI()
         }
     }
     
     func callRewardStatusAPI() {
+        if !apiParameters.shouldCallNext {
+            return
+        }
         Loader.shared.show()
         apiManager.callAPI(request: rewardStatusAPIRequest())
     }
@@ -65,6 +75,7 @@ class RewardStatusViewController: UIViewController {
 //        for Date Filter parameter
 //        start_date
 //        end_date
+        apiParameters.toParameters(parameters: &parameters)
         return parameters
     }
 
@@ -76,6 +87,7 @@ class RewardStatusViewController: UIViewController {
     }
     
     @IBAction func changeStatusTypeAction(_ sender: UISegmentedControl) {
+        self.apiParameters.reset()
         self.callRewardStatusAPI()
     }
     

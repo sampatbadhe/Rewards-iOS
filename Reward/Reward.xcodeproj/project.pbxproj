@@ -50,6 +50,7 @@
 		E70AD5A62634317500F0FA9A /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AD5A52634317500F0FA9A /* UserProfileModel.swift */; };
 		E70AD6022634912300F0FA9A /* SettingsViewController+TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AD6012634912300F0FA9A /* SettingsViewController+TableViewExtension.swift */; };
 		E70BDBC92635A013005F52FA /* MyViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70BDBC82635A013005F52FA /* MyViewViewController.swift */; };
+		E730BA94263AD8580074F235 /* APIParametersStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E730BA93263AD8580074F235 /* APIParametersStruct.swift */; };
 		E7684F2726373025001B66ED /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F2626373025001B66ED /* Int+Extension.swift */; };
 		E7684F2F26373287001B66ED /* AppGlobalEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F2E26373287001B66ED /* AppGlobalEnums.swift */; };
 		E7684F3326373632001B66ED /* MyViewViewController+APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7684F3226373631001B66ED /* MyViewViewController+APIResponseProtocol.swift */; };
@@ -161,6 +162,7 @@
 		E70AD5A52634317500F0FA9A /* UserProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
 		E70AD6012634912300F0FA9A /* SettingsViewController+TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewController+TableViewExtension.swift"; sourceTree = "<group>"; };
 		E70BDBC82635A013005F52FA /* MyViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewViewController.swift; sourceTree = "<group>"; };
+		E730BA93263AD8580074F235 /* APIParametersStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParametersStruct.swift; sourceTree = "<group>"; };
 		E7684F2626373025001B66ED /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		E7684F2E26373287001B66ED /* AppGlobalEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGlobalEnums.swift; sourceTree = "<group>"; };
 		E7684F3226373631001B66ED /* MyViewViewController+APIResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyViewViewController+APIResponseProtocol.swift"; sourceTree = "<group>"; };
@@ -349,6 +351,7 @@
 				E70AD58626340E4700F0FA9A /* SettingStruct.swift */,
 				E79BDE17262C518B001C3C73 /* VariableStruct.swift */,
 				1F60B8352627ED4A001A2286 /* CategoryList.swift */,
+				E730BA93263AD8580074F235 /* APIParametersStruct.swift */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
@@ -747,6 +750,7 @@
 				1FE28B5C261CD58600402A2B /* RealmConfiguration.swift in Sources */,
 				E70AD58726340E4700F0FA9A /* SettingStruct.swift in Sources */,
 				1F1055C22634342B002F8C54 /* UITabBar+Extension.swift in Sources */,
+				E730BA94263AD8580074F235 /* APIParametersStruct.swift in Sources */,
 				E7684F4E26375EEF001B66ED /* RewardModel.swift in Sources */,
 				E7684F5626375FA2001B66ED /* ArrayTransform.swift in Sources */,
 				1FE28B5B261CD58600402A2B /* Environment.swift in Sources */,

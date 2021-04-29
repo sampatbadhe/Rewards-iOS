@@ -35,4 +35,8 @@ class RewardModel: Object, Mappable {
         updatedAt <- (map["updated_at"], CustomDateFormatTransform(format: .dateWithMillisecondAndTimeZone))
     }
     
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+    
 }
