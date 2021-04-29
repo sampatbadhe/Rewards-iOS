@@ -13,6 +13,7 @@ target 'Reward' do
   pod 'IQKeyboardManagerSwift'
   pod 'GoogleSignIn'
   pod 'MBProgressHUD'
+  pod 'Charts'
 
   # Pods for Reward
 

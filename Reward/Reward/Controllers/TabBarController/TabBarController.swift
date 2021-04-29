@@ -21,6 +21,7 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         restrictToOriginalImage(claimRewardItemIndex)
+        tabBar.items?.forEach({ $0.title = String() })
         tabBar.addSubview(shadowView)
         delegate = self
     }

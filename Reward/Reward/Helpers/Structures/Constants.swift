@@ -19,6 +19,10 @@ struct Constants {
         static let submit = "Submit"
     }
     
+    struct NavigationTitle {
+        static let dashboard = "Dashboard"
+    }
+    
     struct Setting {
         static let notifications = "Notifications"
         static let logout = "Logout"
