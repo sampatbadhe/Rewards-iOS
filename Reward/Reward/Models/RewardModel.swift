@@ -42,7 +42,7 @@ class RewardModel: Object, Mappable {
     func toParameters(isEditing: Bool = false) -> [String: Any] {
         var parameter = [String: Any]()
         parameter["activity_date"] = activityDate?.string(withFormat: "YYYY-MM-dd")
-        parameter["category_id"] = categoryId
+        parameter["category_id"] = categoryId.rawValue
         parameter["category_reason_id"] = categoryReasonId
         parameter["comments"] = comments
         if isEditing {

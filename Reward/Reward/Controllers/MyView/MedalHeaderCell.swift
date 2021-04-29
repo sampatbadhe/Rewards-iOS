@@ -35,7 +35,7 @@ class MedalHeaderCell: UITableViewCell {
         bronzeCountLabel.font = bronzeCountLabel.font.bold
     }
     
-    func configureWithModel(medalDetails: BadgesTallyModel) {
+    func configureWithModel(medalDetails: BadgesModel) {
         goldCountLabel.text = medalDetails.gold.toString
         silverCountLabel.text = medalDetails.silver.toString
         bronzeCountLabel.text = medalDetails.bronze.toString

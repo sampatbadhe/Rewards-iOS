@@ -18,11 +18,11 @@ extension MyViewViewController: APIResponseProtocol {
                 return
             }
             categoryBadgeDetails = myViewDetails.categoryByBadges
-            badgeTallyDetails = myViewDetails.badgesTally ?? BadgesTallyModel()
+            badgeTallyDetails = myViewDetails.badgesTally ?? BadgesModel()
             tableView.isHidden = false
             tableView.reloadData()
         case .categoryReasons:
-            categoryReasonDetails.categoryReasonList = response.toObject(type: CategoryReasonListModel.self).categoryReasonList
+            categoryReasonDetails.categoryReasons = response.toObject(type: CategoryReasonListModel.self).categoryReasons
             RealmManager.shared.add(object: categoryReasonDetails, shouldUpdate: false)
         default:
             break

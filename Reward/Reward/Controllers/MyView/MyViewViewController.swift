@@ -14,7 +14,7 @@ class MyViewViewController: UIViewController {
     
     let apiManager = APIManager()
     var categoryBadgeDetails = List<CategoryBadgesModel>()
-    var badgeTallyDetails = BadgesTallyModel()
+    var badgeTallyDetails = BadgesModel()
     var categoryReasonDetails = CategoryReasonListModel()
     
     override func viewDidLoad() {

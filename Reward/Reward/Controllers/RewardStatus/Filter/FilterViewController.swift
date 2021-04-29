@@ -24,12 +24,12 @@ class FilterViewController: UIViewController {
         super.viewDidLoad()
         title = Constants.NavigationTitle.filter
         setUI()
-        addRightView(categoryTextField)
+        categoryTextField.addRightView()
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
-        addRightView(categoryTextField)
+        categoryTextField.addRightView()
     }
     
     func setUI() {

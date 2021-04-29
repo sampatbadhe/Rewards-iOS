@@ -12,7 +12,7 @@ import ObjectMapper
 class MyViewDetailsModel: Object, Mappable {
     
     var categoryByBadges = List<CategoryBadgesModel>()
-    @objc dynamic var badgesTally: BadgesTallyModel?
+    @objc dynamic var badgesTally: BadgesModel?
     
     required convenience init?(map: Map) {
         self.init()

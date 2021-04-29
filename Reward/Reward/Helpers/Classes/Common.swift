@@ -19,13 +19,4 @@ class Common {
         }
     }
     
-    class func getMedalType(type: String?) -> UIImage? {
-        switch type {
-        case "gold": return R.image.goldMedal()
-        case "silver": return R.image.silverMedal()
-        case "bronze": return R.image.bronzeMedal()
-        default: return UIImage()
-        }
-    }
-    
 }

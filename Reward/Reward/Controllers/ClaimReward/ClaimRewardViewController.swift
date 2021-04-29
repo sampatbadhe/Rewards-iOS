@@ -72,7 +72,7 @@ class ClaimRewardViewController: UIViewController {
     }
     
     func getCategoryListDropDown() -> Set<DropDownItem> {
-        var categoryList: [DropDownItem] = categoryReasonsObject.categoryReasons.compactMap({ DropDownItem(id: $0.categoryId, value: $0.categoryName ?? String()) })
+        var categoryList: [DropDownItem] = categoryReasonsObject.categoryReasons.compactMap({ DropDownItem(id: $0.categoryId.rawValue, value: $0.categoryName ?? String()) })
         categoryList.sort { $0.value < $1.value }
         return Set(categoryList)
     }
@@ -129,7 +129,7 @@ class ClaimRewardViewController: UIViewController {
     }
     
     func prepareRewardModel() {
-        rewardDetail.categoryId = selectedCategory ?? 0
+        rewardDetail.categoryId = CategoryTypeId(rawValue: selectedCategory ?? 0) ?? .coe
         rewardDetail.categoryReasonId = selectedReason ?? 0
         rewardDetail.activityDate = datePicker.date
         rewardDetail.comments = additionalCommentTextView.text

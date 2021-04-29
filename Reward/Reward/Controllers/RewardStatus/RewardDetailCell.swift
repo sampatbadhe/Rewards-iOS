@@ -33,19 +33,21 @@ class RewardDetailCell: UITableViewCell {
     }
     
     private func getCategoryReasonDetails() {
-        categoryReasonDetails.categoryReasonList = RealmManager.shared.getFirstResult(type: CategoryReasonListModel.self).categoryReasonList
+        categoryReasonDetails.categoryReasons = RealmManager.shared.getFirstResult(type: CategoryReasonListModel.self).categoryReasons
     }
     
     func configureWithModel(rewardDetail: RewardModel) {
-        let categoryDetail = categoryReasonDetails.categoryReasonList.filter{ (object) -> Bool in
+        guard let categoryDetail = categoryReasonDetails.categoryReasons.filter({ (object) -> Bool in
             return object.id == rewardDetail.categoryReasonId
+        }).first else {
+            return
         }
-        medalImageView.image = Common.getMedalType(type: categoryDetail.first?.badge)
+        medalImageView.image = categoryDetail.badge?.image
         typeLabel.text = rewardDetail.categoryId.title
         statusLabel.text = rewardDetail.status?.capitalized
         statusLabel.backgroundColor = Common.getStatusColor(status: rewardDetail.status)
         statusLabel.borderColor = Common.getStatusColor(status: rewardDetail.status)
-        reasonLabel.text = categoryDetail.first?.reason
+        reasonLabel.text = categoryDetail.reason
         dateLabel.text = rewardDetail.activityDate?.dateString()
         guard let comments = rewardDetail.comments else {
             return
