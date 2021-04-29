@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         GIDSignIn.sharedInstance().clientID = GlobalSettings.googleClientId
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
-        AppSettings().configureTabBar() 
+        AppSettings().configureTabBar()
         return true
     }
 
