@@ -224,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1m-X7-Th5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1620" y="1533"/>
+            <point key="canvasLocation" x="832" y="1533"/>
         </scene>
         <!--Dashboard View Controller-->
         <scene sceneID="NfI-ot-Llm">
@@ -515,7 +515,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m6h-x7-no9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-510" y="2224"/>
+            <point key="canvasLocation" x="-613" y="2224"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Cit-E9-JUE">
@@ -540,6 +540,7 @@
                         <segue destination="z7Q-FC-Q8b" kind="relationship" relationship="viewControllers" id="3zq-Kd-5J7"/>
                         <segue destination="0Qw-fy-GP3" kind="relationship" relationship="viewControllers" id="q53-yP-XnF"/>
                         <segue destination="3XF-cK-UKV" kind="relationship" relationship="viewControllers" id="reB-ny-zoq"/>
+                        <segue destination="cj8-PW-LCZ" kind="relationship" relationship="viewControllers" id="3aT-ZO-9oO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S4o-md-g56" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -559,14 +560,14 @@
                                 <color key="backgroundColor" name="background"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationCell" id="0EP-xa-Oe8" customClass="NotificationCell" customModule="Reward" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="62"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="67"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0EP-xa-Oe8" id="hVk-X8-12a">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="67"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjK-hp-H62">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="47"/>
+                                                    <rect key="frame" x="20" y="10" width="374" height="47"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hu8-DV-6yk">
                                                             <rect key="frame" x="12" y="12" width="350" height="0.0"/>
@@ -609,10 +610,10 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="kjK-hp-H62" firstAttribute="top" secondItem="hVk-X8-12a" secondAttribute="top" id="Q94-3I-SeO"/>
+                                                <constraint firstItem="kjK-hp-H62" firstAttribute="top" secondItem="hVk-X8-12a" secondAttribute="top" constant="10" id="Q94-3I-SeO"/>
                                                 <constraint firstAttribute="trailing" secondItem="kjK-hp-H62" secondAttribute="trailing" constant="20" id="TFI-2M-spi"/>
                                                 <constraint firstItem="kjK-hp-H62" firstAttribute="leading" secondItem="hVk-X8-12a" secondAttribute="leading" constant="20" id="ZMi-Yi-nbz"/>
-                                                <constraint firstAttribute="bottom" secondItem="kjK-hp-H62" secondAttribute="bottom" constant="15" id="xJ8-PP-0Xs"/>
+                                                <constraint firstAttribute="bottom" secondItem="kjK-hp-H62" secondAttribute="bottom" constant="10" id="xJ8-PP-0Xs"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="background"/>
@@ -648,7 +649,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nwS-mS-aVA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="2224"/>
+            <point key="canvasLocation" x="1558" y="2224"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="Gpq-NT-R0M">
@@ -745,7 +746,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ist-s8-8Ux" customClass="CustomTableView" customModule="Reward" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" name="background"/>
                                 <color key="separatorColor" name="border"/>
                                 <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
@@ -916,8 +917,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4az-fG-Ya6" customClass="CustomNavigationController" customModule="Reward" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="dashboard" id="zMp-SB-9Y7"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3VJ-DI-MDt">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="3VJ-DI-MDt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -927,7 +928,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BFq-2c-Q9a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-510" y="1533"/>
+            <point key="canvasLocation" x="-613" y="1533"/>
         </scene>
         <!--Custom Navigation Controller-->
         <scene sceneID="Z4J-kH-kip">
@@ -946,7 +947,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0B-Nn-2Ai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="1533"/>
+            <point key="canvasLocation" x="1559" y="1533"/>
         </scene>
         <!--Custom Navigation Controller-->
         <scene sceneID="Uhb-qJ-Xf6">
@@ -954,8 +955,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cj8-PW-LCZ" customClass="CustomNavigationController" customModule="Reward" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="settings" id="T3S-m6-wf6"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yPN-Rp-5Od">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="yPN-Rp-5Od">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -984,7 +985,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLR-yq-aLg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="196" y="1533"/>
+            <point key="canvasLocation" x="112" y="1533"/>
         </scene>
         <!--My View View Controller-->
         <scene sceneID="xG5-m6-XwJ">
@@ -1238,7 +1239,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LQn-0W-3AK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="196" y="2224"/>
+            <point key="canvasLocation" x="112" y="2224"/>
         </scene>
         <!--Reward Status View Controller-->
         <scene sceneID="tUw-xI-B23">
@@ -1407,7 +1408,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7qf-FI-OQl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="196" y="2901"/>
+            <point key="canvasLocation" x="112" y="2907"/>
         </scene>
         <!--Filter View Controller-->
         <scene sceneID="PiP-zA-p3D">
