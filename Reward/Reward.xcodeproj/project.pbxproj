@@ -23,6 +23,8 @@
 		1F011E31263B6E66009A8DB6 /* SnackbarEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011E30263B6E66009A8DB6 /* SnackbarEnums.swift */; };
 		1F011E35263B70C3009A8DB6 /* EmptyResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F011E34263B70C3009A8DB6 /* EmptyResultView.xib */; };
 		1F011E39263B70F1009A8DB6 /* EmptyResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011E38263B70F1009A8DB6 /* EmptyResultView.swift */; };
+		1F011E3D263B745F009A8DB6 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011E3C263B745F009A8DB6 /* UITableView+Extension.swift */; };
+		1F011E41263B753A009A8DB6 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011E40263B753A009A8DB6 /* UIView+Extension.swift */; };
 		1F1055BA2633FC9A002F8C54 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055B92633FC99002F8C54 /* TabBarController.swift */; };
 		1F1055BE263433AE002F8C54 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055BD263433AC002F8C54 /* AppSettings.swift */; };
 		1F1055C22634342B002F8C54 /* UITabBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055C12634342B002F8C54 /* UITabBar+Extension.swift */; };
@@ -145,6 +147,8 @@
 		1F011E30263B6E66009A8DB6 /* SnackbarEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackbarEnums.swift; sourceTree = "<group>"; };
 		1F011E34263B70C3009A8DB6 /* EmptyResultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyResultView.xib; sourceTree = "<group>"; };
 		1F011E38263B70F1009A8DB6 /* EmptyResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResultView.swift; sourceTree = "<group>"; };
+		1F011E3C263B745F009A8DB6 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		1F011E40263B753A009A8DB6 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		1F1055B92633FC99002F8C54 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		1F1055BD263433AC002F8C54 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		1F1055C12634342B002F8C54 /* UITabBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Extension.swift"; sourceTree = "<group>"; };
@@ -471,6 +475,8 @@
 				1F011D87263ADA08009A8DB6 /* Int+Extension.swift */,
 				E730BAA7263AFEB60074F235 /* CommonExtensions.swift */,
 				1F011DF3263B3411009A8DB6 /* UITextField+Extension.swift */,
+				1F011E3C263B745F009A8DB6 /* UITableView+Extension.swift */,
+				1F011E40263B753A009A8DB6 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -856,6 +862,7 @@
 				1FFCF3222639EE3C00E0CD50 /* DashboardViewController.swift in Sources */,
 				1FFCF3542639F76200E0CD50 /* CategoryStatModel.swift in Sources */,
 				1FAC2C0E2616EAE200638C59 /* AppDelegate.swift in Sources */,
+				1F011E3D263B745F009A8DB6 /* UITableView+Extension.swift in Sources */,
 				1FFCF33C2639F43C00E0CD50 /* BadgesModel.swift in Sources */,
 				E7F4D4322639FCA4005EC6C9 /* NotificationsViewController.swift in Sources */,
 				1FE28B5E261CD58600402A2B /* EnvironmentUtility.swift in Sources */,
@@ -866,6 +873,7 @@
 				E7684F3B26373F75001B66ED /* RewardStatusViewController.swift in Sources */,
 				E730BAAC263AFEF10074F235 /* AppGlobalEnums.swift in Sources */,
 				1FE28B87261CDD4C00402A2B /* APIUrlStruct.swift in Sources */,
+				1F011E41263B753A009A8DB6 /* UIView+Extension.swift in Sources */,
 				E7B56A602637F677006BCD57 /* PaddingLabel.swift in Sources */,
 				E7B56A642637FBA0006BCD57 /* Common.swift in Sources */,
 				1F011D98263AEC72009A8DB6 /* DashboardViewController+APIResponseProtocol.swift in Sources */,

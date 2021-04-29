@@ -35,6 +35,7 @@ struct Constants {
         static let rewardsHistory = "Rewards History"
         static let checkMyRewardsStatus = "Check My Reward Status"
         static let teamBreakdown = "Team's Breakdown"
+        static let noRecordFound = "No record found"
     }
     
     struct Reward {
