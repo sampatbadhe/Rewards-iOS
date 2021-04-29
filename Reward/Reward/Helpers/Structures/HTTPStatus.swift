@@ -9,6 +9,7 @@ import Foundation
 
 struct HTTPStatus {
     static let success = 200
+    static let created = 201
     static let noContent = 204
     static let badRequest = 400
     static let pageNotFound = 404

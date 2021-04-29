@@ -5,37 +5,21 @@
 //  Created by Keval Vadoliya on 15/04/21.
 //
 
-import Foundation
+import UIKit
 
-struct Category: Searchable, Equatable {
+struct DropDownItem: Hashable, Searchable, Equatable {
     
-    var title: String
     var id: Int
-    var reasonList: [Reason]
+    var value: String
+    var itemType: UIImage?
     
-    internal init(title: String, id: Int, reasonList: [Reason]) {
-        self.title = title
+    internal init(id: Int, value: String, itemType: UIImage? = nil) {
         self.id = id
-        self.reasonList = reasonList
+        self.value = value
+        self.itemType = itemType
     }
-
+    
     var query: String {
-        return title
+        return value
     }
-}
-
-struct Reason: Searchable, Equatable {
-    
-    var title: String
-    var id: Int
-    
-    internal init(title: String, id: Int) {
-        self.title = title
-        self.id = id
-    }
-
-    var query: String {
-        return title
-    }
-    
 }

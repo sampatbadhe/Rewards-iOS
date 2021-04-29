@@ -11,6 +11,7 @@ enum APIUrl: String {
     case token = "auth/google_signup"
     case profile = "user"
     case categoryReasons = "category_reasons"
+    case rewards = "rewards"
     case dashboard = "dashboard"
     case notification = "notifications"
 }

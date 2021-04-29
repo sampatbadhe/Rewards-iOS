@@ -17,6 +17,7 @@
 		1F011D98263AEC72009A8DB6 /* DashboardViewController+APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011D97263AEC72009A8DB6 /* DashboardViewController+APIResponseProtocol.swift */; };
 		1F011D9C263AEC99009A8DB6 /* DashboardViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011D9B263AEC99009A8DB6 /* DashboardViewController+TableViewDelegate.swift */; };
 		1F011DA4263AF77A009A8DB6 /* DashboardBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011DA3263AF77A009A8DB6 /* DashboardBottomCell.swift */; };
+		1F011DF4263B3411009A8DB6 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011DF3263B3411009A8DB6 /* UITextField+Extension.swift */; };
 		1F1055BA2633FC9A002F8C54 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055B92633FC99002F8C54 /* TabBarController.swift */; };
 		1F1055BE263433AE002F8C54 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055BD263433AC002F8C54 /* AppSettings.swift */; };
 		1F1055C22634342B002F8C54 /* UITabBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055C12634342B002F8C54 /* UITabBar+Extension.swift */; };
@@ -69,6 +70,13 @@
 		E70AD5A22634285400F0FA9A /* SignInViewController+APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AD5A12634285400F0FA9A /* SignInViewController+APIResponseProtocol.swift */; };
 		E70AD5A62634317500F0FA9A /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AD5A52634317500F0FA9A /* UserProfileModel.swift */; };
 		E70AD6022634912300F0FA9A /* SettingsViewController+TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AD6012634912300F0FA9A /* SettingsViewController+TableViewExtension.swift */; };
+		E730BA64263A9F200074F235 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E730BA63263A9F200074F235 /* UIViewController+Extension.swift */; };
+		E730BA68263A9F770074F235 /* ClaimRewardViewController+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E730BA67263A9F770074F235 /* ClaimRewardViewController+TextFieldDelegate.swift */; };
+		E730BA6C263A9FCB0074F235 /* ClaimRewardViewController+APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E730BA6B263A9FCB0074F235 /* ClaimRewardViewController+APIResponseProtocol.swift */; };
+		E730BA70263AA0070074F235 /* CategoryReasonListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E730BA6F263AA0070074F235 /* CategoryReasonListModel.swift */; };
+		E730BA74263AA0270074F235 /* CategoryReasonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E730BA73263AA0270074F235 /* CategoryReasonModel.swift */; };
+		E730BA78263AA16E0074F235 /* ArrayTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E730BA77263AA16E0074F235 /* ArrayTransform.swift */; };
+		E730BA7C263AADF80074F235 /* RewardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E730BA7B263AADF80074F235 /* RewardModel.swift */; };
 		E730BA9A263AFAF50074F235 /* APIParametersStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E730BA99263AFAF50074F235 /* APIParametersStruct.swift */; };
 		E730BAA0263AFD860074F235 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E730BA9F263AFD860074F235 /* NotificationModel.swift */; };
 		E730BAA4263AFD910074F235 /* NotificationListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E730BAA3263AFD910074F235 /* NotificationListModel.swift */; };
@@ -110,6 +118,7 @@
 		1F011D97263AEC72009A8DB6 /* DashboardViewController+APIResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardViewController+APIResponseProtocol.swift"; sourceTree = "<group>"; };
 		1F011D9B263AEC99009A8DB6 /* DashboardViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		1F011DA3263AF77A009A8DB6 /* DashboardBottomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardBottomCell.swift; sourceTree = "<group>"; };
+		1F011DF3263B3411009A8DB6 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		1F1055B92633FC99002F8C54 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		1F1055BD263433AC002F8C54 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		1F1055C12634342B002F8C54 /* UITabBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Extension.swift"; sourceTree = "<group>"; };
@@ -183,6 +192,13 @@
 		E70AD5A12634285400F0FA9A /* SignInViewController+APIResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+APIResponseProtocol.swift"; sourceTree = "<group>"; };
 		E70AD5A52634317500F0FA9A /* UserProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
 		E70AD6012634912300F0FA9A /* SettingsViewController+TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewController+TableViewExtension.swift"; sourceTree = "<group>"; };
+		E730BA63263A9F200074F235 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		E730BA67263A9F770074F235 /* ClaimRewardViewController+TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClaimRewardViewController+TextFieldDelegate.swift"; sourceTree = "<group>"; };
+		E730BA6B263A9FCB0074F235 /* ClaimRewardViewController+APIResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClaimRewardViewController+APIResponseProtocol.swift"; sourceTree = "<group>"; };
+		E730BA6F263AA0070074F235 /* CategoryReasonListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryReasonListModel.swift; sourceTree = "<group>"; };
+		E730BA73263AA0270074F235 /* CategoryReasonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryReasonModel.swift; sourceTree = "<group>"; };
+		E730BA77263AA16E0074F235 /* ArrayTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTransform.swift; sourceTree = "<group>"; };
+		E730BA7B263AADF80074F235 /* RewardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardModel.swift; sourceTree = "<group>"; };
 		E730BA99263AFAF50074F235 /* APIParametersStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParametersStruct.swift; sourceTree = "<group>"; };
 		E730BA9F263AFD860074F235 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
 		E730BAA3263AFD910074F235 /* NotificationListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListModel.swift; sourceTree = "<group>"; };
@@ -317,6 +333,9 @@
 			isa = PBXGroup;
 			children = (
 				E70AD5A52634317500F0FA9A /* UserProfileModel.swift */,
+				E730BA6F263AA0070074F235 /* CategoryReasonListModel.swift */,
+				E730BA73263AA0270074F235 /* CategoryReasonModel.swift */,
+				E730BA7B263AADF80074F235 /* RewardModel.swift */,
 				1FFCF3372639F3A900E0CD50 /* ContributorModel.swift */,
 				1FFCF3572639F88F00E0CD50 /* DashboardModel.swift */,
 				1FFCF34D2639F6BC00E0CD50 /* OverallStatModel.swift */,
@@ -370,6 +389,7 @@
 				1F1055BD263433AC002F8C54 /* AppSettings.swift */,
 				1FE9968326276DD100223DEC /* DropDownController.swift */,
 				1FFCF2AE26353BEF00E0CD50 /* Redirect.swift */,
+				E730BA77263AA16E0074F235 /* ArrayTransform.swift */,
 				1FFCF2F52639E74000E0CD50 /* ArrayTransform.swift */,
 				1F011D8B263AE727009A8DB6 /* CommonUtility.swift */,
 				E730BAAF263B000D0074F235 /* ArrayTransform.swift */,
@@ -384,10 +404,12 @@
 				1FE28B70261CDBCD00402A2B /* Mapper+Extension.swift */,
 				E7A82B85262B0EF2007E4EC2 /* UIFont+Extension.swift */,
 				1F1055C12634342B002F8C54 /* UITabBar+Extension.swift */,
+				E730BA63263A9F200074F235 /* UIViewController+Extension.swift */,
 				1FFCF36C263A821600E0CD50 /* Date+Extension.swift */,
 				1F011D87263ADA08009A8DB6 /* Int+Extension.swift */,
 				E702D761263A0CBC00C6F3FC /* Date+Extension.swift */,
 				E730BAA7263AFEB60074F235 /* CommonExtensions.swift */,
+				1F011DF3263B3411009A8DB6 /* UITextField+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -417,6 +439,8 @@
 			isa = PBXGroup;
 			children = (
 				1FE996752627515F00223DEC /* ClaimRewardViewController.swift */,
+				E730BA67263A9F770074F235 /* ClaimRewardViewController+TextFieldDelegate.swift */,
+				E730BA6B263A9FCB0074F235 /* ClaimRewardViewController+APIResponseProtocol.swift */,
 			);
 			path = ClaimReward;
 			sourceTree = "<group>";
@@ -710,8 +734,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E70AD5832633FC3200F0FA9A /* CustomTableView.swift in Sources */,
+				E730BA68263A9F770074F235 /* ClaimRewardViewController+TextFieldDelegate.swift in Sources */,
 				E77DE86B26245BEE00D20520 /* SignInViewController.swift in Sources */,
+				E730BA74263AA0270074F235 /* CategoryReasonModel.swift in Sources */,
 				E79BDE2D262C6F9C001C3C73 /* SettingsViewController.swift in Sources */,
+				1F011DF4263B3411009A8DB6 /* UITextField+Extension.swift in Sources */,
 				E70AD5792633F44400F0FA9A /* SettingCell.swift in Sources */,
 				1FFCF3222639EE3C00E0CD50 /* DashboardViewController.swift in Sources */,
 				1FFCF3542639F76200E0CD50 /* CategoryStatModel.swift in Sources */,
@@ -719,7 +746,9 @@
 				1FFCF33C2639F43C00E0CD50 /* BadgesModel.swift in Sources */,
 				E7F4D4322639FCA4005EC6C9 /* NotificationsViewController.swift in Sources */,
 				1FE28B5E261CD58600402A2B /* EnvironmentUtility.swift in Sources */,
+				E730BA70263AA0070074F235 /* CategoryReasonListModel.swift in Sources */,
 				1FE9968426276DD200223DEC /* DropDownController.swift in Sources */,
+				E730BA6C263A9FCB0074F235 /* ClaimRewardViewController+APIResponseProtocol.swift in Sources */,
 				1FE28B7D261CDCC000402A2B /* APIUrl.swift in Sources */,
 				E730BAAC263AFEF10074F235 /* AppGlobalEnums.swift in Sources */,
 				1FE28B87261CDD4C00402A2B /* APIUrlStruct.swift in Sources */,
@@ -739,6 +768,7 @@
 				1FAC2C0E2616EAE200638C59 /* AppDelegate.swift in Sources */,
 				1F011D9C263AEC99009A8DB6 /* DashboardViewController+TableViewDelegate.swift in Sources */,
 				1FE28B76261CDC7A00402A2B /* APIResponseProtocol.swift in Sources */,
+				E730BA64263A9F200074F235 /* UIViewController+Extension.swift in Sources */,
 				1FE28B5D261CD58600402A2B /* RealmManager.swift in Sources */,
 				1F011D84263AC3E0009A8DB6 /* OverallStatsCell.swift in Sources */,
 				1FFCF34E2639F6BC00E0CD50 /* OverallStatModel.swift in Sources */,
@@ -747,9 +777,11 @@
 				1FFCF2AF26353BEF00E0CD50 /* Redirect.swift in Sources */,
 				E7F4D440263A0554005EC6C9 /* NotificationsViewController+TableViewExtension.swift in Sources */,
 				1F1055BE263433AE002F8C54 /* AppSettings.swift in Sources */,
+				E730BA78263AA16E0074F235 /* ArrayTransform.swift in Sources */,
 				1FE28B5C261CD58600402A2B /* RealmConfiguration.swift in Sources */,
 				E70AD58726340E4700F0FA9A /* SettingStruct.swift in Sources */,
 				1F1055C22634342B002F8C54 /* UITabBar+Extension.swift in Sources */,
+				E730BA7C263AADF80074F235 /* RewardModel.swift in Sources */,
 				1FE28B5B261CD58600402A2B /* Environment.swift in Sources */,
 				1FFCF366263A0A3000E0CD50 /* HeroesOfTheMonthCell.swift in Sources */,
 				E79BDDFB262C357C001C3C73 /* Loader.swift in Sources */,
