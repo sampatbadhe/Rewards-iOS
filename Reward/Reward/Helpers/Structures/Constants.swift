@@ -16,6 +16,7 @@ struct Constants {
         static let category = "Category"
         static let reason = "Reason"
         static let additionalComment = "Additional Comment"
+        static let optional = "Optional"
         static let submit = "Submit"
     }
     
