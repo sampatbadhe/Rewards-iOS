@@ -19,6 +19,10 @@
 		1F011DA4263AF77A009A8DB6 /* DashboardBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011DA3263AF77A009A8DB6 /* DashboardBottomCell.swift */; };
 		1F011DF4263B3411009A8DB6 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011DF3263B3411009A8DB6 /* UITextField+Extension.swift */; };
 		1F011DF8263B4BDE009A8DB6 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011DF7263B4BDE009A8DB6 /* CustomNavigationController.swift */; };
+		1F011E2B263B6DE5009A8DB6 /* Snackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011E2A263B6DE5009A8DB6 /* Snackbar.swift */; };
+		1F011E31263B6E66009A8DB6 /* SnackbarEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011E30263B6E66009A8DB6 /* SnackbarEnums.swift */; };
+		1F011E35263B70C3009A8DB6 /* EmptyResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F011E34263B70C3009A8DB6 /* EmptyResultView.xib */; };
+		1F011E39263B70F1009A8DB6 /* EmptyResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F011E38263B70F1009A8DB6 /* EmptyResultView.swift */; };
 		1F1055BA2633FC9A002F8C54 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055B92633FC99002F8C54 /* TabBarController.swift */; };
 		1F1055BE263433AE002F8C54 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055BD263433AC002F8C54 /* AppSettings.swift */; };
 		1F1055C22634342B002F8C54 /* UITabBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1055C12634342B002F8C54 /* UITabBar+Extension.swift */; };
@@ -137,6 +141,10 @@
 		1F011DA3263AF77A009A8DB6 /* DashboardBottomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardBottomCell.swift; sourceTree = "<group>"; };
 		1F011DF3263B3411009A8DB6 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		1F011DF7263B4BDE009A8DB6 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		1F011E2A263B6DE5009A8DB6 /* Snackbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snackbar.swift; sourceTree = "<group>"; };
+		1F011E30263B6E66009A8DB6 /* SnackbarEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackbarEnums.swift; sourceTree = "<group>"; };
+		1F011E34263B70C3009A8DB6 /* EmptyResultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyResultView.xib; sourceTree = "<group>"; };
+		1F011E38263B70F1009A8DB6 /* EmptyResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResultView.swift; sourceTree = "<group>"; };
 		1F1055B92633FC99002F8C54 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		1F1055BD263433AC002F8C54 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		1F1055C12634342B002F8C54 /* UITabBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Extension.swift"; sourceTree = "<group>"; };
@@ -355,6 +363,7 @@
 			children = (
 				1FAC2C132616EAE200638C59 /* Main.storyboard */,
 				1FAC2C182616EAE900638C59 /* LaunchScreen.storyboard */,
+				1F011E34263B70C3009A8DB6 /* EmptyResultView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -443,6 +452,8 @@
 				E730BA77263AA16E0074F235 /* ArrayTransform.swift */,
 				1F011D8B263AE727009A8DB6 /* CommonUtility.swift */,
 				1F011DF7263B4BDE009A8DB6 /* CustomNavigationController.swift */,
+				1F011E2A263B6DE5009A8DB6 /* Snackbar.swift */,
+				1F011E38263B70F1009A8DB6 /* EmptyResultView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -481,6 +492,7 @@
 				1F011D8F263AEA41009A8DB6 /* Badges.swift */,
 				1F011D93263AEB8E009A8DB6 /* Dashboard.swift */,
 				E730BAAB263AFEF10074F235 /* AppGlobalEnums.swift */,
+				1F011E30263B6E66009A8DB6 /* SnackbarEnums.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -711,6 +723,7 @@
 				1FAC2C7A26183E7D00638C59 /* QA.plist in Resources */,
 				1FAC2C1A2616EAE900638C59 /* LaunchScreen.storyboard in Resources */,
 				1FAC2C172616EAE900638C59 /* Assets.xcassets in Resources */,
+				1F011E35263B70C3009A8DB6 /* EmptyResultView.xib in Resources */,
 				1FAC2C7B26183E7D00638C59 /* Dev.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -839,6 +852,7 @@
 				1F011DF4263B3411009A8DB6 /* UITextField+Extension.swift in Sources */,
 				E70AD5792633F44400F0FA9A /* SettingCell.swift in Sources */,
 				E7F29BA92635DC9B0075D964 /* MedalHeaderCell.swift in Sources */,
+				1F011E39263B70F1009A8DB6 /* EmptyResultView.swift in Sources */,
 				1FFCF3222639EE3C00E0CD50 /* DashboardViewController.swift in Sources */,
 				1FFCF3542639F76200E0CD50 /* CategoryStatModel.swift in Sources */,
 				1FAC2C0E2616EAE200638C59 /* AppDelegate.swift in Sources */,
@@ -867,6 +881,7 @@
 				1F60B8362627ED4A001A2286 /* CategoryList.swift in Sources */,
 				1FE9968826276F7E00223DEC /* Searchable.swift in Sources */,
 				1F011D8C263AE727009A8DB6 /* CommonUtility.swift in Sources */,
+				1F011E2B263B6DE5009A8DB6 /* Snackbar.swift in Sources */,
 				1FAC2C0E2616EAE200638C59 /* AppDelegate.swift in Sources */,
 				1F011D9C263AEC99009A8DB6 /* DashboardViewController+TableViewDelegate.swift in Sources */,
 				1FE28B76261CDC7A00402A2B /* APIResponseProtocol.swift in Sources */,
@@ -907,6 +922,7 @@
 				1F011D90263AEA41009A8DB6 /* Badges.swift in Sources */,
 				E77DE86C26245BEE00D20520 /* SignInViewController+GIDSignInDelegate.swift in Sources */,
 				1FE28B83261CDD2000402A2B /* APIRequest.swift in Sources */,
+				1F011E31263B6E66009A8DB6 /* SnackbarEnums.swift in Sources */,
 				1FFCF36D263A821700E0CD50 /* Date+Extension.swift in Sources */,
 				1FFCF3582639F89000E0CD50 /* DashboardModel.swift in Sources */,
 				E70AD5752633F42F00F0FA9A /* ProfileInfoCell.swift in Sources */,

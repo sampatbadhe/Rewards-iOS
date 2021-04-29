@@ -144,21 +144,15 @@ class ClaimRewardViewController: UIViewController {
     
     func isValid() -> Bool {
         if selectedCategory == nil {
-            showAlert(
-                title: Constants.AlertTitle.alert,
-                message: Constants.AlertMessage.selectCategory)
+            Snackbar.shared.show(message: .selectCategory)
             return false
         }
         if selectedReason == nil {
-            showAlert(
-                title: Constants.AlertTitle.alert,
-                message: Constants.AlertMessage.selectReason)
+            Snackbar.shared.show(message: .selectReason)
             return false
         }
         if !(additionalCommentLabel.text?.contains(Constants.Title.optional) ?? false) {
-            showAlert(
-                title: Constants.AlertTitle.alert,
-                message: Constants.AlertMessage.additionalComment)
+            Snackbar.shared.show(message: .additionalComment)
             return  false
         }
         return true
