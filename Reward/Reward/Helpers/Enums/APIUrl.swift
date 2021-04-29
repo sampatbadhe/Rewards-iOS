@@ -13,6 +13,7 @@ enum APIUrl: String {
     case myView = "rewards/my_view"
     case rewards = "rewards"
     case categoryReasons = "category_reasons"
+    case notification = "notifications"
 }
 
 public enum APIPath: String {

@@ -51,5 +51,3 @@ public enum DateTimeFormat: String {
     case date = "yyyy-MM-dd"
     case dateWithMillisecondAndTimeZone = "yyyy-MM-dd'T'HH:mm:ss.SZ"
 }
-
-

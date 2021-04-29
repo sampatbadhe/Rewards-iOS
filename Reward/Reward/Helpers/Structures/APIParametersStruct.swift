@@ -22,4 +22,5 @@ struct APIParameters {
         parameters[APIKeys.currentPage] = currentPage
         parameters[APIKeys.perPage] = perPage
     }
+
 }

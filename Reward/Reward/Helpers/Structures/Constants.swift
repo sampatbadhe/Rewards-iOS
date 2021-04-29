@@ -14,6 +14,7 @@ struct Constants {
         static let rewardStatus = "Reward Status"
         static let settings = "Settings"
         static let filter = "Filter"
+        static let notifications = "Notifications"
     }
     
     struct Title {
