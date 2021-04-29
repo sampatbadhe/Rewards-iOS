@@ -15,9 +15,9 @@ enum Dashboard: Int, CaseIterable {
     public var title: String {
         switch self {
         case .top3Contributors:
-            return "Top 3 Contributes"
+            return "Top Contributors"
         case .HeroesOfTheMonth:
-            return "Heroes Of The Month"
+            return "Heroes Of The Last Month"
         case .overallStats:
             return "Overall Stats"
         }

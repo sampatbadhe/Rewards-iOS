@@ -30,6 +30,16 @@ class OverallStatsCell: UITableViewCell {
         lineChartView.rightAxis.enabled = false
         lineChartView.doubleTapToZoomEnabled = false
         lineChartView.highlightPerTapEnabled = false
+        lineChartView.extraBottomOffset = 20
+        
+        let l = lineChartView.legend
+        l.horizontalAlignment = .center
+        l.verticalAlignment = .bottom
+        l.orientation = .horizontal
+        l.drawInside = false
+        l.font = UIFont().preferredFont(for: .callout, weight: .regular)
+        l.formToTextSpace = 10
+        
         configureXAxis()
         configureLeftAxis()
     }

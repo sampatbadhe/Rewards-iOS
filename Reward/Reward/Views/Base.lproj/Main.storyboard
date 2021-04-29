@@ -247,29 +247,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iqa-V3-dsM" customClass="CustomTableView" customModule="Reward" customModuleProvider="target">
-                                <rect key="frame" x="20" y="88" width="374" height="725"/>
+                                <rect key="frame" x="20" y="108" width="374" height="705"/>
                                 <color key="backgroundColor" name="background"/>
                                 <color key="separatorColor" name="border"/>
                                 <color key="sectionIndexBackgroundColor" name="background"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="HeroesOfTheMonthCell" id="0vq-Nx-OYV" customClass="HeroesOfTheMonthCell" customModule="Reward" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.5" width="374" height="249.5"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="374" height="236"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0vq-Nx-OYV" id="gee-VH-D3l">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="249.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="236"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ee-dp-1mn" customClass="BarChartView" customModule="Charts">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374.5" height="249.5"/>
+                                                    <rect key="frame" x="10" y="10" width="354" height="216"/>
                                                     <color key="backgroundColor" name="cell"/>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="9ee-dp-1mn" firstAttribute="top" secondItem="gee-VH-D3l" secondAttribute="top" id="1PB-Zz-w3t"/>
-                                                <constraint firstAttribute="trailing" secondItem="9ee-dp-1mn" secondAttribute="trailing" id="ZJ3-rf-VBF"/>
+                                                <constraint firstItem="9ee-dp-1mn" firstAttribute="top" secondItem="gee-VH-D3l" secondAttribute="top" constant="10" id="1PB-Zz-w3t"/>
+                                                <constraint firstAttribute="trailing" secondItem="9ee-dp-1mn" secondAttribute="trailing" constant="10" id="ZJ3-rf-VBF"/>
                                                 <constraint firstItem="9ee-dp-1mn" firstAttribute="width" secondItem="gee-VH-D3l" secondAttribute="height" multiplier="6:4" id="avy-lT-hqG"/>
-                                                <constraint firstItem="9ee-dp-1mn" firstAttribute="leading" secondItem="gee-VH-D3l" secondAttribute="leading" id="jfu-jG-PPL"/>
-                                                <constraint firstAttribute="bottom" secondItem="9ee-dp-1mn" secondAttribute="bottom" id="sER-QT-boT"/>
+                                                <constraint firstItem="9ee-dp-1mn" firstAttribute="leading" secondItem="gee-VH-D3l" secondAttribute="leading" constant="10" id="jfu-jG-PPL"/>
+                                                <constraint firstAttribute="bottom" secondItem="9ee-dp-1mn" secondAttribute="bottom" constant="10" id="sER-QT-boT"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="cell"/>
@@ -278,22 +278,22 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="OverallStatsCell" id="f6J-Tv-NCB" customClass="OverallStatsCell" customModule="Reward" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="305" width="374" height="249.5"/>
+                                        <rect key="frame" x="0.0" y="291.5" width="374" height="236"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f6J-Tv-NCB" id="gyO-ui-oIl">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="249.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="236"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQa-RZ-3r8" customClass="LineChartView" customModule="Charts">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374.5" height="249.5"/>
+                                                    <rect key="frame" x="10" y="10" width="354" height="216"/>
                                                     <color key="backgroundColor" name="cell"/>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="rQa-RZ-3r8" secondAttribute="bottom" id="1NG-MD-Zhh"/>
-                                                <constraint firstItem="rQa-RZ-3r8" firstAttribute="top" secondItem="gyO-ui-oIl" secondAttribute="top" id="JCm-Wo-drj"/>
-                                                <constraint firstAttribute="trailing" secondItem="rQa-RZ-3r8" secondAttribute="trailing" id="fLq-we-ix9"/>
-                                                <constraint firstItem="rQa-RZ-3r8" firstAttribute="leading" secondItem="gyO-ui-oIl" secondAttribute="leading" id="nGl-yI-Mwo"/>
+                                                <constraint firstAttribute="bottom" secondItem="rQa-RZ-3r8" secondAttribute="bottom" constant="10" id="1NG-MD-Zhh"/>
+                                                <constraint firstItem="rQa-RZ-3r8" firstAttribute="top" secondItem="gyO-ui-oIl" secondAttribute="top" constant="10" id="JCm-Wo-drj"/>
+                                                <constraint firstAttribute="trailing" secondItem="rQa-RZ-3r8" secondAttribute="trailing" constant="10" id="fLq-we-ix9"/>
+                                                <constraint firstItem="rQa-RZ-3r8" firstAttribute="leading" secondItem="gyO-ui-oIl" secondAttribute="leading" constant="10" id="nGl-yI-Mwo"/>
                                                 <constraint firstItem="rQa-RZ-3r8" firstAttribute="width" secondItem="gyO-ui-oIl" secondAttribute="height" multiplier="6:4" id="vpy-ah-Ozk"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -303,7 +303,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DashboardHeaderCell" id="auN-48-dsA" customClass="DashboardHeaderCell" customModule="Reward" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="554.5" width="374" height="40"/>
+                                        <rect key="frame" x="0.0" y="527.5" width="374" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="auN-48-dsA" id="cKP-9b-zzE">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
@@ -329,14 +329,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TopContributorsCell" id="fpZ-jW-dhh" customClass="TopContributorsCell" customModule="Reward" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="594.5" width="374" height="80"/>
+                                        <rect key="frame" x="0.0" y="567.5" width="374" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fpZ-jW-dhh" id="qoH-mx-2AJ">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QWb-k4-75r">
-                                                    <rect key="frame" x="10" y="20" width="40" height="40"/>
+                                                    <rect key="frame" x="20" y="20" width="40" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="40" id="qYE-YR-fP0"/>
                                                         <constraint firstAttribute="height" constant="40" id="qx9-5w-WJg"/>
@@ -442,13 +442,13 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="QWb-k4-75r" firstAttribute="leading" secondItem="qoH-mx-2AJ" secondAttribute="leading" constant="10" id="56Q-5J-POO"/>
+                                                <constraint firstItem="QWb-k4-75r" firstAttribute="leading" secondItem="qoH-mx-2AJ" secondAttribute="leading" constant="20" id="56Q-5J-POO"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="sl0-cw-Zp0" secondAttribute="trailing" constant="10" id="71t-ZS-dBQ"/>
                                                 <constraint firstItem="jMP-Pi-AT3" firstAttribute="top" secondItem="LX4-5c-v83" secondAttribute="bottom" constant="4" id="BXF-Wb-oIF"/>
                                                 <constraint firstAttribute="bottom" secondItem="sl0-cw-Zp0" secondAttribute="bottom" constant="10" id="G6n-Bx-puI"/>
                                                 <constraint firstItem="sl0-cw-Zp0" firstAttribute="leading" secondItem="LX4-5c-v83" secondAttribute="trailing" constant="10" id="NRH-Hc-H1K"/>
-                                                <constraint firstItem="jMP-Pi-AT3" firstAttribute="leading" secondItem="QWb-k4-75r" secondAttribute="trailing" constant="20" id="WRW-AY-6R4"/>
-                                                <constraint firstItem="LX4-5c-v83" firstAttribute="leading" secondItem="QWb-k4-75r" secondAttribute="trailing" constant="20" id="lgQ-TH-ahb"/>
+                                                <constraint firstItem="jMP-Pi-AT3" firstAttribute="leading" secondItem="QWb-k4-75r" secondAttribute="trailing" constant="10" id="WRW-AY-6R4"/>
+                                                <constraint firstItem="LX4-5c-v83" firstAttribute="leading" secondItem="QWb-k4-75r" secondAttribute="trailing" constant="10" id="lgQ-TH-ahb"/>
                                                 <constraint firstItem="LX4-5c-v83" firstAttribute="top" secondItem="QWb-k4-75r" secondAttribute="top" id="pQM-oH-oHL"/>
                                                 <constraint firstItem="sl0-cw-Zp0" firstAttribute="leading" secondItem="jMP-Pi-AT3" secondAttribute="trailing" constant="10" id="r9n-oF-I6E"/>
                                                 <constraint firstItem="sl0-cw-Zp0" firstAttribute="top" secondItem="qoH-mx-2AJ" secondAttribute="top" constant="10" id="x4K-eh-Hcu"/>
@@ -468,7 +468,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DashboardBottomCell" id="H3t-U8-c1y" customClass="DashboardBottomCell" customModule="Reward" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="674.5" width="374" height="25"/>
+                                        <rect key="frame" x="0.0" y="647.5" width="374" height="25"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H3t-U8-c1y" id="yH5-eM-zyL">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
@@ -517,7 +517,7 @@
                             <constraint firstItem="AUd-xx-Ht5" firstAttribute="trailing" secondItem="iqa-V3-dsM" secondAttribute="trailing" constant="20" id="2l7-j1-2Kc"/>
                             <constraint firstItem="iqa-V3-dsM" firstAttribute="leading" secondItem="AUd-xx-Ht5" secondAttribute="leading" constant="20" id="3Ds-h1-RFx"/>
                             <constraint firstItem="AUd-xx-Ht5" firstAttribute="bottom" secondItem="iqa-V3-dsM" secondAttribute="bottom" id="6MG-Bl-wdg"/>
-                            <constraint firstItem="iqa-V3-dsM" firstAttribute="top" secondItem="AUd-xx-Ht5" secondAttribute="top" id="ozD-ZH-Oxe"/>
+                            <constraint firstItem="iqa-V3-dsM" firstAttribute="top" secondItem="AUd-xx-Ht5" secondAttribute="top" constant="20" id="ozD-ZH-Oxe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gTU-3v-orA"/>

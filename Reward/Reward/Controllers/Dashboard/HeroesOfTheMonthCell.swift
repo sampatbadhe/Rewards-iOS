@@ -25,6 +25,16 @@ class HeroesOfTheMonthCell: UITableViewCell {
         barChartView.drawValueAboveBarEnabled = true
         barChartView.doubleTapToZoomEnabled = false
         barChartView.highlightPerTapEnabled = false
+        barChartView.extraBottomOffset = 20
+        
+        let l = barChartView.legend
+        l.horizontalAlignment = .center
+        l.verticalAlignment = .bottom
+        l.orientation = .horizontal
+        l.drawInside = false
+        l.font = UIFont().preferredFont(for: .callout, weight: .regular)
+        l.formToTextSpace = 10
+        
         configureXAxis()
         configureYAxis()
     }
@@ -53,12 +63,12 @@ class HeroesOfTheMonthCell: UITableViewCell {
             guard let badges = contributor.badges else {
                 return
             }
-            let barChartDataEntry = BarChartDataEntry(x: Double(index), yValues: [Double(badges.gold), Double(badges.silver), Double(badges.bronze)])
+            let barChartDataEntry = BarChartDataEntry(x: Double(index), yValues: [Double(badges.bronze), Double(badges.silver), Double(badges.gold)])
             barChartDataEntries.append(barChartDataEntry)
             dataPoints.append(contributor.name())
         }
         let set = BarChartDataSet(entries: barChartDataEntries, label: String())
-        setLineChartDataSet(dataSet: set)
+        setLineChartDataSet(dataSet: set, badges: [.bronze, .silver, .gold])
         let data: BarChartData = BarChartData(dataSet: set)
         data.setValueFont(UIFont().preferredFont(for: .subheadline, weight: .regular))
         data.barWidth = 0.25
@@ -66,10 +76,10 @@ class HeroesOfTheMonthCell: UITableViewCell {
         barChartView.data = data
     }
     
-    private func setLineChartDataSet(dataSet: BarChartDataSet) {
+    private func setLineChartDataSet(dataSet: BarChartDataSet, badges: [Badges]) {
         dataSet.drawIconsEnabled = false
-        dataSet.colors = Badges.allCases.compactMap({ $0.randomColor })
-        dataSet.stackLabels = Badges.allCases.compactMap({ $0.title })
+        dataSet.colors = badges.compactMap({ $0.color })
+        dataSet.stackLabels = badges.compactMap({ $0.title })
         dataSet.drawValuesEnabled = false
     }
 

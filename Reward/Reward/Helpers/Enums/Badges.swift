@@ -23,8 +23,15 @@ enum Badges: CaseIterable {
         }
     }
     
-    public var randomColor: UIColor {
-        return CommonUtility().randomColor()
+    public var color: UIColor {
+        switch self {
+        case .bronze:
+            return R.color.bronze() ?? .clear
+        case .gold:
+            return R.color.gold() ?? .clear
+        case .silver:
+            return R.color.silver() ?? .clear
+        }
     }
     
 }
