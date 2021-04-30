@@ -28,7 +28,6 @@ class ProfileInfoCell: UITableViewCell {
     }
     
     private func setUI() {
-        profileBorderView.addShadow(ofColor: R.color.cardShadow() ?? .clear, radius: 5, offset: .zero, opacity: 1)
         profileBorderView.borderColor = R.color.border()
     }
     

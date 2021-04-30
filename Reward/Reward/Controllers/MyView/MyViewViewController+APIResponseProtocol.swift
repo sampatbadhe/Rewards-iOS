@@ -18,7 +18,8 @@ extension MyViewViewController: APIResponseProtocol {
                 return
             }
             categoryBadgeDetails = myViewDetails.categoryByBadges
-            badgeTallyDetails = myViewDetails.badgesTally ?? BadgesModel()
+            badgeDetails = myViewDetails.badgesTally ?? BadgesModel()
+            setDetails()
             tableView.isHidden = false
             tableView.reloadData()
         case .categoryReasons:

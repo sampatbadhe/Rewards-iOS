@@ -23,9 +23,6 @@ class RewardStatusViewController: UIViewController {
         super.viewDidLoad()
         title = Constants.NavigationTitle.rewardStatus
         apiManager.delegate = self
-        if showAll {
-            setNavigationBarButton()
-        }
         setSegmentBarUI()
         setTableView()
         apiParameters.reset()
@@ -35,11 +32,6 @@ class RewardStatusViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.largeTitleDisplayMode = .never
-    }
-    
-    func setNavigationBarButton() {
-        let filterBarButton = UIBarButtonItem(image: UIImage(systemName: "slider.vertical.3"), style: .plain, target: self, action: #selector(filterAction(_:)))
-        navigationItem.rightBarButtonItem = filterBarButton
     }
     
     func setSegmentBarUI() {
@@ -75,18 +67,8 @@ class RewardStatusViewController: UIViewController {
         if !showAll {
             parameters[APIKeys.Rewards.categoryId] = categoryId
         }
-//        for Date Filter parameter
-//        start_date
-//        end_date
         apiParameters.toParameters(parameters: &parameters)
         return parameters
-    }
-
-    @IBAction func filterAction(_ sender: UIBarButtonItem) {
-        guard let filterViewController = UIStoryboard.main?.instantiateViewController(withClass: FilterViewController.self) else {
-            return
-        }
-        navigationController?.pushViewController(filterViewController, animated: true)
     }
     
     @IBAction func changeStatusTypeAction(_ sender: UISegmentedControl) {

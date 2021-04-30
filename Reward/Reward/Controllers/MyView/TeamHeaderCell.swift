@@ -14,6 +14,7 @@ class TeamHeaderCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         titleLabel.text = Constants.Title.teamBreakdown
+        titleLabel.font = titleLabel.font.bold
     }
 
 }

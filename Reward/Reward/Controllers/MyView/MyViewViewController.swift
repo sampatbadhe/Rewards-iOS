@@ -11,10 +11,16 @@ import RealmSwift
 class MyViewViewController: UIViewController {
     
     @IBOutlet weak var tableView: CustomTableView!
+    @IBOutlet weak var medalView: UIView!
+    @IBOutlet weak var medalBackgroundView: UIView!
+    @IBOutlet weak var goldCountLabel: UILabel!
+    @IBOutlet weak var silverCountLabel: UILabel!
+    @IBOutlet weak var bronzeCountLabel: UILabel!
+    @IBOutlet weak var allStatusButton: UIButton!
     
     let apiManager = APIManager()
     var categoryBadgeDetails = List<CategoryBadgesModel>()
-    var badgeTallyDetails = BadgesModel()
+    var badgeDetails = BadgesModel()
     var categoryReasonDetails = CategoryReasonListModel()
     
     override func viewDidLoad() {
@@ -22,6 +28,7 @@ class MyViewViewController: UIViewController {
         navigationItem.title = Constants.NavigationTitle.myView
         apiManager.delegate = self
         setNavigationBarButton()
+        setUI()
         setTableView()
         callMyViewAPI()
         callCategoryReasonsAPI()
@@ -31,6 +38,16 @@ class MyViewViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .always
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        tableView.updateHeaderViewHeight()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tableView.updateHeaderViewHeight()
     }
     
     func setNavigationBarButton() {
@@ -43,6 +60,20 @@ class MyViewViewController: UIViewController {
         tableView.refreshControlAction = { sender in
             self.callMyViewAPI()
         }
+    }
+    
+    func setUI() {
+        allStatusButton.setTitle(Constants.Title.checkMyRewardsStatus, for: .normal)
+        goldCountLabel.font = goldCountLabel.font.bold
+        silverCountLabel.font = silverCountLabel.font.bold
+        bronzeCountLabel.font = bronzeCountLabel.font.bold
+    }
+    
+    func setDetails() {
+        goldCountLabel.text = badgeDetails.gold.toString
+        silverCountLabel.text = badgeDetails.silver.toString
+        bronzeCountLabel.text = badgeDetails.bronze.toString
+        tableView.tableHeaderView = medalView
     }
     
     func callMyViewAPI() {
@@ -63,12 +94,16 @@ class MyViewViewController: UIViewController {
     }
     
     @IBAction func shareAction(_ sender: UIBarButtonItem) {
-        let sharingText = "Yay! I earned \(badgeTallyDetails.gold) gold, \(badgeTallyDetails.silver) silver, and \(badgeTallyDetails.bronze) bronze badges on the iHero app"
+        let sharingText = "Yay! I earned \(badgeDetails.gold) gold, \(badgeDetails.silver) silver, and \(badgeDetails.bronze) bronze badges on the iHero app"
         let textToShare = [sharingText]
         let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = view
         activityViewController.excludedActivityTypes = [.airDrop]
         present(activityViewController, animated: true, completion: nil)
+    }
+    
+    @IBAction func allStatusButtonAction(_ sender: UIButton) {
+        self.openRewardStatusView()
     }
     
     func openRewardStatusView(showAll: Bool = true, categoryId: Int = 0) {

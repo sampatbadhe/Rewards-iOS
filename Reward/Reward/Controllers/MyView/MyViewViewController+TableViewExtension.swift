@@ -10,11 +10,7 @@ import UIKit
 extension MyViewViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerCell = tableView.dequeueReusableCell(withClass: MedalHeaderCell.self)
-        headerCell.configureWithModel(medalDetails: badgeTallyDetails)
-        headerCell.allStatusAction = { sender in
-            self.openRewardStatusView()
-        }
+        let headerCell = tableView.dequeueReusableCell(withClass: TeamHeaderCell.self)
         return headerCell
     }
     
