@@ -13,7 +13,9 @@ target 'Reward' do
   pod 'IQKeyboardManagerSwift'
   pod 'GoogleSignIn'
   pod 'MBProgressHUD'
+  pod 'SDWebImage'
   pod 'Charts'
+  pod 'TTGSnackbar'
 
   # Pods for Reward
 

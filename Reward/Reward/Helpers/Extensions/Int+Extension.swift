@@ -2,12 +2,17 @@
 //  Int+Extension.swift
 //  Reward
 //
-//  Created by Keval Vadoliya on 29/04/21.
+//  Created by Darshan on 26/04/21.
 //
 
-import Foundation
+import UIKit
 
 extension Int {
+    
+    var toString: String {
+        return String(describing: self)
+    }
+
     var ordinal: String {
         get {
             var suffix = "th"
@@ -26,4 +31,14 @@ extension Int {
             return String(self) + suffix
         }
     }
+    
+}
+
+extension Optional where Wrapped == Int {
+    
+    var toString: String {
+        let value = self ?? 0
+        return value.toString
+    }
+    
 }

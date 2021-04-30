@@ -72,7 +72,7 @@ class ClaimRewardViewController: UIViewController {
     }
     
     func getCategoryListDropDown() -> Set<DropDownItem> {
-        var categoryList: [DropDownItem] = categoryReasonsObject.categoryReasons.compactMap({ DropDownItem(id: $0.categoryId, value: $0.categoryName ?? String()) })
+        var categoryList: [DropDownItem] = categoryReasonsObject.categoryReasons.compactMap({ DropDownItem(id: $0.categoryId.rawValue, value: $0.categoryName ?? String()) })
         categoryList.sort { $0.value < $1.value }
         return Set(categoryList)
     }
@@ -129,7 +129,7 @@ class ClaimRewardViewController: UIViewController {
     }
     
     func prepareRewardModel() {
-        rewardDetail.categoryId = selectedCategory ?? 0
+        rewardDetail.categoryId = CategoryTypeId(rawValue: selectedCategory ?? 0) ?? .coe
         rewardDetail.categoryReasonId = selectedReason ?? 0
         rewardDetail.activityDate = datePicker.date
         rewardDetail.comments = additionalCommentTextView.text
@@ -144,21 +144,15 @@ class ClaimRewardViewController: UIViewController {
     
     func isValid() -> Bool {
         if selectedCategory == nil {
-            showAlert(
-                title: Constants.AlertTitle.alert,
-                message: Constants.AlertMessage.selectCategory)
+            Snackbar.shared.show(message: .selectCategory)
             return false
         }
         if selectedReason == nil {
-            showAlert(
-                title: Constants.AlertTitle.alert,
-                message: Constants.AlertMessage.selectReason)
+            Snackbar.shared.show(message: .selectReason)
             return false
         }
         if !(additionalCommentLabel.text?.contains(Constants.Title.optional) ?? false) {
-            showAlert(
-                title: Constants.AlertTitle.alert,
-                message: Constants.AlertMessage.additionalComment)
+            Snackbar.shared.show(message: .additionalComment)
             return  false
         }
         return true

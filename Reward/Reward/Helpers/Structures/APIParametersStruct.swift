@@ -5,7 +5,7 @@
 //  Created by Darshan on 29/04/21.
 //
 
-import Foundation
+import UIKit
 
 struct APIParameters {
     
@@ -22,5 +22,5 @@ struct APIParameters {
         parameters[APIKeys.currentPage] = currentPage
         parameters[APIKeys.perPage] = perPage
     }
-    
+
 }

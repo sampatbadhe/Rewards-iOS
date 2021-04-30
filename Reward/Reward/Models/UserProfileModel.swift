@@ -29,6 +29,13 @@ class UserProfileModel: Object, Mappable {
         profilePicUrl <- map["photo_url"]
     }
     
+    func fullName() -> String {
+        guard let firstname = firstName, let lastname = lastName else {
+            return String()
+        }
+        return firstname + " " + lastname
+    }
+    
     override static func primaryKey() -> String? {
         return "id"
     }

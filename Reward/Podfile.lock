@@ -27,6 +27,9 @@ PODS:
   - Realm/Headers (10.7.2)
   - RealmSwift (10.7.2):
     - Realm (= 10.7.2)
+  - SDWebImage (5.11.0):
+    - SDWebImage/Core (= 5.11.0)
+  - SDWebImage/Core (5.11.0)
   - SwifterSwift (5.2.0):
     - SwifterSwift/AppKit (= 5.2.0)
     - SwifterSwift/CoreAnimation (= 5.2.0)
@@ -52,6 +55,7 @@ PODS:
   - SwifterSwift/StoreKit (5.2.0)
   - SwifterSwift/SwiftStdlib (5.2.0)
   - SwifterSwift/UIKit (5.2.0)
+  - TTGSnackbar (1.10.5)
 
 DEPENDENCIES:
   - Alamofire
@@ -62,7 +66,9 @@ DEPENDENCIES:
   - ObjectMapper
   - R.swift
   - RealmSwift
+  - SDWebImage
   - SwifterSwift
+  - TTGSnackbar
 
 SPEC REPOS:
   trunk:
@@ -79,7 +85,9 @@ SPEC REPOS:
     - R.swift.Library
     - Realm
     - RealmSwift
+    - SDWebImage
     - SwifterSwift
+    - TTGSnackbar
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
@@ -95,8 +103,10 @@ SPEC CHECKSUMS:
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   Realm: e523da9ade306c5ae87e85dc09fdef148d3e1cc1
   RealmSwift: 4f6758c3adbdcc87f7b7777107226532a077f61c
+  SDWebImage: 7acbb57630ac7db4a495547fb73916ff3e432f6b
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
+  TTGSnackbar: 2bd245d2bbf83639483410273fd936af0b7ba2a9
 
-PODFILE CHECKSUM: fea77688c1aeba62a3eeee3acfc8abc7d4843313
+PODFILE CHECKSUM: 3344eddec164a7dfe569f69051978697dcb9afd9
 
 COCOAPODS: 1.10.1
