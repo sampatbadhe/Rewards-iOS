@@ -22,6 +22,9 @@ class SettingCell: UITableViewCell {
         settingImageView.image = settingInfo.image?.withRenderingMode(.alwaysTemplate)
         settingTitleLabel.text = settingInfo.title
         settingSwitch.isHidden = !settingInfo.switchVisibility
+        self.alpha = settingInfo.title == Constants.Setting.notifications ? 0.5 : 1
+        self.backgroundColor = settingInfo.title == Constants.Setting.notifications ? R.color.shadow() : R.color.background()
+        self.isUserInteractionEnabled = !(settingInfo.title == Constants.Setting.notifications)
     }
 
 }

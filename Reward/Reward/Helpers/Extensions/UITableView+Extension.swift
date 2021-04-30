@@ -9,13 +9,18 @@ import UIKit
 
 extension UITableView {
     
-    func setSearchEmptyView() {
+    func setEmptyView() {
         let emptyView = EmptyResultView(frame: CGRect.zero)
         emptyView.titleText = Constants.Title.noRecordFound
-//        emptyView.image = ImageCollection.noMatchesFound
+        emptyView.image = R.image.noData()
         backgroundView = emptyView
         emptyView.setSuperViewConstraints(parentView: emptyView.superview)
         isScrollEnabled = false
+    }
+    
+    func resetBackgroundView() {
+        backgroundView = nil
+        isScrollEnabled = true
     }
 
     func updateHeaderViewHeight() {

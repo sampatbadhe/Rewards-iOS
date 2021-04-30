@@ -10,6 +10,11 @@ import UIKit
 extension NotificationsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if notificationListObject.notificationsList.isEmpty {
+            tableView.setEmptyView()
+            return 0
+        }
+        tableView.resetBackgroundView()
         return notificationListObject.notificationsList.count
     }
     

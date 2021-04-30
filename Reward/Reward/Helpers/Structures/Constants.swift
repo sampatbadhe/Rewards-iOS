@@ -49,13 +49,17 @@ struct Constants {
     }
     
     struct AlertTitle {
+        static let no = "No"
+        static let yes = "Yes"
         static let logout = "Logout"
         static let cancel = "Cancel"
         static let alert = "Alert"
+        static let withdrawn = "Withdrawn"
     }
     
     struct AlertMessage {
         static let logoutConfirmationMessage = "Are you sure you want to logout?"
+        static let withdrawnConfirmationMessage = "Are you sure you want to withdrawn this claim?"
     }
     
 }

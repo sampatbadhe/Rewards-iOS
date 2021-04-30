@@ -12,6 +12,15 @@ extension RewardStatusViewController: APIResponseProtocol {
     func successResponse(_ response: [String: Any], successCode: Int, request: APIRequest) {
         Loader.shared.hide()
         tableView.endRefreshing()
+        if let rewardDetail = response["reward"] as? RewardModel,
+           let index = rewardDetailsList.rewardList.firstIndex(where: { (object) -> Bool in
+            object.id == rewardDetail.id
+           }) {
+            rewardDetailsList.rewardList.remove(at: index)
+            tableView.isHidden = false
+            tableView.reloadData()
+            return
+        }
         if !response.shouldAppendListArray() {
             rewardDetailsList.rewardList.removeAll()
         }

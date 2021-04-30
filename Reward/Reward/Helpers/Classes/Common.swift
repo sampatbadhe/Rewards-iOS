@@ -9,12 +9,12 @@ import UIKit
 
 class Common {
     
-    class func getStatusColor(status: String?) -> UIColor {
+    class func getStatusColor(status: String?) -> UIColor? {
         switch status {
-        case "pending": return UIColor.systemOrange
-        case "approved": return UIColor.systemGreen
-        case "rejected": return UIColor.systemRed
-        case "withdrawn": return UIColor.systemGray3
+        case "pending": return R.color.orange()
+        case "approved": return R.color.green()
+        case "rejected": return R.color.red()
+        case "withdrawn": return R.color.silver()
         default: return UIColor.black
         }
     }

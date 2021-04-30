@@ -1272,6 +1272,9 @@
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7Un-Tb-lgg">
                                 <rect key="frame" x="20" y="54" width="374" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="rYg-mQ-WTw"/>
+                                </constraints>
                                 <segments>
                                     <segment title=""/>
                                     <segment title=""/>
@@ -1429,7 +1432,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7qf-FI-OQl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112" y="2907"/>
+            <point key="canvasLocation" x="112" y="3023"/>
         </scene>
     </scenes>
     <designables>

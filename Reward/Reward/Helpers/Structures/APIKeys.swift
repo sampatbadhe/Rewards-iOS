@@ -9,6 +9,7 @@ import UIKit
 
 struct APIKeys {
     
+    static let reward = "reward"
     static let currentPage = "page"
     static let perPage = "per_page"
     
