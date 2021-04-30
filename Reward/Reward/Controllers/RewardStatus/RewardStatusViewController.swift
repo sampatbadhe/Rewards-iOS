@@ -18,6 +18,7 @@ class RewardStatusViewController: UIViewController {
     var categoryReasonDetails = CategoryReasonListModel()
     var showAll: Bool = false
     var categoryId = Int()
+    var withdrawnId: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +63,7 @@ class RewardStatusViewController: UIViewController {
     }
     
     func callWithdrawnRewardAPI(id: Int) {
+        withdrawnId = id
         Loader.shared.show()
         apiManager.callAPI(request: withdrawnRewardAPIRequest(id: id))
     }
@@ -104,6 +106,15 @@ class RewardStatusViewController: UIViewController {
     
     func handleWithdrawn(index: Int) {
         withdrawnAlertView(index: index)
+    }
+    
+    func handleWithdrawResponse() {
+        guard let index = rewardDetailsList.rewardList.firstIndex(where: { $0.id == withdrawnId }) else {
+            return
+        }
+        withdrawnId = nil
+        rewardDetailsList.rewardList.remove(at: index)
+        tableView.reloadData()
     }
     
 }
