@@ -1040,8 +1040,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${bundle_id_suffix}";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				EXCLUDED_ARCHS = arm64;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Rohan Daxini (M528S3529N)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M528S3529N;
+				EXCLUDED_ARCHS = "";
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = "Reward/Supporting Files/Dev.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -1049,10 +1051,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.Reward;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.iHero;
 				PRODUCT_NAME = iHero;
+				PROVISIONING_PROFILE_SPECIFIER = "App Store Dist Profile";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				bundle_id_suffix = Dev;
 			};
 			name = "Release (Dev)";
@@ -1141,7 +1144,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${bundle_id_suffix}";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rohan Daxini (3253TTFGC5)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M528S3529N;
 				EXCLUDED_ARCHS = arm64;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				INFOPLIST_FILE = "Reward/Supporting Files/Dev.plist";
@@ -1150,11 +1155,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.Reward;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.iHero;
 				PRODUCT_NAME = iHero;
+				PROVISIONING_PROFILE_SPECIFIER = "Dev profile";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				bundle_id_suffix = Dev;
 			};
 			name = "Debug (Dev)";
@@ -1243,7 +1249,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${bundle_id_suffix}";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rohan Daxini (3253TTFGC5)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M528S3529N;
 				EXCLUDED_ARCHS = arm64;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				INFOPLIST_FILE = "Reward/Supporting Files/QA.plist";
@@ -1252,11 +1260,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.Reward;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.iHero;
 				PRODUCT_NAME = iHero;
+				PROVISIONING_PROFILE_SPECIFIER = "Dev profile";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				bundle_id_suffix = QA;
 			};
 			name = "Debug (QA)";
@@ -1345,7 +1354,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${bundle_id_suffix}";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rohan Daxini (3253TTFGC5)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M528S3529N;
 				EXCLUDED_ARCHS = arm64;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				INFOPLIST_FILE = "Reward/Supporting Files/Production.plist";
@@ -1354,11 +1365,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.Reward;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.iHero;
 				PRODUCT_NAME = iHero;
+				PROVISIONING_PROFILE_SPECIFIER = "Dev profile";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				bundle_id_suffix = "";
 			};
 			name = "Debug (Production)";
@@ -1447,8 +1459,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${bundle_id_suffix}";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				EXCLUDED_ARCHS = arm64;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Rohan Daxini (M528S3529N)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M528S3529N;
+				EXCLUDED_ARCHS = "";
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = "Reward/Supporting Files/QA.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -1456,10 +1470,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.Reward;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.iHero;
 				PRODUCT_NAME = iHero;
+				PROVISIONING_PROFILE_SPECIFIER = "App Store Dist Profile";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				bundle_id_suffix = QA;
 			};
 			name = "Release (QA)";
@@ -1548,8 +1563,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${bundle_id_suffix}";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				EXCLUDED_ARCHS = arm64;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Rohan Daxini (M528S3529N)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = M528S3529N;
+				EXCLUDED_ARCHS = "";
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = "Reward/Supporting Files/Production.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -1557,10 +1574,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.Reward;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiprosh.iHero;
 				PRODUCT_NAME = iHero;
+				PROVISIONING_PROFILE_SPECIFIER = "App Store Dist Profile";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				bundle_id_suffix = "";
 			};
 			name = "Release (Production)";
