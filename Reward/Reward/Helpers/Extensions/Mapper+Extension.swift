@@ -19,6 +19,9 @@ extension Dictionary where Key == String {
         guard let metaData = self["meta"] as? [String: Any] else {
             return false
         }
+        if let page = metaData["current_page"] as? String {
+            return (page as NSString).integerValue != 1
+        }
         if let page = metaData["current_page"] as? Int {
             return page != 1
         }
@@ -33,8 +36,15 @@ extension Dictionary where Key == String {
         if let page = metaData["current_page"] as? Int {
             apiParameters.currentPage = page
         }
+        if let page = metaData["current_page"] as? String {
+            apiParameters.currentPage = (page as NSString).integerValue
+        }
         if let totalCount = metaData["total_count"] as? Int {
             apiParameters.shouldCallNext = apiParameters.currentPage * apiParameters.perPage < totalCount
+        }
+        if let totalCount = metaData["total_count"] as? String {
+            let count = (totalCount as NSString).integerValue
+            apiParameters.shouldCallNext = apiParameters.currentPage * apiParameters.perPage < count
         }
         apiParameters.currentPage += 1
         return apiParameters
